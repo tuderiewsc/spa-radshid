@@ -1,0 +1,104 @@
+.container{
+    max-width: 100% !important;
+}
+
+.top_banner {
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(38,50,56,.8)),to(rgba(38,50,56,.8))), url(../assets/bg1.jpg);
+    background: linear-gradient(rgba(38,50,56,.8),rgba(38,50,56,.8)), url(../assets/bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+    height: 100%;
+}
+
+.top_banner .top_banner_Slogan{
+    color: #eeeeee;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 100vh;
+    /*height: 400px;*/
+}
+
+
+.form-row{
+    position: relative;
+}
+form input{
+    height: 36px;
+}
+
+form .input-group-prepend{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 36px;
+    z-index: 100;
+}
+
+.form-group{
+    text-align: right;
+}
+
+#password_input_container {
+    position: relative;
+}
+#password_input_container i#pass_reveal{
+    position: absolute;
+    left: -4px;
+    top: 0;
+    z-index: 100;
+    height: 36px;
+    line-height: 36px;
+    background: #e9ecef;
+    padding: 0 10px;
+}
+
+#login_frm input{
+    text-indent: 45px;
+}
+#login_frm_submit_btn{
+    height: 36px;
+}
+
+
+/* Animate.css */
+@-webkit-keyframes zoomInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+@keyframes zoomInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+.zoomInDown {
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+}
+/* Animate.css */

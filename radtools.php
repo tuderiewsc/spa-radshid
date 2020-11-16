@@ -1,0 +1,70 @@
+<?php
+/**
+ * Plugin Name: Radshid Customization
+ * Plugin URI: https://radshid.com/
+ * Description: Spa For Radshid Site.
+ * Version: 1.0.0
+ * Author: Outsider
+ * Author URI: https://radshid.com/
+ * Text Domain: radshid_lan
+ * Domain Path: /languages
+ */
+
+defined('ABSPATH') || exit;
+
+add_action('plugins_loaded', function(){
+	load_plugin_textdomain('radshid_lan', false, basename(plugin_dir_path(__FILE__)) . '/languages/');
+});
+
+
+//define('RAD_INC', plugin_dir_path(__FILE__) . 'inc/');
+define('RAD_ADMIN', plugin_dir_path(__FILE__) . 'admin/');
+define('RAD_ADMIN_VIEW', plugin_dir_path(__FILE__) . 'admin/view/');
+define('RAD_CSS', plugin_dir_url(__FILE__) . 'css/');
+define('RAD_JS', plugin_dir_url(__FILE__) . 'js/');
+
+// load css&js
+add_action( 'wp_enqueue_scripts', function(){
+	// scripts
+	wp_enqueue_script('popper', RAD_JS.'popper.min.js');
+	wp_enqueue_script('bootstrap', RAD_JS.'bootstrap.min.js');
+	wp_enqueue_script('myscripts', RAD_JS.'scripts.js', array('jquery', 'media-upload'));
+	wp_enqueue_script('wow', RAD_JS.'wow.min.js');
+	wp_localize_script( 'myscripts', 'RadAjax', array(
+		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'security' => wp_create_nonce( '(H+MbPeShVmYq3t6' )
+	));
+	wp_enqueue_media();
+	// styles
+	wp_enqueue_style( 'mystyles', RAD_CSS . 'styles.css');
+});
+// load css&js
+
+
+
+//register_activation_hook(__FILE__, 'hmds_activation_func');
+//function hmds_activation_func(){
+//}
+//
+//register_uninstall_hook(__FILE__, 'hmds_uninstall_func');
+//function hmds_uninstall_func(){
+//}
+
+if(is_admin()){
+	require(RAD_ADMIN . 'admin_proccess.php');
+	//require(HMDS_ADMIN . 'ajax_requests.php');
+}
+
+
+// Shortcodes
+add_action('init', function(){
+	add_shortcode('spa_form' , 'rad_show_spa_form');
+	add_shortcode('home_top_banner' , 'rad_show_top_banner');
+});
+function rad_show_spa_form($atts, $content = null){
+	include(plugin_dir_path( __FILE__ ).'site/views/spa_form.php');
+}
+function rad_show_top_banner($atts, $content = null){
+	include(plugin_dir_path( __FILE__ ).'site/views/top_banner.php');
+}
+// Shortcodes
