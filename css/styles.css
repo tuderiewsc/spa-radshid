@@ -3,8 +3,8 @@
 }
 
 .top_banner {
-    background: -webkit-gradient(linear,left top, left bottom,from(rgba(38,50,56,.8)),to(rgba(38,50,56,.8))), url(../assets/bg1.jpg);
-    background: linear-gradient(rgba(38,50,56,.8),rgba(38,50,56,.8)), url(../assets/bg1.jpg);
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(38,50,56,.8)),to(rgba(38,50,56,.8))), url(../assets/images/bg1.jpg);
+    background: linear-gradient(rgba(38,50,56,.8),rgba(38,50,56,.8)), url(../assets/images/bg1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -24,8 +24,12 @@
 .form-row{
     position: relative;
 }
-form input{
+form label , form .form-text{
+    text-align: right;
+}
+form input ,form button {
     height: 36px;
+    border-radius: 0 !important;
 }
 
 form .input-group-prepend{
@@ -60,6 +64,56 @@ form .input-group-prepend{
 #login_frm_submit_btn{
     height: 36px;
 }
+
+.invalid-feedback{
+    color: orangered;
+    text-align: right;
+}
+
+.owl-carousel .item img{
+    width: 100px;
+    height: auto;
+    filter: grayscale(0.6);
+    transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    -webkit-transition:0.4s ease-in-out ;
+}
+.owl-carousel .item img:hover{
+    filter: grayscale(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Animate.css */

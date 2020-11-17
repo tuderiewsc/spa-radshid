@@ -22,20 +22,24 @@ define('RAD_ADMIN', plugin_dir_path(__FILE__) . 'admin/');
 define('RAD_ADMIN_VIEW', plugin_dir_path(__FILE__) . 'admin/view/');
 define('RAD_CSS', plugin_dir_url(__FILE__) . 'css/');
 define('RAD_JS', plugin_dir_url(__FILE__) . 'js/');
+define('RAD_ASSETS', plugin_dir_url(__FILE__) . 'assets/');
 
 // load css&js
 add_action( 'wp_enqueue_scripts', function(){
 	// scripts
-	wp_enqueue_script('popper', RAD_JS.'popper.min.js');
+	wp_enqueue_script('popper', RAD_JS.'popper.min.js' , array('jquery', 'media-upload'));
 	wp_enqueue_script('bootstrap', RAD_JS.'bootstrap.min.js');
-	wp_enqueue_script('myscripts', RAD_JS.'scripts.js', array('jquery', 'media-upload'));
+	wp_enqueue_script('owlcarousel', RAD_JS.'owl.carousel.min.js');
 	wp_enqueue_script('wow', RAD_JS.'wow.min.js');
+	wp_enqueue_script('myscripts', RAD_JS.'scripts.js');
 	wp_localize_script( 'myscripts', 'RadAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'security' => wp_create_nonce( '(H+MbPeShVmYq3t6' )
 	));
 	wp_enqueue_media();
 	// styles
+	wp_enqueue_style( 'owl_carousel', RAD_CSS . 'owl.carousel.min.css');
+	wp_enqueue_style( 'owl_carousel_theme', RAD_CSS . 'owl.theme.default.min.css');
 	wp_enqueue_style( 'mystyles', RAD_CSS . 'styles.css');
 });
 // load css&js
@@ -60,11 +64,15 @@ if(is_admin()){
 add_action('init', function(){
 	add_shortcode('spa_form' , 'rad_show_spa_form');
 	add_shortcode('home_top_banner' , 'rad_show_top_banner');
+	add_shortcode('home_agency_carousel' , 'rad_show_agency_carousel');
 });
 function rad_show_spa_form($atts, $content = null){
 	include(plugin_dir_path( __FILE__ ).'site/views/spa_form.php');
 }
 function rad_show_top_banner($atts, $content = null){
 	include(plugin_dir_path( __FILE__ ).'site/views/top_banner.php');
+}
+function rad_show_agency_carousel($atts, $content = null){
+	include(plugin_dir_path( __FILE__ ).'site/views/agency_carousel.php');
 }
 // Shortcodes
