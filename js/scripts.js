@@ -56,6 +56,7 @@ jQuery(document).ready(function($){
     });
     /* Login Form */
 
+
     /* Register Form */
     let registerSubmitBtn = $('#register_frm_submit_btn');
     registerSubmitBtn.on('click' , function (e) {
@@ -71,6 +72,7 @@ jQuery(document).ready(function($){
         let gps_serial = register_frm.find('input#register_gps_serial_input').val();
         let reg_code = register_frm.find('input#register_reg_code_input').val();
         let car_name = register_frm.find('input#register_car_name_input').val();
+        let driver_name = register_frm.find('input#register_driver_name_input').val();
         let admin_phone = register_frm.find('input#register_admin_phone_input').val();
         let sim_phone = register_frm.find('input#register_sim_phone_input').val();
 
@@ -80,67 +82,42 @@ jQuery(document).ready(function($){
         let phoneReg = /^([+]\d{2})?\d{10}$/;
         let gpsReg = /^([+]\d{2})?\d{15}$/;
         let is_pass_valid = passReg.test( pass );
-        let is_email_valid = emailReg.test( email );
         let is_mobile_valid = phoneReg.test( mobile );
         let is_gps_serial_valid = gpsReg.test( gps_serial );
         let is_admin_phone_valid = phoneReg.test( admin_phone );
-        let is_sim_phone_valid = phoneReg.test( sim_phone );
 
+        let is_sim_phone_valid =false;
+        let is_email_valid =false;
+        sim_phone !== '' ? is_sim_phone_valid = phoneReg.test( sim_phone ) : is_sim_phone_valid = true;
+        email !== '' ? is_email_valid = emailReg.test( email ) : is_email_valid = true;
 
         // Show invalid feedback
         InputValidation(name , register_frm , 'register_name_input' , 'empty');
         InputValidation(family , register_frm , 'register_family_input', 'empty');
         InputValidation(username , register_frm , 'register_username_input', 'empty');
         InputValidation(is_pass_valid , register_frm , 'register_password_input', 'valid');
+        InputValidation(is_mobile_valid , register_frm , 'register_mobile_input', 'valid');
+        InputValidation(is_email_valid , register_frm , 'register_email_input', 'valid');
+        InputValidation(is_gps_serial_valid , register_frm , 'register_gps_serial_input', 'valid');
+        InputValidation(reg_code , register_frm , 'register_reg_code_input', 'empty');
+        InputValidation(car_name , register_frm , 'register_car_name_input', 'empty');
+        InputValidation(driver_name , register_frm , 'register_driver_name_input', 'empty');
+        InputValidation(is_admin_phone_valid , register_frm , 'register_admin_phone_input', 'valid');
+        InputValidation(is_sim_phone_valid , register_frm , 'register_sim_phone_input', 'valid');
 
-        // if (!is_pass_valid){
-        //     register_frm.find('input#register_password_input').siblings('.invalid-feedback').css('display', 'block');
-        //     register_frm.find('input#register_password_input').css('borderColor', 'orangered');
-        // } else {
-        //     register_frm.find('input#register_password_input').siblings('.invalid-feedback').css('display', 'none');
-        //     register_frm.find('input#register_password_input').css('borderColor', '#e1e1e1');
-        // }
         if (pass !== pass_confirm){
             register_frm.find('#match_pass').css('display', 'block');
+            register_frm.find('input#register_password_confirm_input').siblings('.valid_input').css('display', 'none');
             register_frm.find('input#register_password_confirm_input').css('borderColor', 'orangered');
         } else {
             register_frm.find('#match_pass').css('display', 'none');
+            register_frm.find('input#register_password_confirm_input').siblings('.valid_input').css('display', 'block');
             register_frm.find('input#register_password_confirm_input').css('borderColor', '#e1e1e1');
         }
-        if (!is_mobile_valid){
-            register_frm.find('input#register_mobile_input').siblings('.invalid-feedback').css('display', 'block');
-            register_frm.find('input#register_mobile_input').css('borderColor', 'orangered');
-        } else {
-            register_frm.find('input#register_mobile_input').siblings('.invalid-feedback').css('display', 'none');
-            register_frm.find('input#register_mobile_input').css('borderColor', '#e1e1e1');
-        }
-        if (!is_mobile_valid){
-            register_frm.find('input#register_mobile_input').siblings('.invalid-feedback').css('display', 'block');
-            register_frm.find('input#register_mobile_input').css('borderColor', 'orangered');
-        } else {
-            register_frm.find('input#register_mobile_input').siblings('.invalid-feedback').css('display', 'none');
-            register_frm.find('input#register_mobile_input').css('borderColor', '#e1e1e1');
-        }
-
-        // name === '' ? register_frm.find('input#register_name_input').siblings('.invalid-feedback').css('display', 'block') : register_frm.find('input#register_name_input').siblings('.invalid-feedback').css('display', 'none');
-        //family === '' ? register_frm.find('input#register_family_input').siblings('.invalid-feedback').css('display', 'block') : register_frm.find('input#register_family_input').siblings('.invalid-feedback').css('display', 'none');
-        //username === '' ? register_frm.find('input#register_username_input').siblings('.invalid-feedback').css('display', 'block') : register_frm.find('input#register_username_input').siblings('.invalid-feedback').css('display', 'none');
-        //!is_pass_valid ? register_frm.find('input#register_password_input').siblings('.invalid-feedback').css('display', 'block') : register_frm.find('input#register_password_input').siblings('.invalid-feedback').css('display', 'none');
-        //pass !== pass_confirm ? register_frm.find('#match_pass').css('display', 'block') : register_frm.find('#match_pass').css('display', 'none');
-        //!is_mobile_valid ? register_frm.find('input#register_mobile_input').siblings('.invalid-feedback').css('display', 'block') : register_frm.find('input#register_mobile_input').siblings('.invalid-feedback').css('display', 'none');
-        !is_email_valid ? register_frm.find('input#register_email_input').siblings('.invalid-feedback').css('display', 'block') : register_frm.find('input#register_email_input').siblings('.invalid-feedback').css('display', 'none');
-        !is_gps_serial_valid ? register_frm.find('input#register_gps_serial_input').siblings('.invalid-feedback').css('display', 'block') : register_frm.find('input#register_gps_serial_input').siblings('.invalid-feedback').css('display', 'none');
-        reg_code === '' ? register_frm.find('input#register_reg_code_input').siblings('.invalid-feedback').css('display', 'block') : register_frm.find('input#register_reg_code_input').siblings('.invalid-feedback').css('display', 'none');
-        car_name === '' ? register_frm.find('input#register_car_name_input').siblings('.invalid-feedback').css('display', 'block') : register_frm.find('input#register_car_name_input').siblings('.invalid-feedback').css('display', 'none');
-        !is_admin_phone_valid ? register_frm.find('input#register_admin_phone_input').siblings('.invalid-feedback').css('display', 'block') : register_frm.find('input#register_admin_phone_input').siblings('.invalid-feedback').css('display', 'none');
-        !is_sim_phone_valid ? register_frm.find('input#register_sim_phone_input').siblings('.invalid-feedback').css('display', 'block') : register_frm.find('input#register_sim_phone_input').siblings('.invalid-feedback').css('display', 'none');
-
-        //return;
 
         if (name !=='' && family !=='' && username !=='' && is_pass_valid && pass===pass_confirm && is_mobile_valid && is_email_valid && is_gps_serial_valid
         && reg_code !=='' && car_name !=='' && is_admin_phone_valid && is_sim_phone_valid) {
             registerSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
-
             $.ajax({
                 url: '/url',
                 type: 'POST',
@@ -163,9 +140,6 @@ jQuery(document).ready(function($){
         }
     });
     /* Register Form */
-
-
-
 
 
     /* Owl Carousel */
@@ -227,17 +201,21 @@ function InputValidation(value , form , input_id , type='empty'){
     if (type === 'empty'){
         if (value === ''){
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'block');
+            form.find('input#' + input_id).siblings('.valid_input').css('display', 'none');
             form.find('input#' + input_id).css('borderColor', 'orangered');
         } else {
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'none');
+            form.find('input#' + input_id).siblings('.valid_input').css('display', 'block');
             form.find('input#' + input_id).css('borderColor', '#e1e1e1');
         }
     } else {
         if (!value){
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'block');
+            form.find('input#' + input_id).siblings('.valid_input').css('display', 'none');
             form.find('input#' + input_id).css('borderColor', 'orangered');
         } else {
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'none');
+            form.find('input#' + input_id).siblings('.valid_input').css('display', 'block');
             form.find('input#' + input_id).css('borderColor', '#e1e1e1');
         }
     }

@@ -65,6 +65,32 @@ form .input-group-prepend{
     height: 36px;
 }
 
+
+input#register_name_input:after {content: "dsfsf";font-family: 'FontAwesome';color: red; position: absolute;  left: 0;  top: 0; }
+
+
+form .required>label{
+    position: relative;
+}
+form .required>label::after{
+    content: "*";
+    color: orangered;
+    position: absolute;
+    right: auto;
+    top: 0;
+    padding: 0 3px;
+}
+
+form .valid_input{
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    font-size: 1.5em;
+    color: darkgreen;
+    display: none;
+}
+
+
 .invalid-feedback{
     color: orangered;
     text-align: right;
