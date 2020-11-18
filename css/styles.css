@@ -58,15 +58,12 @@ form .input-group-prepend{
     padding: 0 10px;
 }
 
-#login_frm input{
+#login_frm input ,#password_recovery_frm input {
     text-indent: 45px;
 }
 #login_frm_submit_btn{
     height: 36px;
 }
-
-
-input#register_name_input:after {content: "dsfsf";font-family: 'FontAwesome';color: red; position: absolute;  left: 0;  top: 0; }
 
 
 form .required>label{
@@ -109,37 +106,9 @@ form .valid_input{
     filter: grayscale(0);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#password_recovery_sms_method{
+    display: none;
+}
 
 
 /* Animate.css */
@@ -182,3 +151,9 @@ form .valid_input{
     animation-name: zoomInDown;
 }
 /* Animate.css */
+
+
+
+
+
+

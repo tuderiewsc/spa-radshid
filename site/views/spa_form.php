@@ -6,7 +6,7 @@
 <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#login_tab"><?php _e('Login' , 'radshid_lan'); ?></a></li>
     <li><a data-toggle="tab" href="#register_tab"><?php _e('Register' , 'radshid_lan'); ?> </a></li>
-    <li><a data-toggle="tab" href="#menu2">بازیابی رمز عبور</a></li>
+    <li><a data-toggle="tab" href="#password_recovery_tab"><?php _e('Password Recovery' , 'radshid_lan'); ?></a></li>
     <li><a data-toggle="tab" href="#menu3">رهگیری</a></li>
 </ul>
 <div class="tab-content container">
@@ -229,9 +229,72 @@
         <input type="hidden" value="<?php _e('Please correct showed errors first' , 'radshid_lan'); ?>" id="register_frm_err_notify">
     </div>
 
-    <div id="menu2" class="tab-pane fade">
-        <h3 style="color: red">Menu 2</h3>
-        <p style="color: red">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+    <div id="password_recovery_tab" class="tab-pane fade">
+        <form id="password_recovery_frm">
+            <div class="form-row">
+                <div class="col-12 mb-3 required">
+                    <label for="password_recovery_username_input"><?php _e('در صورتی که گذرواژه خود را فراموش کرده‌اید یکی از راه‌های زیر را انتخاب کنید :
+' , 'radshid_lan'); ?>
+                    </label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user-o"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="password_recovery_username_input" name="txtResetPassUsername">
+                        <div class="invalid-feedback">
+                            <span><?php _e('Please enter your username' , 'radshid_lan'); ?></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password_recovery_method"><?php _e('Send Method' , 'radshid_lan'); ?></label>
+                <select class="form-control" id="password_recovery_method">
+                    <option value="1"><?php _e('Email' , 'radshid_lan'); ?></option>
+                    <option value="2"><?php _e('Mobile Phone' , 'radshid_lan'); ?></option>
+                </select>
+            </div>
+
+            <div class="form-row" id="password_recovery_email_method">
+                <div class="col-12 mb-3 required">
+                    <label for="password_recovery_email_input"><?php _e('Email' , 'radshid_lan'); ?></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <input type="email" class="form-control" id="password_recovery_email_input" name="txtResetPassEmail" >
+                        <div class="invalid-feedback">
+                            <span><?php _e('Please enter a valid email' , 'radshid_lan'); ?></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row" id="password_recovery_sms_method">
+                <div class="col-12 mb-3 required">
+                    <label for="password_recovery_phone_input"><?php _e('Phone number' , 'radshid_lan'); ?></label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="password_recovery_phone_input" name="txtResetPassSMS" >
+                        <div class="invalid-feedback">
+                            <span><?php _e('Please enter a valid Phone number' , 'radshid_lan'); ?></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <?php do_action( 'anr_captcha_form_field' ); ?>
+
+            <button type="button" class="btn btn-info btn-block" id="password_recovery_frm_submit_btn">
+			    <?php _e('Send' , 'radshid_lan'); ?>
+                <!--                <i class="fa fa-circle-o-notch align-middle mx-1"></i>-->
+            </button>
+        </form>
+<!--        <input type="hidden" value="--><?php //_e('Login' , 'radshid_lan'); ?><!--" id="login_frm_submit_btn_txt">-->
     </div>
     <div id="menu3" class="tab-pane fade">
         <h3>Menu 3</h3>

@@ -1,7 +1,6 @@
 jQuery(document).ready(function($){
 
     // inits
-    new WOW().init();
     $('a[href="#login_tab"]').click();
 
     // Constants
@@ -54,6 +53,44 @@ jQuery(document).ready(function($){
             });
         }
     });
+
+    // $('#spa_login_btn').click(function () {
+    //     event.preventDefault();
+    //     var user_name = $('#exampleInputEmail1').val();
+    //     var pass = $('#exampleInputPassword1').val();
+    //     //var nonce = $('#planet_nonce').val();
+    //     var data = {
+    //         action: '/spa.radshid.com',
+    //         security: SpaAjax.security,
+    //         //act: 'login',
+    //         username: 'demo',
+    //         pass: '11112'
+    //     };
+    //     //window.location.href= 'http://spa.radshid.com/?act=' + data.act + '&username=demo&pass=111132';
+    //     $.ajax({
+    //         url: SpaAjax.ajaxurl,
+    //         //url: '/spa.radshid.ir',
+    //         type: 'GET',
+    //         xhrFields: {
+    //             withCredentials: true
+    //         },
+    //         async: true,
+    //         crossDomain: true,
+    //         data: data,
+    //         dataType: 'JSON',
+    //         success: function (res , textStatus , xhr) {
+    //             //var res= $.parseJSON( res );
+    //             console.log('res ' + res);
+    //             console.log('textStatus: ' + textStatus);
+    //             console.log('xhr: ' + xhr);
+    //         }
+    //         , error: function (err) {
+    //             console.log(err);
+    //         }
+    //         , complete: function () {
+    //         }
+    //     })
+    // })
     /* Login Form */
 
 
@@ -142,16 +179,110 @@ jQuery(document).ready(function($){
     /* Register Form */
 
 
+
+    /* Password Recovery Form */
+    $('select#password_recovery_method').on('change' , function () {
+        let selected_val = $(this).val();
+        if (selected_val === '2'){
+            $('#password_recovery_sms_method').css('display' , 'block');
+            $('#password_recovery_email_method').css('display' , 'none');
+        } else {
+            $('#password_recovery_sms_method').css('display' , 'none');
+            $('#password_recovery_email_method').css('display' , 'block');
+        }
+    });
+
+
+    let password_recovery_frm_submit_btn = $('#password_recovery_frm_submit_btn');
+    password_recovery_frm_submit_btn.on('click' , function (e) {
+        e.preventDefault();
+        let password_recovery_frm = $('#password_recovery_frm');
+        let username = password_recovery_frm.find('input#password_recovery_username_input').val();
+        let email = password_recovery_frm.find('input#password_recovery_email_input').val();
+        let phone = password_recovery_frm.find('input#password_recovery_phone_input').val();
+
+        let emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        let phoneReg = /^([+]\d{2})?\d{10}$/;
+        let is_email_valid = emailReg.test( email );
+        let is_phone_valid = phoneReg.test( phone );
+
+        // Show invalid feedback
+        InputValidation(username , password_recovery_frm , 'password_recovery_username_input' , 'empty');
+        InputValidation(is_email_valid , password_recovery_frm , 'password_recovery_email_input' , 'valid');
+        InputValidation(is_phone_valid , password_recovery_frm , 'password_recovery_phone_input' , 'valid');
+
+        username === '' ? password_recovery_frm.find('input#password_recovery_username_input').siblings('.invalid-feedback').css('display', 'block') : login_frm.find('input#password_recovery_username_input').siblings('.invalid-feedback').css('display', 'none');
+        !is_email_valid ? password_recovery_frm.find('input#password_recovery_email_input').siblings('.invalid-feedback').css('display', 'block') : login_frm.find('input#password_recovery_email_input').siblings('.invalid-feedback').css('display', 'none');
+        !is_phone_valid ? password_recovery_frm.find('input#password_recovery_phone_input').siblings('.invalid-feedback').css('display', 'block') : login_frm.find('input#password_recovery_phone_input').siblings('.invalid-feedback').css('display', 'none');
+
+
+        let selected_method = $('select#password_recovery_method').val();
+
+        return;
+
+        if (selected_method === '1'){
+            if (username !== '' && password !== '' ) {
+                loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
+
+                $.ajax({
+                    url: '/url',
+                    type: 'POST',
+                    data: { 'username':username ,'pass':password },
+                    dataType: 'JSON',
+                    success: function (data , xhr) {
+                        if (xhr === 'success'){
+                            //resetSignUpForm();
+                        } else {
+                            //
+                        }
+                    }, error:function (err) {
+                        console.log(err);
+                    }, complete:function () {
+                        loginSubmitBtn.html(login_frm_submit_btn_txt);
+                    },timeout:10000
+                });
+            }
+        } else {
+            if (username !== '' && password !== '' ) {
+                loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
+
+                $.ajax({
+                    url: '/url',
+                    type: 'POST',
+                    data: { 'username':username ,'pass':password },
+                    dataType: 'JSON',
+                    success: function (data , xhr) {
+                        if (xhr === 'success'){
+                            //resetSignUpForm();
+                        } else {
+                            //
+                        }
+                    }, error:function (err) {
+                        console.log(err);
+                    }, complete:function () {
+                        loginSubmitBtn.html(login_frm_submit_btn_txt);
+                    },timeout:10000
+                });
+            }
+        }
+    });
+
+
+
+    /* Password Recovery Form */
+
+
+
     /* Owl Carousel */
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
+    let agency_carousel = $('.agency_carousel');
+    agency_carousel.owlCarousel({
         rtl: true,
         margin: 80,
         loop: true,
         nav: true,
         //navText: ['بعدی', 'قبلی'],
         navElement: 'div',
-        items: 6,
+        items: 1,
         slideBy: 'page',
         dots: false,
         autoplay: true,
@@ -182,20 +313,20 @@ jQuery(document).ready(function($){
             1200: {
                 items: 6
             }
-
         }
     });
-    owl.on('mousewheel', '.owl-stage', function (e) {
+    agency_carousel.on('mousewheel', '.owl-stage', function (e) {
+        e.preventDefault();
         if (e.deltaY<0) {
             owl.trigger('next.owl');
         } else {
             owl.trigger('prev.owl');
         }
-        e.preventDefault();
     });
     /* Owl Carousel */
 
 });
+
 
 function InputValidation(value , form , input_id , type='empty'){
     if (type === 'empty'){
