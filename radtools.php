@@ -65,6 +65,7 @@ add_action('init', function(){
 	add_shortcode('spa_form' , 'rad_show_spa_form');
 	add_shortcode('home_top_banner' , 'rad_show_top_banner');
 	add_shortcode('home_agency_carousel' , 'rad_show_agency_carousel');
+	add_shortcode('home_random_posts' , 'rad_show_home_random_posts');
 });
 function rad_show_spa_form($atts, $content = null){
 	include(plugin_dir_path( __FILE__ ).'site/views/spa_form.php');
@@ -74,5 +75,8 @@ function rad_show_top_banner($atts, $content = null){
 }
 function rad_show_agency_carousel($atts, $content = null){
 	include(plugin_dir_path( __FILE__ ).'site/views/agency_carousel.php');
+}
+function rad_show_home_random_posts($atts, $content = null){
+	include(plugin_dir_path( __FILE__ ).'site/views/random_posts.php');
 }
 // Shortcodes

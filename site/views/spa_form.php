@@ -48,7 +48,7 @@
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
             <button type="button" class="btn btn-success btn-block" id="login_frm_submit_btn">
-				<?php _e('Login' , 'radshid_lan'); ?>
+                <?php _e('Login' , 'radshid_lan'); ?>
                 <!--                <i class="fa fa-circle-o-notch align-middle mx-1"></i>-->
             </button>
         </form>
@@ -122,7 +122,7 @@
                 <div class="col-12 mb-3 required">
                     <label for="register_mobile_input"><?php _e('Mobile Number' , 'radshid_lan'); ?></label>
                     <input type="text" class="form-control " id="register_mobile_input" name="txtMobile" maxlength="10"
-                           onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
+                    onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                     <i class="fa fa-check valid_input"></i>
                     <div class="invalid-feedback">
                         <span><?php _e('Please enter your a valid mobile number' , 'radshid_lan'); ?></span>
@@ -147,7 +147,7 @@
                 <div class="col-12 mb-3 required">
                     <label for="register_gps_serial_input"><?php _e('Gps Serial' , 'radshid_lan'); ?></label>
                     <input type="text" class="form-control " id="register_gps_serial_input" name="txtGpsSerial" maxlength="15"
-                           onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
+                    onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                     <i class="fa fa-check valid_input"></i>
                     <div class="invalid-feedback">
                         <span><?php _e('Please enter a valid gps serial' , 'radshid_lan'); ?></span>
@@ -162,7 +162,7 @@
                 <div class="col-12 mb-3 required">
                     <label for="register_reg_code_input"><?php _e('Register Code' , 'radshid_lan'); ?></label>
                     <input type="text" class="form-control " id="register_reg_code_input" name="txtRegisterCode"
-                           onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
+                    onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                     <i class="fa fa-check valid_input"></i>
                     <div class="invalid-feedback">
                         <span><?php _e('Please enter your register code' , 'radshid_lan'); ?></span>
@@ -197,7 +197,7 @@
                 <div class="col-12 mb-3 required">
                     <label for="register_admin_phone_input"><?php _e('Admin Phone' , 'radshid_lan'); ?></label>
                     <input type="text" class="form-control " id="register_admin_phone_input" name="txtAdminPhone" maxlength="10"
-                           onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
+                    onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                     <i class="fa fa-check valid_input"></i>
                     <div class="invalid-feedback">
                         <span><?php _e('Please enter a valid admin phone' , 'radshid_lan'); ?></span>
@@ -213,7 +213,7 @@
                 <div class="col-12 mb-3">
                     <label for="register_sim_phone_input"><?php _e('Sim Phone' , 'radshid_lan'); ?></label>
                     <input type="text" class="form-control" id="register_sim_phone_input" name="txtSimPhone" maxlength="10"
-                           onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
+                    onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                     <i class="fa fa-check valid_input"></i>
                     <div class="invalid-feedback">
                         <span><?php _e('Please enter a valid sim phone' , 'radshid_lan'); ?></span>
@@ -222,7 +222,7 @@
             </div>
 
             <button type="button" class="btn btn-info btn-block" id="register_frm_submit_btn">
-				<?php _e('Register' , 'radshid_lan'); ?>
+                <?php _e('Register' , 'radshid_lan'); ?>
             </button>
         </form>
         <input type="hidden" value="<?php _e('Register' , 'radshid_lan'); ?>" id="register_frm_submit_btn_txt">
@@ -235,71 +235,71 @@
             <div class="form-row">
                 <div class="col-12 mb-3 required">
                     <label for="password_recovery_username_input"><?php _e('در صورتی که گذرواژه خود را فراموش کرده‌اید یکی از راه‌های زیر را انتخاب کنید :
-' , 'radshid_lan'); ?>
-                    </label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-user-o"></i></span>
-                        </div>
-                        <input type="text" class="form-control" id="password_recovery_username_input" name="txtResetPassUsername">
-                        <div class="invalid-feedback">
-                            <span><?php _e('Please enter your username' , 'radshid_lan'); ?></span>
-                        </div>
+                    ' , 'radshid_lan'); ?>
+                </label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user-o"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="password_recovery_username_input" name="txtResetPassUsername">
+                    <div class="invalid-feedback">
+                        <span><?php _e('Please enter your username' , 'radshid_lan'); ?></span>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="form-group">
-                <label for="password_recovery_method"><?php _e('Send Method' , 'radshid_lan'); ?></label>
-                <select class="form-control" id="password_recovery_method">
-                    <option value="1"><?php _e('Email' , 'radshid_lan'); ?></option>
-                    <option value="2"><?php _e('Mobile Phone' , 'radshid_lan'); ?></option>
-                </select>
-            </div>
+        <div class="form-group">
+            <label for="password_recovery_method"><?php _e('Send Method' , 'radshid_lan'); ?></label>
+            <select class="form-control" id="password_recovery_method">
+                <option value="1"><?php _e('Email' , 'radshid_lan'); ?></option>
+                <option value="2"><?php _e('Mobile Phone' , 'radshid_lan'); ?></option>
+            </select>
+        </div>
 
-            <div class="form-row" id="password_recovery_email_method">
-                <div class="col-12 mb-3 required">
-                    <label for="password_recovery_email_input"><?php _e('Email' , 'radshid_lan'); ?></label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-                        </div>
-                        <input type="email" class="form-control" id="password_recovery_email_input" name="txtResetPassEmail" >
-                        <div class="invalid-feedback">
-                            <span><?php _e('Please enter a valid email' , 'radshid_lan'); ?></span>
-                        </div>
+        <div class="form-row" id="password_recovery_email_method">
+            <div class="col-12 mb-3 required">
+                <label for="password_recovery_email_input"><?php _e('Email' , 'radshid_lan'); ?></label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="password_recovery_email_input" name="txtResetPassEmail" >
+                    <div class="invalid-feedback">
+                        <span><?php _e('Please enter a valid email' , 'radshid_lan'); ?></span>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="form-row" id="password_recovery_sms_method">
-                <div class="col-12 mb-3 required">
-                    <label for="password_recovery_phone_input"><?php _e('Phone number' , 'radshid_lan'); ?></label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                        </div>
-                        <input type="text" class="form-control" id="password_recovery_phone_input" name="txtResetPassSMS" >
-                        <div class="invalid-feedback">
-                            <span><?php _e('Please enter a valid Phone number' , 'radshid_lan'); ?></span>
-                        </div>
+        <div class="form-row" id="password_recovery_sms_method">
+            <div class="col-12 mb-3 required">
+                <label for="password_recovery_phone_input"><?php _e('Phone number' , 'radshid_lan'); ?></label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="password_recovery_phone_input" name="txtResetPassSMS" >
+                    <div class="invalid-feedback">
+                        <span><?php _e('Please enter a valid Phone number' , 'radshid_lan'); ?></span>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <?php do_action( 'anr_captcha_form_field' ); ?>
+        <?php do_action( 'anr_captcha_form_field' ); ?>
 
-            <button type="button" class="btn btn-info btn-block" id="password_recovery_frm_submit_btn">
-			    <?php _e('Send' , 'radshid_lan'); ?>
-                <!--                <i class="fa fa-circle-o-notch align-middle mx-1"></i>-->
-            </button>
-        </form>
-<!--        <input type="hidden" value="--><?php //_e('Login' , 'radshid_lan'); ?><!--" id="login_frm_submit_btn_txt">-->
-    </div>
-    <div id="menu3" class="tab-pane fade">
-        <h3>Menu 3</h3>
-        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
+        <button type="button" class="btn btn-info btn-block" id="password_recovery_frm_submit_btn">
+           <?php _e('Send' , 'radshid_lan'); ?>
+           <!--                <i class="fa fa-circle-o-notch align-middle mx-1"></i>-->
+       </button>
+   </form>
+   <!--        <input type="hidden" value="--><?php //_e('Login' , 'radshid_lan'); ?><!--" id="login_frm_submit_btn_txt">-->
+</div>
+<div id="menu3" class="tab-pane fade">
+    <h3>Menu 3</h3>
+    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</div>
 </div>
 <!-- Nav tabs -->
 

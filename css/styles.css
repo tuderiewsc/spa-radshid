@@ -111,6 +111,100 @@ form .valid_input{
 }
 
 
+/* Posts Grid */
+.grid_container{
+    direction: rtl;
+    width: 90%;
+    margin: 20px 5% 50px 5%;
+    font-family: vazir, sans-serif, Arial, Helvetica, sans-serif;
+}
+.block {
+    margin:0;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+.block.big{
+    height: 340px;
+    border: 1px solid #eee;
+    padding: 0;
+}
+.block.small{
+    height: 170px;
+    border: 1px solid #eee;
+    padding: 0;
+}
+.rightSide{
+    height: auto;
+    background-color: gray;
+    padding: 0 !important;
+}
+.leftSide{
+    height: auto;
+    background-color: darkgray;
+    padding: 0 !important;
+}
+.big h4.post_title {
+    position: absolute;
+    right: 0;bottom: 0;
+    padding: 4px;
+    margin:8px 12px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+.small h4.post_title {
+    position: absolute;
+    right: 0;bottom: 0;
+    padding: 4px;
+    color: #fff;
+    margin:8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+}
+.post_link{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent 5%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0.9) 95%);
+}
+.post_link:hover{
+    background: linear-gradient(to bottom,transparent 5%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.9) 90%);
+}
+.bigImage img{
+    height: 340px;
+    width: 100%;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    filter: grayscale(1);
+}
+.smallImage img{
+    height: 170px;
+    width: 100%;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    filter: grayscale(1);
+}
+.block figure{
+    overflow: hidden !important;
+}
+.block:hover img{
+    /*transform: scale(1.02);*/
+    filter: grayscale(0);
+}
+/* Posts Grid */
+
+
 /* Animate.css */
 @-webkit-keyframes zoomInDown {
     from {
