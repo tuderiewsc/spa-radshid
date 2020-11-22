@@ -2,6 +2,7 @@ jQuery(document).ready(function($){
 
     // inits
     $('a[href="#login_tab"]').click();
+    new WOW().init();
 
     // Constants
     const login_frm_submit_btn_txt = $('#login_frm_submit_btn_txt').val();
@@ -153,15 +154,15 @@ jQuery(document).ready(function($){
         }
 
         if (name !=='' && family !=='' && username !=='' && is_pass_valid && pass===pass_confirm && is_mobile_valid && is_email_valid && is_gps_serial_valid
-        && reg_code !=='' && car_name !=='' && is_admin_phone_valid && is_sim_phone_valid) {
+            && reg_code !=='' && car_name !=='' && is_admin_phone_valid && is_sim_phone_valid) {
             registerSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
-            $.ajax({
-                url: '/url',
-                type: 'POST',
-                data: { 'name':name ,'family':family },
-                dataType: 'JSON',
-                success: function (data , xhr) {
-                    if (xhr === 'success'){
+        $.ajax({
+            url: '/url',
+            type: 'POST',
+            data: { 'name':name ,'family':family },
+            dataType: 'JSON',
+            success: function (data , xhr) {
+                if (xhr === 'success'){
                         //resetSignUpForm();
                     } else {
                         //
@@ -172,39 +173,39 @@ jQuery(document).ready(function($){
                     registerSubmitBtn.html(register_frm_submit_btn_txt);
                 },timeout:10000
             });
-        }else {
-            alert(register_frm_err_notify);
-        }
-    });
-    /* Register Form */
+    }else {
+        alert(register_frm_err_notify);
+    }
+});
+/* Register Form */
 
 
 
-    /* Password Recovery Form */
-    $('select#password_recovery_method').on('change' , function () {
-        let selected_val = $(this).val();
-        if (selected_val === '2'){
-            $('#password_recovery_sms_method').css('display' , 'block');
-            $('#password_recovery_email_method').css('display' , 'none');
-        } else {
-            $('#password_recovery_sms_method').css('display' , 'none');
-            $('#password_recovery_email_method').css('display' , 'block');
-        }
-    });
+/* Password Recovery Form */
+$('select#password_recovery_method').on('change' , function () {
+    let selected_val = $(this).val();
+    if (selected_val === '2'){
+        $('#password_recovery_sms_method').css('display' , 'block');
+        $('#password_recovery_email_method').css('display' , 'none');
+    } else {
+        $('#password_recovery_sms_method').css('display' , 'none');
+        $('#password_recovery_email_method').css('display' , 'block');
+    }
+});
 
 
-    let password_recovery_frm_submit_btn = $('#password_recovery_frm_submit_btn');
-    password_recovery_frm_submit_btn.on('click' , function (e) {
-        e.preventDefault();
-        let password_recovery_frm = $('#password_recovery_frm');
-        let username = password_recovery_frm.find('input#password_recovery_username_input').val();
-        let email = password_recovery_frm.find('input#password_recovery_email_input').val();
-        let phone = password_recovery_frm.find('input#password_recovery_phone_input').val();
+let password_recovery_frm_submit_btn = $('#password_recovery_frm_submit_btn');
+password_recovery_frm_submit_btn.on('click' , function (e) {
+    e.preventDefault();
+    let password_recovery_frm = $('#password_recovery_frm');
+    let username = password_recovery_frm.find('input#password_recovery_username_input').val();
+    let email = password_recovery_frm.find('input#password_recovery_email_input').val();
+    let phone = password_recovery_frm.find('input#password_recovery_phone_input').val();
 
-        let emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-        let phoneReg = /^([+]\d{2})?\d{10}$/;
-        let is_email_valid = emailReg.test( email );
-        let is_phone_valid = phoneReg.test( phone );
+    let emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    let phoneReg = /^([+]\d{2})?\d{10}$/;
+    let is_email_valid = emailReg.test( email );
+    let is_phone_valid = phoneReg.test( phone );
 
         // Show invalid feedback
         InputValidation(username , password_recovery_frm , 'password_recovery_username_input' , 'empty');
@@ -269,17 +270,17 @@ jQuery(document).ready(function($){
 
 
 
-    /* Password Recovery Form */
+/* Password Recovery Form */
 
 
 
-    /* Owl Carousel */
-    let agency_carousel = $('.agency_carousel');
-    agency_carousel.owlCarousel({
-        rtl: true,
-        margin: 80,
-        loop: true,
-        nav: true,
+/* Owl Carousel */
+let agency_carousel = $('.agency_carousel');
+agency_carousel.owlCarousel({
+    rtl: true,
+    margin: 80,
+    loop: true,
+    nav: true,
         //navText: ['بعدی', 'قبلی'],
         navElement: 'div',
         items: 1,
@@ -315,15 +316,15 @@ jQuery(document).ready(function($){
             }
         }
     });
-    agency_carousel.on('mousewheel', '.owl-stage', function (e) {
-        e.preventDefault();
-        if (e.deltaY<0) {
-            owl.trigger('next.owl');
-        } else {
-            owl.trigger('prev.owl');
-        }
-    });
-    /* Owl Carousel */
+agency_carousel.on('mousewheel', '.owl-stage', function (e) {
+    e.preventDefault();
+    if (e.deltaY<0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+});
+/* Owl Carousel */
 
 });
 

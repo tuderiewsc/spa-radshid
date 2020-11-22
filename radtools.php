@@ -30,6 +30,7 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_script('popper', RAD_JS.'popper.min.js' , array('jquery', 'media-upload'));
 	wp_enqueue_script('bootstrap', RAD_JS.'bootstrap.min.js');
 	wp_enqueue_script('owlcarousel', RAD_JS.'owl.carousel.min.js');
+	wp_enqueue_script('wow', RAD_JS.'wow.min.js');
 	wp_enqueue_script('myscripts', RAD_JS.'scripts.js');
 	wp_localize_script( 'myscripts', 'RadAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
@@ -39,6 +40,7 @@ add_action( 'wp_enqueue_scripts', function(){
 	// styles
 	wp_enqueue_style( 'owl_carousel', RAD_CSS . 'owl.carousel.min.css');
 	wp_enqueue_style( 'owl_carousel_theme', RAD_CSS . 'owl.theme.default.min.css');
+	wp_enqueue_style( 'bootstrap', RAD_CSS . 'bootstrap.min.css');
 	wp_enqueue_style( 'animate_css', RAD_CSS . 'animate.min.css');
 	wp_enqueue_style( 'mystyles', RAD_CSS . 'styles.css');
 });
