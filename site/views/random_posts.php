@@ -15,7 +15,16 @@
 	?>
 	<?php $random_post = new WP_Query( $random_posts_args ); ?>
 	<?php
-	$recent_posts =wp_get_recent_posts(6);
+	$args = array(
+		'numberposts' => 6,
+		'offset' => 0,
+		'category' => 58, // put 0 for all cats
+		'orderby' => 'post_date',
+		'order' => 'DESC',
+		'post_type' => 'post',
+		'post_status' => 'publish',
+		'suppress_filters' => true );
+	$recent_posts =wp_get_recent_posts($args);
 	$ids = [];
 	$random_ids = [];
 	$i = 0;
@@ -94,7 +103,7 @@
 
 	<div class="container">
 		<div class="card-deck">
-				<h3 class="card-deck-title">مقالات</h3>
+			<h3 class="card-deck-title">مقالات</h3>
 			<!-- <div class="clearfix"></div> -->
 			<div class="card wow bounceInRight" data-wow-duration="1s">
 				<a href="<?php echo get_the_permalink( $ids[$random_ids[0]], false ); ?>">
