@@ -56,6 +56,7 @@ add_action( 'wp_enqueue_scripts', function(){
 //function hmds_uninstall_func(){
 //}
 
+
 if(is_admin()){
 	require(RAD_ADMIN . 'admin_proccess.php');
 	//require(HMDS_ADMIN . 'ajax_requests.php');
@@ -68,6 +69,7 @@ add_action('init', function(){
 	add_shortcode('home_top_banner' , 'rad_show_top_banner');
 	add_shortcode('home_agency_carousel' , 'rad_show_agency_carousel');
 	add_shortcode('home_random_posts' , 'rad_show_home_random_posts');
+	add_shortcode('home_top_links' , 'rad_show_home_top_links');
 });
 function rad_show_spa_form($atts, $content = null){
 	include(plugin_dir_path( __FILE__ ).'site/views/spa_form.php');
@@ -80,5 +82,8 @@ function rad_show_agency_carousel($atts, $content = null){
 }
 function rad_show_home_random_posts($atts, $content = null){
 	include(plugin_dir_path( __FILE__ ).'site/views/random_posts.php');
+}
+function rad_show_home_top_links($atts, $content = null){
+	include(plugin_dir_path( __FILE__ ).'site/views/top_links.php');
 }
 // Shortcodes

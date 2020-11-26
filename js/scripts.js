@@ -326,6 +326,11 @@ agency_carousel.on('mousewheel', '.owl-stage', function (e) {
 });
 /* Owl Carousel */
 
+
+/* Random Posts */
+
+/* Random Posts */
+
 });
 
 
