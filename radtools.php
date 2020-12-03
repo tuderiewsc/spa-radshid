@@ -42,7 +42,7 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_style( 'owl_carousel_theme', RAD_CSS . 'owl.theme.default.min.css');
 	wp_enqueue_style( 'bootstrap', RAD_CSS . 'bootstrap.min.css');
 	wp_enqueue_style( 'animate_css', RAD_CSS . 'animate.min.css');
-	wp_enqueue_style( 'mystyles', RAD_CSS . 'styles.css');
+	wp_enqueue_style( 'mystyles', RAD_CSS . 'rad-styles.css' , '1.0.0');
 });
 // load css&js
 

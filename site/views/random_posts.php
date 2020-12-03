@@ -2,46 +2,56 @@
 
 
 <div class="container-fluid">
+	<?php //$random_posts_args = array( 'post_type' => 'post', 'post_status' => 'publish', 'nopaging' => true, 'order' => 'ASC', 'orderby' => 'rand', 'cat' => $Grid_catID, 'cache_results' => true ) ?>
+	<?php //$random_post = new WP_Query( $random_posts_args ); ?>
 	<?php
-	$random_posts_args = array(
-		'post_type' => 'post',
-		'post_status' => 'publish',
-		'nopaging' => true,
-		'order' => 'ASC',
-		'orderby' => 'rand',
-		'cat' => $Grid_catID,
-		'cache_results' => true
-	)
-	?>
-	<?php $random_post = new WP_Query( $random_posts_args ); ?>
-	<?php
-	$args = array(
+	$args1 = array(
 		'numberposts' => 6,
 		'offset' => 0,
-		'category' => 58, // put 0 for all cats
+		'category' => 16, // put 0 for all cats
 		'orderby' => 'post_date',
 		'order' => 'DESC',
 		'post_type' => 'post',
 		'post_status' => 'publish',
 		'suppress_filters' => true );
-	$recent_posts =wp_get_recent_posts($args);
-	$ids = [];
-	$random_ids = [];
+	$recent_posts1 = wp_get_recent_posts($args1);
+	$ids1 = [];
+	$random_ids1 = [];
 	$i = 0;
-	while ($i < count($recent_posts))
+	while ($i < count($recent_posts1))
 	{
-		array_push($ids, $recent_posts[$i]['ID']);
+		array_push($ids1, $recent_posts1[$i]['ID']);
 		$i++;
 	}
-	$random_ids = array_rand($ids , 3);
+	$random_ids1 = array_rand($ids1 , 3);
+
+	$args2 = array(
+		'numberposts' => 6,
+		'offset' => 0,
+		'category' => 322, // put 0 for all cats
+		'orderby' => 'post_date',
+		'order' => 'DESC',
+		'post_type' => 'post',
+		'post_status' => 'publish',
+		'suppress_filters' => true );
+	$recent_posts2 = wp_get_recent_posts($args2);
+	$ids2 = [];
+	$random_ids2 = [];
+	$i = 0;
+	while ($i < count($recent_posts2))
+	{
+		array_push($ids2, $recent_posts2[$i]['ID']);
+		$i++;
+	}
+	$random_ids2 = array_rand($ids2 , 3);
 	?>
 
-	<?php if ( $random_post->have_posts() ) : ?>
+	<?php //if ( $random_post->have_posts() ) : ?>
 
-		<?php $posts_number = 0; ?>
-		<?php while ( $random_post->have_posts() && $posts_number++ < 6 ) : $random_post->the_post(); ?>
-		<?php endwhile; ?>
-		<?php wp_reset_postdata(); ?>
+		<?php //$posts_number = 0; ?>
+		<?php //while ( $random_post->have_posts() && $posts_number++ < 6 ) : $random_post->the_post(); ?>
+		<?php //endwhile; ?>
+		<?php //wp_reset_postdata(); ?>
 
 <!-- 		<div class="grid_container">
 			<div class="row">
@@ -103,62 +113,114 @@
 
 	<div class="container">
 		<div class="card-deck">
-			<h3 class="card-deck-title">مقالات</h3>
-			<!-- <div class="clearfix"></div> -->
-			<div class="card wow bounceInRight" data-wow-duration="1s">
-				<a href="<?php echo get_the_permalink( $ids[$random_ids[0]], false ); ?>">
+			<h3 class="card-deck-title">اخبار رادشید</h3>
+            <a href="https://radshid.com/?p=3809" class="more_link">بیشتر</a>
+            <div class="card wow bounceInRight" data-wow-duration="1s">
+				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[0]], false ); ?>">
 					<figure class="card-img-top">
-						<?php echo get_the_post_thumbnail( $ids[$random_ids[0]], '' , '' ); ?>
+						<?php echo get_the_post_thumbnail( $ids1[$random_ids1[0]], '' , '' ); ?>
 					</figure>
 				</a>
 				<div class="card-body">
-					<a href="<?php echo get_the_permalink( $ids[$random_ids[0]], false ); ?>">
-						<h5 class="card-title"><?php echo get_the_title( $ids[$random_ids[0]] ); ?></h5>
+					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[0]], false ); ?>">
+						<h5 class="card-title"><?php echo get_the_title( $ids1[$random_ids1[0]] ); ?></h5>
 					</a>
 					<?php
-					$postContent = wp_trim_words(get_post($ids[$random_ids[0]])->post_content)
+					$postContent = wp_trim_words(get_post($ids1[$random_ids1[0]])->post_excerpt)
 					?>
-					<p class="card-text"><?php echo $postContent; ?></p>
+<!--					<p class="card-text">--><?php //echo $postContent; ?><!--</p>-->
 				</div>
 			</div>
 			<div class="card wow bounceInDown" data-wow-duration="1s">
-				<a href="<?php echo get_the_permalink( $ids[$random_ids[1]], false ); ?>">
+				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[1]], false ); ?>">
 					<figure class="card-img-top">
-						<?php echo get_the_post_thumbnail( $ids[$random_ids[1]], '' , '' ); ?>
+						<?php echo get_the_post_thumbnail( $ids1[$random_ids1[1]], '' , '' ); ?>
 					</figure>
 				</a>
 				<div class="card-body">
-					<a href="<?php echo get_the_permalink( $ids[$random_ids[1]], false ); ?>">
-						<h5 class="card-title"><?php echo get_the_title( $ids[$random_ids[1]] ); ?></h5>
+					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[1]], false ); ?>">
+						<h5 class="card-title"><?php echo get_the_title( $ids1[$random_ids1[1]] ); ?></h5>
 					</a>
-
 					<?php
-					$postContent = wp_trim_words(get_post($ids[$random_ids[1]])->post_content)
+					$postContent = wp_trim_words(get_post($ids1[$random_ids1[1]])->post_content)
 					?>
-					<p class="card-text"><?php echo $postContent; ?></p>
+<!--					<p class="card-text">--><?php //echo $postContent; ?><!--</p>-->
 				</div>
 			</div>
 			<div class="card wow bounceInLeft" data-wow-duration="1s">
-				<a href="<?php echo get_the_permalink( $ids[$random_ids[2]], false ); ?>">
+				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[2]], false ); ?>">
 					<figure class="card-img-top">
-						<?php echo get_the_post_thumbnail( $ids[$random_ids[2]], '' , '' ); ?>
+						<?php echo get_the_post_thumbnail( $ids1[$random_ids1[2]], '' , '' ); ?>
 					</figure>
 				</a>
 				<div class="card-body">
-					<a href="<?php echo get_the_permalink( $ids[$random_ids[2]], false ); ?>">
-						<h5 class="card-title"><?php echo get_the_title( $ids[$random_ids[2]] ); ?></h5>
+					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[2]], false ); ?>">
+						<h5 class="card-title"><?php echo get_the_title( $ids1[$random_ids1[2]] ); ?></h5>
 					</a>
-
 					<?php
-					$postContent = wp_trim_words(get_post($ids[$random_ids[2]])->post_content)
+					$postContent = wp_trim_words(get_post($ids1[$random_ids1[2]])->post_content)
 					?>
-					<p class="card-text"><?php echo $postContent; ?></p>
+<!--					<p class="card-text">--><?php //echo $postContent; ?><!--</p>-->
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<?php else : ?>
-		<p class="alert alert-danger text-center my-4 w-100">متاسفانه مطلبي براي نمايش وجود ندارد</p>
-	<?php endif; ?>
+    <div class="container">
+        <div class="card-deck">
+            <h3 class="card-deck-title">اخبار فناوری</h3>
+            <a href="https://radshid.com/?p=6627" class="more_link">بیشتر</a>
+            <div class="card wow bounceInRight" data-wow-duration="1s">
+                <a href="<?php echo get_the_permalink( $ids2[$random_ids2[0]], false ); ?>">
+                    <figure class="card-img-top">
+						<?php echo get_the_post_thumbnail( $ids2[$random_ids2[0]], '' , '' ); ?>
+                    </figure>
+                </a>
+                <div class="card-body">
+                    <a href="<?php echo get_the_permalink( $ids2[$random_ids2[0]], false ); ?>">
+                        <h5 class="card-title"><?php echo get_the_title( $ids2[$random_ids2[0]] ); ?></h5>
+                    </a>
+					<?php
+					$postContent = wp_trim_words(get_post($ids2[$random_ids2[0]])->post_excerpt)
+					?>
+                </div>
+            </div>
+            <div class="card wow bounceInDown" data-wow-duration="1s">
+                <a href="<?php echo get_the_permalink( $ids2[$random_ids2[1]], false ); ?>">
+                    <figure class="card-img-top">
+						<?php echo get_the_post_thumbnail( $ids2[$random_ids2[1]], '' , '' ); ?>
+                    </figure>
+                </a>
+                <div class="card-body">
+                    <a href="<?php echo get_the_permalink( $ids2[$random_ids2[1]], false ); ?>">
+                        <h5 class="card-title"><?php echo get_the_title( $ids2[$random_ids2[1]] ); ?></h5>
+                    </a>
+					<?php
+					$postContent = wp_trim_words(get_post($ids2[$random_ids2[1]])->post_content)
+					?>
+                </div>
+            </div>
+            <div class="card wow bounceInLeft" data-wow-duration="1s">
+                <a href="<?php echo get_the_permalink( $ids2[$random_ids2[2]], false ); ?>">
+                    <figure class="card-img-top">
+						<?php echo get_the_post_thumbnail( $ids2[$random_ids2[2]], '' , '' ); ?>
+                    </figure>
+                </a>
+                <div class="card-body">
+                    <a href="<?php echo get_the_permalink( $ids2[$random_ids2[2]], false ); ?>">
+                        <h5 class="card-title"><?php echo get_the_title( $ids2[$random_ids2[2]] ); ?></h5>
+                    </a>
+					<?php
+					$postContent = wp_trim_words(get_post($ids2[$random_ids2[2]])->post_content)
+					?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <?php //else : ?>
+<!--		<p class="alert alert-danger text-center my-4 w-100">متاسفانه مطلبي براي نمايش وجود ندارد</p>-->
+	<?php //endif; ?>
 </div>
