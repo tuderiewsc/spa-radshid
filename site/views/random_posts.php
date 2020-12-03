@@ -6,9 +6,9 @@
 	<?php //$random_post = new WP_Query( $random_posts_args ); ?>
 	<?php
 	$args1 = array(
-		'numberposts' => 6,
+		'numberposts' => 25,
 		'offset' => 0,
-		'category' => 16, // put 0 for all cats
+		'category' => [16,322], // put 0 for all cats
 		'orderby' => 'post_date',
 		'order' => 'DESC',
 		'post_type' => 'post',
@@ -111,10 +111,9 @@
 		</div>
 	-->
 
-	<div class="container">
 		<div class="card-deck">
-			<h3 class="card-deck-title">اخبار رادشید</h3>
-            <a href="https://radshid.com/?p=3809" class="more_link">بیشتر</a>
+            <h3 class="card-deck-title">مقالات</h3>
+<!--            <a href="https://radshid.com/?p=3809" class="more_link">بیشتر</a>-->
             <div class="card wow bounceInRight" data-wow-duration="1s">
 				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[0]], false ); ?>">
 					<figure class="card-img-top">
@@ -128,10 +127,9 @@
 					<?php
 					$postContent = wp_trim_words(get_post($ids1[$random_ids1[0]])->post_excerpt)
 					?>
-<!--					<p class="card-text">--><?php //echo $postContent; ?><!--</p>-->
 				</div>
 			</div>
-			<div class="card wow bounceInDown" data-wow-duration="1s">
+			<div class="card wow zoomIn" data-wow-duration="1s">
 				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[1]], false ); ?>">
 					<figure class="card-img-top">
 						<?php echo get_the_post_thumbnail( $ids1[$random_ids1[1]], '' , '' ); ?>
@@ -144,7 +142,6 @@
 					<?php
 					$postContent = wp_trim_words(get_post($ids1[$random_ids1[1]])->post_content)
 					?>
-<!--					<p class="card-text">--><?php //echo $postContent; ?><!--</p>-->
 				</div>
 			</div>
 			<div class="card wow bounceInLeft" data-wow-duration="1s">
@@ -164,60 +161,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-    <div class="container">
-        <div class="card-deck">
-            <h3 class="card-deck-title">اخبار فناوری</h3>
-            <a href="https://radshid.com/?p=6627" class="more_link">بیشتر</a>
-            <div class="card wow bounceInRight" data-wow-duration="1s">
-                <a href="<?php echo get_the_permalink( $ids2[$random_ids2[0]], false ); ?>">
-                    <figure class="card-img-top">
-						<?php echo get_the_post_thumbnail( $ids2[$random_ids2[0]], '' , '' ); ?>
-                    </figure>
-                </a>
-                <div class="card-body">
-                    <a href="<?php echo get_the_permalink( $ids2[$random_ids2[0]], false ); ?>">
-                        <h5 class="card-title"><?php echo get_the_title( $ids2[$random_ids2[0]] ); ?></h5>
-                    </a>
-					<?php
-					$postContent = wp_trim_words(get_post($ids2[$random_ids2[0]])->post_excerpt)
-					?>
-                </div>
-            </div>
-            <div class="card wow bounceInDown" data-wow-duration="1s">
-                <a href="<?php echo get_the_permalink( $ids2[$random_ids2[1]], false ); ?>">
-                    <figure class="card-img-top">
-						<?php echo get_the_post_thumbnail( $ids2[$random_ids2[1]], '' , '' ); ?>
-                    </figure>
-                </a>
-                <div class="card-body">
-                    <a href="<?php echo get_the_permalink( $ids2[$random_ids2[1]], false ); ?>">
-                        <h5 class="card-title"><?php echo get_the_title( $ids2[$random_ids2[1]] ); ?></h5>
-                    </a>
-					<?php
-					$postContent = wp_trim_words(get_post($ids2[$random_ids2[1]])->post_content)
-					?>
-                </div>
-            </div>
-            <div class="card wow bounceInLeft" data-wow-duration="1s">
-                <a href="<?php echo get_the_permalink( $ids2[$random_ids2[2]], false ); ?>">
-                    <figure class="card-img-top">
-						<?php echo get_the_post_thumbnail( $ids2[$random_ids2[2]], '' , '' ); ?>
-                    </figure>
-                </a>
-                <div class="card-body">
-                    <a href="<?php echo get_the_permalink( $ids2[$random_ids2[2]], false ); ?>">
-                        <h5 class="card-title"><?php echo get_the_title( $ids2[$random_ids2[2]] ); ?></h5>
-                    </a>
-					<?php
-					$postContent = wp_trim_words(get_post($ids2[$random_ids2[2]])->post_content)
-					?>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 
     <?php //else : ?>

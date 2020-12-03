@@ -6,42 +6,29 @@
 		<div class="row">
 			<div class="link_items">
 				<div class="linkItem odd">
-					<a href="#">
+					<a href="https://radshid.com/?p=12762">
 						<p><i class="fa fa-car"></i></p>
 						<p>انواع ردیاب خودرو</p>
 					</a>
 				</div>
 				<div class="linkItem even">
-					<a href="#">
+					<a href="https://radshid.com/?p=12732">
 						<p><i class="fa fa-male"></i></p>
 						<p>انواع ردیاب شخصی</p>
 					</a>
 				</div>
 				<div class="linkItem odd">
-					<a href="#">
+					<a href="https://radshid.com/?p=12885">
 						<p><i class="fa fa-tablet"></i></p>
 						<p>گجت های صنعتی</p>
 					</a>
 				</div>
-				<!-- <div class="linkItem even">
-					<a href="#">
+				<div class="linkItem even">
+					<a href="http://spa.radshid.com/">
 						<p><i class="fa fa-truck"></i></p>
 						<p>مدیریت ناوگان</p>
 					</a>
-				</div> -->
-				<div class="linkItem even">
-					<a href="#">
-						<p><i class="fa fa-map"></i></p>
-						<p>ردیاب سپهتن</p>
-					</a>
 				</div>
-				<!-- <div class="linkItem even">
-					<a href="#">
-						<p><i class="fa fa-camera"></i></p>
-						<p>نظارت تصویری خودرو</p>
-					</a>
-				</div> -->
-
 			</div>
 		</div>
 	</div>

@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/labaniyate-roozane.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/zarinpal-badge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/rad-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/TopBg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/TopBg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/IRIB.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/IRIB.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/aab.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/aab.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/bargh.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/bargh.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/jam.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/jam.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/mapna.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/mapna.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/modiran.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/modiran.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/pars.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/pars.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/roozaneh.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/roozaneh.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/saderat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/saderat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/sairan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/sairan.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/rad-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/rad-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/radtools.php" beforeDir="false" afterPath="$PROJECT_DIR$/radtools.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/agency_carousel.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/agency_carousel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/random_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/random_posts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/top_banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/top_banner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/top_links.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/top_links.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/radtools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-              <folding>
-                <element signature="e#6#254#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="48">
+              <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -36,18 +41,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/views/top_banner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+            <state relative-caret-position="144">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/views/random_posts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="29" column="22" lean-forward="true" selection-end-line="225" selection-end-column="6" />
+            <state relative-caret-position="240">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding>
+                <element signature="e#807#1030#0#PHP" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" />
@@ -59,20 +65,86 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/views/agency_carousel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" selection-start-line="8" selection-end-line="9" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#section#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="9" column="16" lean-forward="true" selection-end-line="43" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/views/top_links.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="250" column="29" lean-forward="true" selection-start-line="250" selection-start-column="29" selection-end-line="250" selection-end-column="29" />
+            <state relative-caret-position="264">
+              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <folding>
+                <element signature="e#11#249#0" />
+                <element signature="e#1281#1308#0" />
+                <element signature="e#1337#1363#0" />
+                <element signature="e#1388#1442#0" />
+                <element signature="e#1469#1558#0" />
+                <element signature="e#1571#1597#0" />
+                <element signature="e#1625#1652#0" />
+                <element signature="e#1692#1852#0" />
+                <element signature="e#1901#1927#0" />
+                <element signature="e#1949#1970#0" />
+                <element signature="e#1993#2020#0" />
+                <element signature="e#2048#2164#0" />
+                <element signature="e#2183#2304#0" />
+                <element signature="e#2324#2372#0" />
+                <element signature="e#2397#2616#0" />
+                <element signature="e#2646#2675#0" />
+                <element signature="e#2706#2728#0" />
+                <element signature="e#2762#2896#0" />
+                <element signature="e#2904#2989#0" />
+                <element signature="e#3000#3066#0" />
+                <element signature="e#3079#3145#0" />
+                <element signature="e#3156#3232#0" />
+                <element signature="e#3242#3322#0" />
+                <element signature="e#3342#3537#0" />
+                <element signature="e#3559#3754#0" />
+                <element signature="e#3765#3951#0" />
+                <element signature="e#3968#4070#0" />
+                <element signature="e#4084#4273#0" />
+                <element signature="e#4289#4478#0" />
+                <element signature="e#4492#4528#0" />
+                <element signature="e#4545#4606#0" />
+                <element signature="e#4864#5030#0" />
+                <element signature="e#5052#5163#0" />
+                <element signature="e#5191#5221#0" />
+                <element signature="e#5246#5591#0" />
+                <element signature="e#6099#6314#0" />
+                <element signature="e#6333#6358#0" />
+                <element signature="e#6381#6429#0" />
+                <element signature="e#6458#6527#0" />
+                <element signature="e#6557#6587#0" />
+                <element signature="e#6610#6675#0" />
+                <element signature="e#6722#6890#0" />
+                <element signature="e#6901#7016#0" />
+                <element signature="e#7030#7058#0" />
+                <element signature="e#7073#7101#0" />
+                <element signature="e#7114#7211#0" />
+                <element signature="e#7229#7287#0" />
+                <element signature="e#7301#7421#0" />
+                <element signature="e#7435#7648#0" />
+                <element signature="e#7666#7695#0" />
+                <element signature="e#15378#15412#0" />
+                <element signature="e#15433#15457#0" />
+                <element signature="e#15483#15505#0" />
+                <element signature="e#15550#15642#0" />
+                <element signature="e#15678#15806#0" />
+                <element signature="e#15826#15912#0" />
+                <element signature="e#16561#16649#0" />
+                <element signature="e#16650#16793#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="286" column="24" selection-start-line="286" selection-start-column="24" selection-end-line="286" selection-end-column="24" />
+            <state relative-caret-position="384">
+              <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
               <folding>
                 <element signature="e#9305#12970#0" />
                 <element signature="n#!!block;n#InputValidation#0" />
@@ -102,22 +174,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>zeus tools add Planet future</find>
-      <find>Ztools_Activation</find>
-      <find>Ztools_Settings</find>
-      <find>HMDS</find>
-      <find>rad_show_spa_form</find>
-      <find>radtools_creat_admin_menu</find>
-      <find>password_input_container</find>
-      <find>login_frm</find>
-      <find>signUpInput</find>
-      <find>maxlength</find>
-      <find>Driver Name</find>
-      <find>valid_input</find>
-      <find>email</find>
-      <find>animation-duration</find>
-      <find>top_banner_Slogan</find>
-      <find>data-animation-dura</find>
       <find>&lt;input</find>
       <find>agency_carousel</find>
       <find>top_banner_Sloga</find>
@@ -126,12 +182,28 @@
       <find>E61D0F</find>
       <find>.card-deck .card</find>
       <find>post_content</find>
-      <find>linkItem a i</find>
       <find>.card-deck .card a</find>
-      <find>.card-deck</find>
       <find>.owl-carousel .item img</find>
-      <find>top_banner</find>
       <find>after</find>
+      <find>href</find>
+      <find>more</find>
+      <find>card-tite</find>
+      <find>container</find>
+      <find>for Radshid</find>
+      <find>linkItem a i</find>
+      <find>font-family: &quot;Vazir&quot;</find>
+      <find>Top Banner</find>
+      <find>top_bann</find>
+      <find>.card-deck</find>
+      <find>owl-dots</find>
+      <find>fullsize</find>
+      <find>top_banner_Title</find>
+      <find>flex: a</find>
+      <find>owl</find>
+      <find>card-deck-title</find>
+      <find>top_links</find>
+      <find>card-deck</find>
+      <find>top_banner</find>
     </findStrings>
     <replaceStrings>
       <replace>date</replace>
@@ -168,13 +240,14 @@
         <option value="$PROJECT_DIR$/admin/admin_proccess.php" />
         <option value="$PROJECT_DIR$/views/top_banner.php" />
         <option value="$PROJECT_DIR$/site/views/spa_form.php" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/site/views/top_links.php" />
         <option value="$PROJECT_DIR$/radtools.php" />
         <option value="$PROJECT_DIR$/site/views/top_banner.php" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/site/views/agency_carousel.php" />
-        <option value="$PROJECT_DIR$/site/views/random_posts.php" />
+        <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/css/rad-styles.css" />
+        <option value="$PROJECT_DIR$/site/views/random_posts.php" />
       </list>
     </option>
   </component>
@@ -190,31 +263,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
               <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="carousel_images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
@@ -231,6 +285,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,17 +298,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\images" />
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\site" />
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\images\carousel_images" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\fonts" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\images" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\css" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\images" />
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\site" />
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -300,6 +355,7 @@
       <workItem from="1606564166229" duration="78000" />
       <workItem from="1606631959293" duration="4396000" />
       <workItem from="1606886459014" duration="22780000" />
+      <workItem from="1606971833380" duration="16229000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -326,14 +382,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136519000" />
+    <option name="totallyTimeSpent" value="152748000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15991472" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16151386" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -473,20 +529,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/TopBg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/radtools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-          <folding>
-            <element signature="e#6#254#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="48">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/views/top_links.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/views/top_banner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/views/agency_carousel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="16" lean-forward="true" selection-end-line="43" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="286" column="24" selection-start-line="286" selection-start-column="24" selection-end-line="286" selection-end-column="24" />
+        <state relative-caret-position="384">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
           <folding>
             <element signature="e#9305#12970#0" />
             <element signature="n#!!block;n#InputValidation#0" />
@@ -494,39 +571,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/views/agency_carousel.php">
+    <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        <state relative-caret-position="264">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#section#0;n#!!top" />
+            <element signature="e#11#249#0" />
+            <element signature="e#1281#1308#0" />
+            <element signature="e#1337#1363#0" />
+            <element signature="e#1388#1442#0" />
+            <element signature="e#1469#1558#0" />
+            <element signature="e#1571#1597#0" />
+            <element signature="e#1625#1652#0" />
+            <element signature="e#1692#1852#0" />
+            <element signature="e#1901#1927#0" />
+            <element signature="e#1949#1970#0" />
+            <element signature="e#1993#2020#0" />
+            <element signature="e#2048#2164#0" />
+            <element signature="e#2183#2304#0" />
+            <element signature="e#2324#2372#0" />
+            <element signature="e#2397#2616#0" />
+            <element signature="e#2646#2675#0" />
+            <element signature="e#2706#2728#0" />
+            <element signature="e#2762#2896#0" />
+            <element signature="e#2904#2989#0" />
+            <element signature="e#3000#3066#0" />
+            <element signature="e#3079#3145#0" />
+            <element signature="e#3156#3232#0" />
+            <element signature="e#3242#3322#0" />
+            <element signature="e#3342#3537#0" />
+            <element signature="e#3559#3754#0" />
+            <element signature="e#3765#3951#0" />
+            <element signature="e#3968#4070#0" />
+            <element signature="e#4084#4273#0" />
+            <element signature="e#4289#4478#0" />
+            <element signature="e#4492#4528#0" />
+            <element signature="e#4545#4606#0" />
+            <element signature="e#4864#5030#0" />
+            <element signature="e#5052#5163#0" />
+            <element signature="e#5191#5221#0" />
+            <element signature="e#5246#5591#0" />
+            <element signature="e#6099#6314#0" />
+            <element signature="e#6333#6358#0" />
+            <element signature="e#6381#6429#0" />
+            <element signature="e#6458#6527#0" />
+            <element signature="e#6557#6587#0" />
+            <element signature="e#6610#6675#0" />
+            <element signature="e#6722#6890#0" />
+            <element signature="e#6901#7016#0" />
+            <element signature="e#7030#7058#0" />
+            <element signature="e#7073#7101#0" />
+            <element signature="e#7114#7211#0" />
+            <element signature="e#7229#7287#0" />
+            <element signature="e#7301#7421#0" />
+            <element signature="e#7435#7648#0" />
+            <element signature="e#7666#7695#0" />
+            <element signature="e#15378#15412#0" />
+            <element signature="e#15433#15457#0" />
+            <element signature="e#15483#15505#0" />
+            <element signature="e#15550#15642#0" />
+            <element signature="e#15678#15806#0" />
+            <element signature="e#15826#15912#0" />
+            <element signature="e#16561#16649#0" />
+            <element signature="e#16650#16793#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/views/top_banner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/views/random_posts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="29" column="22" lean-forward="true" selection-end-line="225" selection-end-column="6" />
+        <state relative-caret-position="240">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding>
+            <element signature="e#807#1030#0#PHP" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="250" column="29" lean-forward="true" selection-start-line="250" selection-start-column="29" selection-end-line="250" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -5,8 +5,9 @@
 <section>
     <div class="col-12">
         <div class="card-deck">
-                <h3 class="card-deck-title">برندها</h3>
-                <a href="https://radshid.com/?p=4520" class="more_link">بیشتر</a>
+            <a class="w-100" href="https://radshid.com/?p=4520" target="_blank">
+                <h3 class="card-deck-title">مشتریان ما</h3>
+            </a>
             <div class="owl-carousel owl-theme agency_carousel">
                 <div class="item">
                     <img src="<?php echo RAD_ASSETS. '/images/carousel_images/aab.jpg'  ?>" alt="">

@@ -12,6 +12,22 @@ jQuery(document).ready(function($){
 
 
     /* -------------------------------------------------------------------------------------------------- */
+
+    /* Top Banner */
+    setTimeout(function () {
+        $('.top_banner_Title').css('visibility' , 'visibile').addClass('wow');
+        $('.top_banner_Slogan').css('visibility' , 'visibile').addClass('wow');
+    }, 1000);
+
+    let screen_height = window.innerHeight;
+    let screen_width = window.innerWidth;
+    console.log(screen_width);
+    console.log(screen_height);
+    const topBannerHeight =(( screen_width / screen_height ) * 385 ) - 145;
+    $('.top_banner').css('height', topBannerHeight + 'px');
+    /* Top Banner */
+
+
     /* Login Form */
     let loginPassInput = $('#login_pass_input');
     $('#password_input_container').find('i').hover(function() {
@@ -193,7 +209,6 @@ $('select#password_recovery_method').on('change' , function () {
     }
 });
 
-
 let password_recovery_frm_submit_btn = $('#password_recovery_frm_submit_btn');
 password_recovery_frm_submit_btn.on('click' , function (e) {
     e.preventDefault();
@@ -267,9 +282,6 @@ password_recovery_frm_submit_btn.on('click' , function (e) {
             }
         }
     });
-
-
-
 /* Password Recovery Form */
 
 
@@ -319,9 +331,9 @@ agency_carousel.owlCarousel({
 agency_carousel.on('mousewheel', '.owl-stage', function (e) {
     e.preventDefault();
     if (e.deltaY<0) {
-        owl.trigger('next.owl');
+        agency_carousel.trigger('next.owl');
     } else {
-        owl.trigger('prev.owl');
+        agency_carousel.trigger('prev.owl');
     }
 });
 /* Owl Carousel */
