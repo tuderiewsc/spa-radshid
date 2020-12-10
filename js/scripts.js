@@ -13,18 +13,18 @@ jQuery(document).ready(function($){
 
     /* -------------------------------------------------------------------------------------------------- */
 
+    //$('#topBannerLoading').css('display' , 'none').find('i').removeClass('fa-spin');
+    $('.loader').css('display' , 'none').remove();
+
     /* Top Banner */
+    // let wh = window.screen.height;
+    // let banner_height = 100% - 88;
+    // $('.top_banner').css('height' , banner_height + 'px');
+
     setTimeout(function () {
         $('.top_banner_Title').css('visibility' , 'visibile').addClass('wow');
         $('.top_banner_Slogan').css('visibility' , 'visibile').addClass('wow');
     }, 1000);
-
-    let screen_height = window.innerHeight;
-    let screen_width = window.innerWidth;
-    console.log(screen_width);
-    console.log(screen_height);
-    const topBannerHeight =(( screen_width / screen_height ) * 385 ) - 145;
-    $('.top_banner').css('height', topBannerHeight + 'px');
     /* Top Banner */
 
 
@@ -342,6 +342,28 @@ agency_carousel.on('mousewheel', '.owl-stage', function (e) {
 /* Random Posts */
 
 /* Random Posts */
+
+
+
+    // $('.card-deck-title').hover(function() {
+    //     $(this).find('#card-deck-title-text').slideLeft('fast');
+    //     $(this).find('#card-deck-title-text').slideRight('fast').html('مشاهده ادامه');
+    //
+    //         // setTimeout(function() {
+    //         //     $('.card-deck-title').find('#card-deck-title-text').slideDown('fast').html('مشاهده ادامه');
+    //         // }, 1000);
+    //
+    // }, function() {
+    //     $(this).find('#card-deck-title-text').slideUp('fast');
+    //     $(this).find('#card-deck-title-text').slideDown('fast').html('مشتریان ما');
+    //
+    //     // $(this).find('#card-deck-title-text').slideUp('fast', function() {
+    //     //     setTimeout(function() {
+    //     //         $('.card-deck-title').find('#card-deck-title-text').slideDown('fast').html('مشتریان ما');
+    //     //     }, 1000);
+    //     // });
+    // });
+
 
 });
 

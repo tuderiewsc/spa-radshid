@@ -5,9 +5,11 @@
 <section>
     <div class="col-12">
         <div class="card-deck">
-            <a class="w-100" href="https://radshid.com/?p=4520" target="_blank">
-                <h3 class="card-deck-title">مشتریان ما</h3>
-            </a>
+                <h3 class="card-deck-title d-flex justify-content-between">
+                    <span id="card-deck-title-text">مشتریان ما</span>
+                    <a href="https://radshid.com/?p=4520" target="_blank">بیشتر</a>
+                </h3>
+
             <div class="owl-carousel owl-theme agency_carousel">
                 <div class="item">
                     <img src="<?php echo RAD_ASSETS. '/images/carousel_images/aab.jpg'  ?>" alt="">

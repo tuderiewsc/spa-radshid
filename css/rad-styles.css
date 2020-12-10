@@ -12,15 +12,34 @@ a:hover, a:focus, a:visited {
 .top_banner {
     position: relative;
     /*background: -webkit-gradient(linear,left top, left bottom,from(rgba(38,50,56,.8)),to(rgba(38,50,56,.8))), url(../assets/images/TopBg.jpg);*/
-    background: linear-gradient(to left , rgba(81,186,168,0.6),rgba(38,50,56,0.2)), url(../assets/images/TopBg.jpg);
+    background: linear-gradient(to left , rgba(81,186,168,0.6),rgba(38,50,56,0.6)), url(../assets/images/TopBg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: auto;
     border-radius: 0 !important;
     margin-top: 0;
-    height: 540px;
+    height: calc(100vh - 300px);
 }
+
+.top_banner #topBannerLoading{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+.top_banner #topBannerLoading i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 4em;
+    color: #51baa8;
+}
+
 .top_banner .top_banner_Title{
     visibility: hidden;
     position: absolute;
@@ -47,7 +66,7 @@ a:hover, a:focus, a:visited {
     padding: 0;
     margin: 0 auto;
     font-size: 1.75em;
-    font-family: Vazir;
+    font-family: Vazir !important;
 }
 .form-row{
     position: relative;
@@ -121,7 +140,11 @@ form .valid_input{
     -webkit-transition:0.4s ease-in-out ;
 }
 .owl-carousel .item img:hover{
-    filter: grayscale(0);
+    filter: grayscale(0.9);
+}
+.owl-stage-outer{
+    width: 92%;
+    margin: auto;
 }
 #password_recovery_sms_method{
     display: none;
@@ -218,19 +241,25 @@ form .valid_input{
     filter: grayscale(0);
 }
 .card-deck{
-    padding: 0 120px;
+    width: 100%;
+    padding: 40px 25px;
     margin: 65px auto;
     position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px #e0e0e0;
 }
 
 .card-deck .card-deck-title{
     position: relative;
     width: 100%;
-    text-align: center;
+    text-align: right;
     font-size: 1.75em;
     font-family: 'iranyekan';
     color: #808080;
     margin-bottom: 30px;
+    padding: 5px 0;
+    border-bottom: 1px solid #eeeeee;
+    border-radius: 0;
 }
 .card-deck .card-deck-title:hover , .card-deck .card-deck-title:focus {
     text-decoration: none;
@@ -245,40 +274,38 @@ form .valid_input{
 .card-deck .more_link:hover{
     text-decoration: none;
 }
-.card-deck-title::before{
-    content: "";
-    position: absolute;
-    bottom: -13px;
-    right: 50%;
-    width: 0;
-    border-bottom: 2px solid #51BAA8;
-    border-radius: 20px;
-    transition: 0.4s ease-in-out;
-    -webkit-transition: 0.2s ease-in-out;
-    -moz-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    -ms-transition: 0.2s ease-in-out;
-}
+/*.card-deck-title::before{*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*bottom: -13px;*/
+    /*right: 50%;*/
+    /*width: 0;*/
+    /*border-bottom: 2px solid #51BAA8;*/
+    /*border-radius: 20px;*/
+    /*transition: 0.4s ease-in-out;*/
+    /*-webkit-transition: 0.2s ease-in-out;*/
+    /*-moz-transition: 0.2s ease-in-out;*/
+    /*-o-transition: 0.2s ease-in-out;*/
+/*}*/
 .card-deck-title::after{
     content: "";
     position: absolute;
-    bottom: -13px;
-    left: 50%;
+    bottom: -2px;
+    right: 0;
     width: 0;
-    border-bottom: 2px solid #51BAA8;
+    border-bottom: 3px solid #51BAA8;
     border-radius: 20px;
     transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
-    -ms-transition: 0.2s ease-in-out;
 }
 .card-deck:hover .card-deck-title::after{
-    width: 65px;
+    width: 95px;
 }
-.card-deck:hover .card-deck-title::before{
-    width: 65px;
-}
+/*.card-deck:hover .card-deck-title::before{*/
+    /*width: 65px;*/
+/*}*/
 .card-deck .card{
     -webkit-transition: 0.2s ease-in-out;
     -ms-transition: 0.2s ease-in-out;
@@ -293,7 +320,7 @@ form .valid_input{
 }
 .card-deck .card a img{
     border-radius: 0;
-    height: 125px;
+    height: 150px;
 }
 .card-deck .card .card-title{
     text-align: center;
@@ -317,20 +344,19 @@ form .valid_input{
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: -60px;
 }
 .linkItem {
-    min-width: 22%;
-    width: 25%;
+    min-width: 15%;
+    width: 16%;
     text-align: center;
-    padding: 30px;
+    padding: 15px;
     border-radius: 0 !important;
 }
 .linkItem.odd{
-    background: #51BAA8;
+    background: #ffffff;
 }
 .linkItem.even{
-    background: #e61d0f;
+    background: #ffffff;
 }
 .linkItem a{
     text-align: center;
@@ -342,13 +368,24 @@ form .valid_input{
     color: #fff !important;
     text-decoration: none;
 }
+.linkItem a img{
+    width: 50px;
+    height: auto;
+    transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+}
+.linkItem:hover img{
+    transform: scale(1.05);
+}
 .linkItem a p{
     text-align: center;
     margin: 0;
     padding: 8px;
     font-weight: bold;
-    font-size: 1em;
-    color: #eee;
+    font-size: 0.875em;
+    color: #808080;
 }
 .linkItem a i{
     font-size: 4em;
@@ -379,12 +416,15 @@ form .valid_input{
 .slick-prev , .slick-next{
     display: none;
 }
-.woo_product_slider_cover .sp-wps-product-details {
-    background: #51BAA8 !important;
-    opacity: 0.8 !important;
-}
 .owl-dots{
     margin-top: 24px;
+}
+#wps-slider-section #sp-woo-product-slider-13958 .wpsf-product-title a {
+    font-size: 14px !important;
+}
+
+#content .wpb_alert p:last-child, #content .wpb_text_column :last-child, #content .wpb_text_column p:last-child, .wpb_alert p:last-child, .wpb_text_column :last-child, .wpb_text_column p:last-child {
+    margin: auto;
 }
 /* for Radshid */
 
@@ -406,6 +446,32 @@ form .valid_input{
         border-color: orange;
     }
 }
+
+/* laoding circle */
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px dotted #51BAA8;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* laoding circle */
+
+
 /* Responsive */
 @media screen and (max-width: 1300px) {
     .linkItem {
@@ -424,11 +490,33 @@ form .valid_input{
 @media screen and (max-width: 768px) {
     .top_banner{
         margin-top: -95px;
+        background-size: contain;
+        height: 400px;
     }
+    .top_banner #topBannerLoading{
+        height: 400px;
+    }
+    /*.responsive #top .logo {*/
+        /*padding: 0 65px;*/
+    /*}*/
     /*.fullsize .container{*/
+        /*width: 100% !important;*/
         /*max-width: 100% !important;*/
         /*padding: 0 !important;*/
     /*}*/
+
+    .top_banner .top_banner_Title{
+        top: 40%;
+    }
+    .top_banner .top_banner_Slogan {
+        top: 50%;
+    }
+    .linkItem {
+        width: 45%;
+    }
+    .linkItem a p{
+        padding: 10px;
+    }
     .linkItem a{
         font-size: 0.875em;
     }
@@ -443,19 +531,8 @@ form .valid_input{
         flex: auto;
         width: 100%;
     }
-    .linkItem {
-        width: 90%;
-    }
-    .linkItem a{
-        font-size: 1.25em;
-    }
 
-    .linkItem a p{
-        padding: 10px;
-    }
-    .linkItem a i{
-        font-size: 3em;
-    }
+
 }
 @media screen and (max-width: 600px) {
     .linkItem a{
@@ -474,16 +551,12 @@ form .valid_input{
 }
 @media screen and (max-width: 500px) {
     .top_banner .top_banner_Title{
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .top_banner .top_banner_Slogan {
-        top: 40%;
-        font-size: 1.5em;
+        top: 55%;
+        font-size: 1.75em;
     }
-    .top_links{
-        margin-top: 40px;
-    }
-
     .card-deck {
         padding: 0;
     }

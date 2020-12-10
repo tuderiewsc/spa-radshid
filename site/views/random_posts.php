@@ -115,13 +115,13 @@
             <h3 class="card-deck-title">مقالات</h3>
 <!--            <a href="https://radshid.com/?p=3809" class="more_link">بیشتر</a>-->
             <div class="card wow bounceInRight" data-wow-duration="1s">
-				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[0]], false ); ?>">
+				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[0]], false ); ?>" target="_blank">
 					<figure class="card-img-top">
 						<?php echo get_the_post_thumbnail( $ids1[$random_ids1[0]], '' , '' ); ?>
 					</figure>
 				</a>
 				<div class="card-body">
-					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[0]], false ); ?>">
+					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[0]], false ); ?>" target="_blank">
 						<h5 class="card-title"><?php echo get_the_title( $ids1[$random_ids1[0]] ); ?></h5>
 					</a>
 					<?php
@@ -130,13 +130,13 @@
 				</div>
 			</div>
 			<div class="card wow zoomIn" data-wow-duration="1s">
-				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[1]], false ); ?>">
+				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[1]], false ); ?>" target="_blank">
 					<figure class="card-img-top">
 						<?php echo get_the_post_thumbnail( $ids1[$random_ids1[1]], '' , '' ); ?>
 					</figure>
 				</a>
 				<div class="card-body">
-					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[1]], false ); ?>">
+					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[1]], false ); ?>" target="_blank">
 						<h5 class="card-title"><?php echo get_the_title( $ids1[$random_ids1[1]] ); ?></h5>
 					</a>
 					<?php
@@ -145,13 +145,13 @@
 				</div>
 			</div>
 			<div class="card wow bounceInLeft" data-wow-duration="1s">
-				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[2]], false ); ?>">
+				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[2]], false ); ?>" target="_blank">
 					<figure class="card-img-top">
 						<?php echo get_the_post_thumbnail( $ids1[$random_ids1[2]], '' , '' ); ?>
 					</figure>
 				</a>
 				<div class="card-body">
-					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[2]], false ); ?>">
+					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[2]], false ); ?>" target="_blank">
 						<h5 class="card-title"><?php echo get_the_title( $ids1[$random_ids1[2]] ); ?></h5>
 					</a>
 					<?php
