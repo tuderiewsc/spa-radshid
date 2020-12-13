@@ -13,14 +13,10 @@ jQuery(document).ready(function($){
 
     /* -------------------------------------------------------------------------------------------------- */
 
-    //$('#topBannerLoading').css('display' , 'none').find('i').removeClass('fa-spin');
-    $('.loader').css('display' , 'none').remove();
 
     /* Top Banner */
-    // let wh = window.screen.height;
-    // let banner_height = 100% - 88;
-    // $('.top_banner').css('height' , banner_height + 'px');
-
+    $('.loader-container').css('display' , 'none').remove();
+    //$('.bx-wrapper').css('visibility' , 'visible');
     setTimeout(function () {
         $('.top_banner_Title').css('visibility' , 'visibile').addClass('wow');
         $('.top_banner_Slogan').css('visibility' , 'visibile').addClass('wow');

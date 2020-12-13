@@ -31,7 +31,7 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_script('bootstrap', RAD_JS.'bootstrap.min.js');
 	wp_enqueue_script('owlcarousel', RAD_JS.'owl.carousel.min.js');
 	wp_enqueue_script('wow', RAD_JS.'wow.min.js');
-	wp_enqueue_script('myscripts', RAD_JS.'scripts.js');
+	wp_enqueue_script('myscripts', RAD_JS.'scripts.js' , '1.0.0');
 	wp_localize_script( 'myscripts', 'RadAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'security' => wp_create_nonce( '(H+MbPeShVmYq3t6' )
