@@ -112,7 +112,7 @@
 	-->
 
 		<div class="card-deck">
-            <h3 class="card-deck-title">مقالات</h3>
+            <h3 class="card-deck-title" data-hover="65">مقالات</h3>
 <!--            <a href="https://radshid.com/?p=3809" class="more_link">بیشتر</a>-->
             <div class="card wow bounceInRight" data-wow-duration="1s">
 				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[0]], false ); ?>" target="_blank">

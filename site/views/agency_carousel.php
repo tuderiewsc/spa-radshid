@@ -5,9 +5,12 @@
 <section>
     <div class="col-12">
         <div class="card-deck">
-                <h3 class="card-deck-title d-flex justify-content-between">
+                <h3 class="card-deck-title d-flex justify-content-between" data-hover="95">
                     <span id="card-deck-title-text">مشتریان ما</span>
-                    <a href="https://radshid.com/?p=4520" target="_blank">بیشتر</a>
+                    <a class="more_link" href="https://radshid.com/?p=4520" target="_blank">
+                        بیشتر
+                        <i class="fa fa-angle-left"></i>
+                    </a>
                 </h3>
             <div class="owl-carousel owl-theme agency_carousel">
                 <div class="item">
