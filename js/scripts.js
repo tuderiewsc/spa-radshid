@@ -10,9 +10,6 @@ jQuery(document).ready(function($){
     const login_frm_submit_btn_txt = $('#login_frm_submit_btn_txt').val();
     const register_frm_submit_btn_txt = $('#register_frm_submit_btn_txt').val();
     const register_frm_err_notify = $('#register_frm_err_notify').val();
-
-
-
     /* -------------------------------------------------------------------------------------------------- */
 
 
@@ -336,50 +333,35 @@ jQuery(document).ready(function($){
     /* Owl Carousel */
 
 
-
     /* Strip Length */
-    let deckTitle = $(this).find('.card-deck-title');
-    let len = deckTitle.data('hover');
-    switch(len) {
-        case 80:
-            deckTitle.addClass('middle');
-            break;
-        case 95:
-            deckTitle.addClass('large');
-            break;
-        case 65:
-            deckTitle.addClass('small');
-            break;
-        default:
-            deckTitle.addClass('middle');
-    }
+    let elm1 = $('.card-deck').find('.card-deck-title#products');
+    let elm2 = $('.card-deck').find('.card-deck-title#customers');
+    let elm3 = $('.card-deck').find('.card-deck-title#articles');
+    stripLength(elm1);
+    stripLength(elm2);
+    stripLength(elm3);
     /* Strip Length */
-
-
-
-
-    // $('.card-deck-title').hover(function() {
-    //     $(this).find('#card-deck-title-text').slideLeft('fast');
-    //     $(this).find('#card-deck-title-text').slideRight('fast').html('مشاهده ادامه');
-    //
-    //         // setTimeout(function() {
-    //         //     $('.card-deck-title').find('#card-deck-title-text').slideDown('fast').html('مشاهده ادامه');
-    //         // }, 1000);
-    //
-    // }, function() {
-    //     $(this).find('#card-deck-title-text').slideUp('fast');
-    //     $(this).find('#card-deck-title-text').slideDown('fast').html('مشتریان ما');
-    //
-    //     // $(this).find('#card-deck-title-text').slideUp('fast', function() {
-    //     //     setTimeout(function() {
-    //     //         $('.card-deck-title').find('#card-deck-title-text').slideDown('fast').html('مشتریان ما');
-    //     //     }, 1000);
-    //     // });
-    // });
 
 
 });
 
+
+function stripLength(elm) {
+    let len = elm.data('hover');
+    switch(len) {
+        case 80:
+            elm.addClass('middle');
+            break;
+        case 95:
+            elm.addClass('large');
+            break;
+        case 65:
+            elm.addClass('small');
+            break;
+        default:
+            elm.addClass('middle');
+    }
+}
 
 function InputValidation(value , form , input_id , type='empty'){
     if (type === 'empty'){

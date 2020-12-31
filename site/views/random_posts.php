@@ -112,9 +112,8 @@
 	-->
 
 		<div class="card-deck">
-            <h3 class="card-deck-title" data-hover="65">مقالات</h3>
-<!--            <a href="https://radshid.com/?p=3809" class="more_link">بیشتر</a>-->
-            <div class="card wow bounceInRight" data-wow-duration="1s">
+            <h3 class="card-deck-title" data-hover="65" id="articles">مقالات</h3>
+            <div class="card" >
 				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[0]], false ); ?>" target="_blank">
 					<figure class="card-img-top">
 						<?php echo get_the_post_thumbnail( $ids1[$random_ids1[0]], '' , '' ); ?>
@@ -124,12 +123,11 @@
 					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[0]], false ); ?>" target="_blank">
 						<h5 class="card-title"><?php echo get_the_title( $ids1[$random_ids1[0]] ); ?></h5>
 					</a>
-					<?php
-					$postContent = wp_trim_words(get_post($ids1[$random_ids1[0]])->post_excerpt)
-					?>
-				</div>
+					<?php $postContent = str_replace('"' , '' , wp_trim_words(get_post($ids1[$random_ids1[0]])->post_excerpt , 30)) ?>
+                    <p class="card-text"><?php echo $postContent; ?></p>
+                </div>
 			</div>
-			<div class="card wow zoomIn" data-wow-duration="1s">
+			<div class="card" >
 				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[1]], false ); ?>" target="_blank">
 					<figure class="card-img-top">
 						<?php echo get_the_post_thumbnail( $ids1[$random_ids1[1]], '' , '' ); ?>
@@ -139,12 +137,11 @@
 					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[1]], false ); ?>" target="_blank">
 						<h5 class="card-title"><?php echo get_the_title( $ids1[$random_ids1[1]] ); ?></h5>
 					</a>
-					<?php
-					$postContent = wp_trim_words(get_post($ids1[$random_ids1[1]])->post_content)
-					?>
-				</div>
+					<?php $postContent = str_replace('"' , '' , wp_trim_words(get_post($ids1[$random_ids1[1]])->post_excerpt , 30)) ?>
+                    <p class="card-text"><?php echo $postContent; ?></p>
+                </div>
 			</div>
-			<div class="card wow bounceInLeft" data-wow-duration="1s">
+			<div class="card" >
 				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[2]], false ); ?>" target="_blank">
 					<figure class="card-img-top">
 						<?php echo get_the_post_thumbnail( $ids1[$random_ids1[2]], '' , '' ); ?>
@@ -154,10 +151,8 @@
 					<a href="<?php echo get_the_permalink( $ids1[$random_ids1[2]], false ); ?>" target="_blank">
 						<h5 class="card-title"><?php echo get_the_title( $ids1[$random_ids1[2]] ); ?></h5>
 					</a>
-					<?php
-					$postContent = wp_trim_words(get_post($ids1[$random_ids1[2]])->post_content)
-					?>
-<!--					<p class="card-text">--><?php //echo $postContent; ?><!--</p>-->
+					<?php $postContent = str_replace('"' , '' , wp_trim_words(get_post($ids1[$random_ids1[2]])->post_excerpt , 30)) ?>
+					<p class="card-text"><?php echo $postContent; ?></p>
 				</div>
 			</div>
 		</div>

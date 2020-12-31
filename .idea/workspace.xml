@@ -2,14 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/site/views/affilate_dashboard_page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/affilate_separator_section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/views/sipaad_separator_section.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Gandom-FD.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Gandom-FD.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Gandom-FD.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Samim-FD.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Vazir.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Vazir.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Vazir.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/TopBg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/TopBg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/TopBg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/TopBg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/TopBg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/IRIB.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/IRIB.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/aab.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/aab.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/bargh.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/bargh.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/jam.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/jam.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/mapna.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/mapna.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/modiran.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/modiran.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/pars.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/pars.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/roozaneh.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/roozaneh.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/saderat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/saderat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/carousel_images/sairan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/carousel_images/sairan.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/rad-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/rad-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/radtools.php" beforeDir="false" afterPath="$PROJECT_DIR$/radtools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/affilate_dashboard_page.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/agency_carousel.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/agency_carousel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/random_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/random_posts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/top_banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/top_banner.php" afterDir="false" />
@@ -25,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/radtools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="72" column="32" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="32" />
+            <state relative-caret-position="803">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="e#6#254#0#PHP" expanded="true" />
               </folding>
@@ -35,10 +52,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/views/agency_carousel.php">
+        <entry file="file://$PROJECT_DIR$/site/views/sipaad_separator_section.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
+            <state relative-caret-position="96">
+              <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/views/affilate_separator_section.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="265" selection-start-line="9" selection-start-column="265" selection-end-line="9" selection-end-column="265" />
             </state>
           </provider>
         </entry>
@@ -46,27 +72,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/views/random_posts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="114" column="54" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="327" lean-forward="true" selection-start-line="327" selection-end-line="327" />
+            <state relative-caret-position="3432">
+              <caret line="143" column="30" selection-start-line="143" selection-start-column="30" selection-end-line="143" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="246" column="1" lean-forward="true" selection-start-line="246" selection-start-column="1" selection-end-line="246" selection-end-column="1" />
+              <folding>
+                <element signature="e#19658#19965#0" />
+                <element signature="e#19966#20233#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/views/top_banner.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/views/agency_carousel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="480">
+              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding>
+                <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#InputValidation#0" />
               </folding>
             </state>
@@ -85,36 +134,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>top_bann</find>
-      <find>card-deck-title</find>
-      <find>odd</find>
-      <find>.card-deck .card-deck-title</find>
-      <find>Vazir</find>
-      <find>.linkItem</find>
-      <find>owl</find>
-      <find>0.2s</find>
-      <find>0.4s</find>
-      <find>bx-wrapper</find>
-      <find>rad_show_home_top_links</find>
-      <find>rainbow</find>
-      <find>test</find>
-      <find>loader</find>
-      <find>underline</find>
-      <find>sm-img</find>
-      <find>top_banner</find>
-      <find>top_banner_Title</find>
-      <find>0.1s</find>
-      <find>ease-in-out</find>
-      <find>Gandom</find>
       <find>background-size</find>
-      <find>more_link</find>
-      <find>transparent</find>
-      <find>.psfw-price .woocommerce-Price-amount bdi</find>
-      <find>card-deck</find>
-      <find>psfw-buton-one-wrapper</find>
       <find>psfw-share-wrap</find>
-      <find>.card-deck .more_link i</find>
-      <find>.card-deck</find>
+      <find>top_banner_Title</find>
+      <find>animate__</find>
+      <find>.psfw-buton-one-wrapper.psfw-button a:hover</find>
+      <find>deckTitle</find>
+      <find>after</find>
+      <find>.card-deck .card .card-title</find>
+      <find>.card-deck .card-deck-title</find>
+      <find>alt=&quot;&quot;</find>
+      <find>top_banner</find>
+      <find>.card-deck .card .card-text</find>
+      <find>10</find>
+      <find>.linkItem a p</find>
+      <find>seperator</find>
+      <find>affilate_separator_section_two</find>
+      <find>2a1b3d</find>
+      <find>separator</find>
+      <find>h3.separator_sub_title</find>
+      <find>psfw-buton-one-wrapper</find>
+      <find>wp_trim_words</find>
+      <find>data-wow-duration=&quot;1s&quot;</find>
+      <find>.card-deck .card-body</find>
+      <find>51BAA8</find>
+      <find>separator_sub_right</find>
+      <find>.header_color .sub_menu&gt;ul&gt;li&gt;a, .header_color .sub_menu&gt;div&gt;ul&gt;li&gt;a, .header_color .main_menu ul:first-child &gt; li &gt; a, #top .header_color .main_menu .menu ul .current_page_item &gt; a, #top .header_color .main_menu .menu ul .current-menu-item &gt; a, #top .header_color .sub_menu li ul a</find>
+      <find>avia-m</find>
+      <find>fullsize</find>
+      <find>more_link</find>
+      <find>768</find>
     </findStrings>
     <replaceStrings>
       <replace>date</replace>
@@ -131,6 +180,13 @@
       <replace>0.3s</replace>
       <replace>ease</replace>
       <replace>Samim</replace>
+      <replace>elm</replace>
+      <replace>alt=&quot;مشتریان رادشید&quot;</replace>
+      <replace>20</replace>
+      <replace>separator</replace>
+      <replace>10</replace>
+      <replace>1c272b</replace>
+      <replace>B71C1C</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\wordpress\wp-content\plugins\ztools</dir>
@@ -163,13 +219,19 @@
         <option value="$PROJECT_DIR$/site/views/spa_form.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/site/views/top_links.php" />
-        <option value="$PROJECT_DIR$/radtools.php" />
         <option value="$PROJECT_DIR$/site/views/affilate_dashboard_page.php" />
-        <option value="$PROJECT_DIR$/site/views/top_banner.php" />
-        <option value="$PROJECT_DIR$/site/views/random_posts.php" />
-        <option value="$PROJECT_DIR$/css/rad-styles.css" />
+        <option value="$PROJECT_DIR$/css/animate.min.css" />
+        <option value="$PROJECT_DIR$/site/views/affilate_seperator_section.php" />
         <option value="$PROJECT_DIR$/site/views/agency_carousel.php" />
+        <option value="$PROJECT_DIR$/site/views/random_posts.php" />
+        <option value="$PROJECT_DIR$/site/views/affilate_separator_section_one.php" />
+        <option value="$PROJECT_DIR$/site/views/affilate_separator_section_two.php" />
+        <option value="$PROJECT_DIR$/radtools.php" />
+        <option value="$PROJECT_DIR$/site/views/top_banner.php" />
+        <option value="$PROJECT_DIR$/site/views/sipaad_separator_section.php" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
+        <option value="$PROJECT_DIR$/site/views/affilate_separator_section.php" />
+        <option value="$PROJECT_DIR$/css/rad-styles.css" />
       </list>
     </option>
   </component>
@@ -193,17 +255,6 @@
               <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
               <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -221,11 +272,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\images" />
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\images\separator_images" />
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\site\views" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\fonts" />
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\images\icons_images" />
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\images\carousel_images" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\css" />
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\wordpress\wp-content\plugins\spa-radshid\assets\images" />
@@ -292,7 +343,12 @@
       <workItem from="1608372947459" duration="2009000" />
       <workItem from="1608376267180" duration="530000" />
       <workItem from="1608382362102" duration="750000" />
-      <workItem from="1608441564453" duration="12391000" />
+      <workItem from="1608441564453" duration="12895000" />
+      <workItem from="1608528872426" duration="5531000" />
+      <workItem from="1608712162794" duration="6721000" />
+      <workItem from="1608974055141" duration="827000" />
+      <workItem from="1609304876470" duration="20941000" />
+      <workItem from="1609390693620" duration="7066000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -319,7 +375,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237127000" />
+    <option name="totallyTimeSpent" value="278717000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,12 +391,12 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18976545" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18017058" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" visible="true" weight="0.28277355" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.28277355" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
@@ -464,9 +520,6 @@
     <entry file="file://$PROJECT_DIR$/js/owl.carousel.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/animate.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/images/carousel_images/1111.jpg" />
     <entry file="file://$PROJECT_DIR$/site/views/spa_form.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -475,9 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/TopBg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/views/top_links.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -485,57 +535,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/animate.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/TopBg2.jpg" />
+    <entry file="file://$PROJECT_DIR$/assets/images/TopBg.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/TopBg.jpg" />
+    <entry file="file://$PROJECT_DIR$/site/views/affilate_dashboard_page.php" />
+    <entry file="file://$PROJECT_DIR$/assets/images/separator_images/sipaad_image.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/separator_images/affilate_image.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/site/views/random_posts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="114" column="54" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/views/affilate_dashboard_page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        <state relative-caret-position="3432">
+          <caret line="143" column="30" selection-start-line="143" selection-start-column="30" selection-end-line="143" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/views/top_banner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="168">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/radtools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="72" column="32" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="32" />
+        <state relative-caret-position="803">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
           <folding>
             <element signature="e#6#254#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
+    <entry file="file://$PROJECT_DIR$/site/views/sipaad_separator_section.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="327" lean-forward="true" selection-start-line="327" selection-end-line="327" />
+        <state relative-caret-position="96">
+          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/views/agency_carousel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
+        <state relative-caret-position="216">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        <state relative-caret-position="480">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#InputValidation#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/views/affilate_separator_section.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="265" selection-start-line="9" selection-start-column="265" selection-end-line="9" selection-end-column="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="246" column="1" lean-forward="true" selection-start-line="246" selection-start-column="1" selection-end-line="246" selection-end-column="1" />
+          <folding>
+            <element signature="e#19658#19965#0" />
+            <element signature="e#19966#20233#0" />
           </folding>
         </state>
       </provider>
