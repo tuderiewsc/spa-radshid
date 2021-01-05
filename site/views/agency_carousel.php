@@ -5,7 +5,7 @@
 <section>
     <div class="col-12">
         <div class="card-deck">
-                <h3 class="card-deck-title d-flex justify-content-between" data-hover="95" id="customers">
+                <h3 class="card-deck-title d-flex justify-content-between" data-hover="110" id="customers">
                     <span id="card-deck-title-text">مشتریان ما</span>
                     <a class="more_link" href="https://radshid.com/?p=4520" target="_blank">
                         بیشتر

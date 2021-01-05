@@ -1,10 +1,12 @@
-/* Version 3 */
+/* Version 4 */
 
 jQuery(document).ready(function($){
 
     // inits
     $('a[href="#login_tab"]').click();
     new WOW().init();
+    document.addEventListener('touchstart', handler, {passive: true});
+
 
     // Constants
     const login_frm_submit_btn_txt = $('#login_frm_submit_btn_txt').val();
@@ -18,7 +20,7 @@ jQuery(document).ready(function($){
     setTimeout(function () {
         $('.top_banner_Title').css('visibility' , 'visibile').addClass('wow');
         $('.top_banner_Slogan').css('visibility' , 'visibile').addClass('wow');
-    }, 1000);
+    }, 500);
     /* Top Banner */
 
 
@@ -45,23 +47,68 @@ jQuery(document).ready(function($){
         if (username !== '' && password !== '' ) {
             loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
 
-            $.ajax({
-                url: '/url',
-                type: 'POST',
-                data: { 'username':username ,'pass':password },
-                dataType: 'JSON',
-                success: function (data , xhr) {
-                    if (xhr === 'success'){
-                        //resetSignUpForm();
-                    } else {
-                        //
-                    }
-                }, error:function (err) {
-                    console.log(err);
-                }, complete:function () {
-                    loginSubmitBtn.html(login_frm_submit_btn_txt);
-                },timeout:10000
-            });
+
+            if (window.location.protocol.indexOf('https') === 0){
+                var el = document.createElement('meta');
+                el.setAttribute('http-equiv', 'Content-Security-Policy');
+                el.setAttribute('content', 'upgrade-insecure-requests');
+                document.head.append(el);
+            }
+
+            fetch('http://www.spa.radshid.com/WebMethods/Users.aspx/LoginUser/', {
+                method: 'post',
+                //mode: 'cors',
+                crossDomain: true,
+                // credentials: 'same-origin',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json',
+                },
+                body:{
+                    "username": username,
+                    "password": password,
+                    "rememberMe": false
+                }
+            }).then(res=>res.json())
+                .then(res => console.log(res));
+
+
+            // $.ajax({
+            //     headers: { "Accept": "application/json"},
+            //     url: 'http://www.spa.radshid.com/WebMethods/Users.aspx/LoginUser',
+            //     type: 'POST',
+            //     crossDomain: true,
+            //     //credentials: 'same-origin',
+            //     data: {
+            //         "username": username,
+            //         "password": password,
+            //         "rememberMe": false
+            //     },
+            //     dataType: 'JSON',
+            //     timeout:10000,
+            //     success: function (data , xhr) {
+            //         console.log('data: ' + data);
+            //         console.log('xhr: ' + xhr);
+            //         if (xhr === 'success'){
+            //             //resetSignUpForm();
+            //         } else {
+            //             //
+            //         }
+            //     }, error:function (err) {
+            //         console.log(err);
+            //     }, complete:function () {
+            //         loginSubmitBtn.html(login_frm_submit_btn_txt);
+            //     }
+            // });
+
+
+            // let data = {
+            //     act: 'login',
+            //     username: username,
+            //     pass: password
+            // };
+            // window.location.href= 'http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'';
+
         }
     });
 
@@ -167,21 +214,42 @@ jQuery(document).ready(function($){
             && reg_code !=='' && car_name !=='' && is_admin_phone_valid && is_sim_phone_valid) {
             registerSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
             $.ajax({
-                url: '/url',
+                url: 'http://api.radshid.com/api/v1/users',
                 type: 'POST',
-                data: { 'name':name ,'family':family },
-                dataType: 'JSON',
+                data: {
+                    "avl":{
+                        "Imei": gps_serial,
+                        "RegisterCode": reg_code
+                    },
+                    "Car":{
+                        "Title": car_name,
+                        "SimPhone": sim_phone
+                    },
+                    "User":{
+                        "Mobile": mobile,
+                        "FirstName": name,
+                        "LastName": family,
+                        "Username": username,
+                        "Password": pass
+
+                    },
+                    "Domain":"www.radshid.com",
+                    "AdminPhone":admin_phone
+                },
+                //dataType: 'JSON',
                 success: function (data , xhr) {
                     if (xhr === 'success'){
+                        console.log('data: ' + data);
+                        console.log('xhr: ' + xhr);
                         //resetSignUpForm();
                     } else {
-                        //
+                        alert('error in send data');
                     }
                 }, error:function (err) {
                     console.log(err);
                 }, complete:function () {
                     registerSubmitBtn.html(register_frm_submit_btn_txt);
-                },timeout:10000
+                },timeout:1000000
             });
         }else {
             alert(register_frm_err_notify);
@@ -349,10 +417,10 @@ jQuery(document).ready(function($){
 function stripLength(elm) {
     let len = elm.data('hover');
     switch(len) {
-        case 80:
+        case 95:
             elm.addClass('middle');
             break;
-        case 95:
+        case 110:
             elm.addClass('large');
             break;
         case 65:

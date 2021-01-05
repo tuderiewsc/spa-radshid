@@ -33,7 +33,7 @@
 		'order' => 'DESC',
 		'post_type' => 'post',
 		'post_status' => 'publish',
-		'suppress_filters' => true );
+		'suppress_filters' => false );
 	$recent_posts2 = wp_get_recent_posts($args2);
 	$ids2 = [];
 	$random_ids2 = [];
@@ -46,70 +46,6 @@
 	$random_ids2 = array_rand($ids2 , 3);
 	?>
 
-	<?php //if ( $random_post->have_posts() ) : ?>
-
-		<?php //$posts_number = 0; ?>
-		<?php //while ( $random_post->have_posts() && $posts_number++ < 6 ) : $random_post->the_post(); ?>
-		<?php //endwhile; ?>
-		<?php //wp_reset_postdata(); ?>
-
-<!-- 		<div class="grid_container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 rightSide">
-					<div style="display: flex;flex-flow: row wrap;justify-content: center;">
-						<div class="block big col-lg-6 col-md-6 col-sm-12">
-							<figure class="bigImage">
-								<?php echo get_the_post_thumbnail( $ids[0], '' , '' ); ?>
-							</figure>
-							<a href="<?php echo get_the_permalink( $ids[0], false ); ?>" class="post_link" target="_blank">
-								<h4 class="post_title"><?php echo get_the_title( $ids[0] ); ?></h4>
-							</a>
-						</div>
-						<div class="block big col-lg-6 col-md-6 col-sm-12">
-							<figure class="bigImage">
-								<?php echo get_the_post_thumbnail( $ids[1], '' , '' ); ?>
-							</figure>
-							<a href="<?php echo get_the_permalink( $ids[1], false ); ?>" class="post_link" target="_blank">
-								<h4 class="post_title"><?php echo get_the_title( $ids[1] ); ?></h4>
-							</a>
-						</div>
-						<div class="block small col-lg-3 col-md-3 col-sm-12">
-							<figure class="smallImage">
-								<?php echo get_the_post_thumbnail( $ids[2], array(384,170) , '' ); ?>
-							</figure>
-							<a href="<?php echo get_the_permalink( $ids[2], false ); ?>" class="post_link" target="_blank">
-								<h4 class="post_title"><?php echo get_the_title( $ids[2] ); ?></h4>
-							</a>
-						</div>
-						<div class="block small col-lg-3 col-md-3 col-sm-12">
-							<figure class="smallImage">
-								<?php echo get_the_post_thumbnail( $ids[3], array(384,170) , '' ); ?>
-							</figure>
-							<a href="<?php echo get_the_permalink( $ids[3], false ); ?>" class="post_link" target="_blank">
-								<h4 class="post_title"><?php echo get_the_title( $ids[3] ); ?></h4>
-							</a>
-						</div>
-						<div class="block small col-lg-3 col-md-3 col-sm-12">
-							<figure class="smallImage">
-								<?php echo get_the_post_thumbnail( $ids[4], array(384,170) , '' ); ?>
-							</figure>
-							<a href="<?php echo get_the_permalink( $ids[4], false ); ?>" class="post_link" target="_blank">
-								<h4 class="post_title"><?php echo get_the_title( $ids[4] ); ?></h4>
-							</a>
-						</div>
-						<div class="block small col-lg-3 col-md-3 col-sm-12">
-							<figure class="smallImage">
-								<?php echo get_the_post_thumbnail( $ids[5], array(384,170) , '' ); ?>
-							</figure>
-							<a href="<?php echo get_the_permalink( $ids[5], false ); ?>" class="post_link" target="_blank">
-								<h4 class="post_title"><?php echo get_the_title( $ids[5] ); ?></h4>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	-->
 
 		<div class="card-deck">
             <h3 class="card-deck-title" data-hover="65" id="articles">مقالات</h3>
@@ -157,8 +93,4 @@
 			</div>
 		</div>
 
-
-    <?php //else : ?>
-<!--		<p class="alert alert-danger text-center my-4 w-100">متاسفانه مطلبي براي نمايش وجود ندارد</p>-->
-	<?php //endif; ?>
 </div>

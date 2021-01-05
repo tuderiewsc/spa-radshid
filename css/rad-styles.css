@@ -1,10 +1,20 @@
-/* Version 7*/
+/* Version 1.0.8 */
+
+
+/*#Colors{*/
+    /*color:#a81010; !* old red *!*/
+    /*color:#B71C1C;*/
+    /*color:#D50000;*/
+    /*color:#1c272b;*/
+/*}*/
+
 
 @font-face {
     font-family: "Samim";
     src: url("../assets/fonts/Samim-FD.ttf") format("truetype"), url("../assets/fonts/Samim-FD.eot") format("eot"), url("../assets/fonts/Samim-FD.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 a:hover, a:focus, a:visited {
@@ -14,12 +24,13 @@ a:hover, a:focus, a:visited {
 .top_banner{
     position: relative;
     background: linear-gradient(to left , rgba(0,0,0,0.8),rgba(38,50,56,0.3)), url(../assets/images/TopBg.gif);
+    /*background: linear-gradient(to left , transparent , transparent), url(../assets/images/TopBg.gif);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: contain;
     border-radius: 0 !important;
-    margin-top: 0;
+    margin-top: 35px;
     height: calc(100vh - 250px);
 }
 
@@ -118,7 +129,7 @@ form .required>label{
 }
 form .required>label::after{
     content: "*";
-    color: orangered;
+    color: tomato;
     position: absolute;
     right: auto;
     top: 0;
@@ -133,7 +144,7 @@ form .valid_input{
     display: none;
 }
 .invalid-feedback{
-    color: orangered;
+    color: tomatored;
     text-align: right;
 }
 .owl-carousel .item img{
@@ -258,7 +269,7 @@ form .valid_input{
     position: relative;
     width: 100%;
     text-align: right;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-family: 'iranyekan';
     color: #424242;
     margin-bottom: 30px;
@@ -308,7 +319,7 @@ form .valid_input{
 .card-deck-title::after{
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     right: 0;
     border-bottom: 1px solid #B71C1C;
     border-radius: 20px;
@@ -333,10 +344,10 @@ form .valid_input{
 }
 
 .card-deck-title.large::after{
-    width: 95px;
+    width: 110px;
 }
 .card-deck-title.middle::after{
-    width: 80px;
+    width: 95px;
 }
 .card-deck-title.small::after{
     width: 65px;
@@ -350,14 +361,15 @@ form .valid_input{
     -moz-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     border-radius: 0;
-    background-color: #fafafa;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
 }
 .card-deck .card a{
     border-radius: 0;
 }
 .card-deck .card a img{
     border-radius: 0;
-    height: 150px;
+    height: 175px;
 }
 .card-deck .card .card-title{
     text-align: center;
@@ -456,11 +468,6 @@ form .valid_input{
 
 
 /* for Radshid */
-.fullsize .container{
-    max-width: 100% !important;
-    padding: 0 !important;
-}
-
 #wps-slider-section.wps-slider-section-11749 {
     padding-top: 0 !important;
 }
@@ -480,6 +487,10 @@ form .valid_input{
 #content .wpb_alert p:last-child, #content .wpb_text_column :last-child, #content .wpb_text_column p:last-child, .wpb_alert p:last-child, .wpb_text_column :last-child, .wpb_text_column p:last-child {
     margin: auto;
 }
+
+footer.socket_color{
+    background-color: #1c272b !important;
+}
 /* for Radshid */
 
 /* The typing effect */
@@ -497,7 +508,7 @@ form .valid_input{
         border-color: transparent;
     }
     50% {
-        border-color: orange;
+        border-color: tomato;
     }
 }
 
@@ -509,18 +520,21 @@ form .valid_input{
     width: 100%;
     background: #ffffff;
     height: 100%;
+    border-radius: 0 !important;
 }
 .loader-container .loader_circle {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: calc(50% - 20px);
+    top: calc(50% - 20px);
     border: 5px solid #f3f3f3;
     border-radius: 50%;
     border-top: 5px solid #B71C1C;
-    width: 50px;
-    height: 50px;
-    -webkit-animation: spin 0.5s linear infinite;
+    width: 40px;
+    height: 40px;
     animation: spin 0.5s linear infinite;
+    -webkit-animation: spin 0.5s linear infinite;
+    -moz-animation: spin 0.5s linear infinite;
+    -o-animation: spin 0.5s linear infinite;
 }
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
@@ -547,6 +561,9 @@ form .valid_input{
 /* Products Slider */
 .psfw-image-hover-wrap::before{
     z-index: -5 !important;
+}
+.psfw-inner-wrap{
+    border-radius: 0;
 }
 .psfw-inner-wrap .psfw-image-hover-wrap::before{
     background-color: #ffffff !important;
@@ -723,7 +740,7 @@ form .valid_input{
     align-items: center;
     align-content: center;
     font-family: "Samim";
-    border-radius: 0;
+    border-radius: 0 !important;
 }
 
 .separator_sub {
@@ -808,12 +825,6 @@ form .valid_input{
     .responsive #top .logo {
         padding: 0 65px;
     }
-    .fullsize .container{
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 !important;
-    }
-
     .top_banner .top_banner_Title{
         font-size: 2em;
     }
@@ -848,6 +859,11 @@ form .valid_input{
     .separator {
         flex-flow: row wrap;
         justify-content: center;
+    }
+    .separator.reverseOnMob {
+        flex-flow: row wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
     }
 
     .separator_sub {
@@ -942,7 +958,7 @@ form .valid_input{
     }
     .psfw-inner-wrap{
         margin-right: 0 !important;
-        margin-left: 30px;
+        margin-left: 0 !important;
     }
 }
 @media screen and (max-width: 300px) {

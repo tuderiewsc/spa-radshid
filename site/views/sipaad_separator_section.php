@@ -2,9 +2,9 @@
 
 
 	<div class="row">
-			<div class="separator my-5">
+			<div class="separator reverseOnMob my-5">
                 <div class="separator_sub">
-                    <figure class="separator_sub_image bounceIn wow" data-wow-duration="0.5s" data-wow-delay="1.5s">
+                    <figure class="separator_sub_image bounceIn wow" data-wow-duration="0.5s" data-wow-delay="1s">
                         <img src="<?php echo RAD_ASSETS. '/images/separator_images/sipaad_image.png'  ?>" alt="سیستم همکاری در فروش">
                     </figure>
                 </div>
