@@ -1,4 +1,4 @@
-/* Version 1.0.8 */
+/* Version 1.0.10 */
 
 
 /*#Colors{*/
@@ -434,24 +434,27 @@ form .valid_input{
     color: #fff !important;
     text-decoration: none;
 }
-.linkItem a img{
+.linkItem a img.linkItemImg{
     width: 50px;
     height: auto;
+    visibility: hidden;
     transition: 0.3s ease;
     -moz-transition: 0.3s ease;
     -o-transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
 }
+
 /*.linkItem:hover img{*/
     /*transform: scale(1.05);*/
 /*}*/
-.linkItem a p{
+.linkItem a p.linkItemText{
     text-align: center;
     margin: 0;
     padding: 0;
     font-weight: bold;
     font-size: 13px;
     color: #1c272b;
+    visibility: hidden;
 }
 .linkItem a i{
     font-size: 4em;
@@ -794,6 +797,32 @@ footer.socket_color{
     border: none;
 }
 /* Affilate Separator Section */
+
+
+
+
+/* Affilate Dash Page Section */
+.scroll_links{
+    width: 100%;
+}
+.scroll_links .navbar-nav{
+   display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.scroll_links .navbar-nav .nav-item{
+
+}
+
+
+/*ul#avia-menu{*/
+    /*display: none;*/
+/*}*/
+/* Affilate Dash Page Section */
+
 
 
 

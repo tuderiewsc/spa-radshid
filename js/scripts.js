@@ -1,11 +1,12 @@
-/* Version 4 */
+/* Version 6 */
 
 jQuery(document).ready(function($){
 
     // inits
     $('a[href="#login_tab"]').click();
     new WOW().init();
-    document.addEventListener('touchstart', handler, {passive: true});
+    //$('body').scrollspy({ target: '.navbar' });
+    //document.addEventListener('touchstart', handler, {passive: true});
 
 
     // Constants
@@ -20,6 +21,8 @@ jQuery(document).ready(function($){
     setTimeout(function () {
         $('.top_banner_Title').css('visibility' , 'visibile').addClass('wow');
         $('.top_banner_Slogan').css('visibility' , 'visibile').addClass('wow');
+        $('.linkItemImg').css('visibility' , 'visibile').addClass('wow');
+        $('.linkItemText').css('visibility' , 'visibile').addClass('wow');
     }, 500);
     /* Top Banner */
 
@@ -55,51 +58,51 @@ jQuery(document).ready(function($){
                 document.head.append(el);
             }
 
-            fetch('http://www.spa.radshid.com/WebMethods/Users.aspx/LoginUser/', {
-                method: 'post',
-                //mode: 'cors',
-                crossDomain: true,
-                // credentials: 'same-origin',
-                headers: {
-                    'Accept': 'application/json, text/plain, */*',
-                    'Content-Type': 'application/json',
-                },
-                body:{
-                    "username": username,
-                    "password": password,
-                    "rememberMe": false
-                }
-            }).then(res=>res.json())
-                .then(res => console.log(res));
-
-
-            // $.ajax({
-            //     headers: { "Accept": "application/json"},
-            //     url: 'http://www.spa.radshid.com/WebMethods/Users.aspx/LoginUser',
-            //     type: 'POST',
+            // fetch('http://spa.radshid.com/WebMethods/Users.aspx/LoginUser/', {
+            //     method: 'post',
+            //     //mode: 'cors',
             //     crossDomain: true,
-            //     //credentials: 'same-origin',
-            //     data: {
+            //     // credentials: 'same-origin',
+            //     headers: {
+            //         'Accept': 'application/json, text/plain, */*',
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body:{
             //         "username": username,
             //         "password": password,
             //         "rememberMe": false
-            //     },
-            //     dataType: 'JSON',
-            //     timeout:10000,
-            //     success: function (data , xhr) {
-            //         console.log('data: ' + data);
-            //         console.log('xhr: ' + xhr);
-            //         if (xhr === 'success'){
-            //             //resetSignUpForm();
-            //         } else {
-            //             //
-            //         }
-            //     }, error:function (err) {
-            //         console.log(err);
-            //     }, complete:function () {
-            //         loginSubmitBtn.html(login_frm_submit_btn_txt);
             //     }
-            // });
+            // }).then(res=>res.json())
+            //     .then(res => console.log(res));
+
+
+            $.ajax({
+                headers: { "Accept": "application/json"},
+                url: 'http://spa.radshid.com/WebMethods/Users.aspx/LoginUser',
+                type: 'POST',
+                crossDomain: true,
+                //credentials: 'same-origin',
+                data: {
+                    "username": username,
+                    "password": password,
+                    "rememberMe": false
+                },
+                dataType: 'JSON',
+                timeout:10000,
+                success: function (data , xhr) {
+                    console.log('data: ' + data);
+                    console.log('xhr: ' + xhr);
+                    if (xhr === 'success'){
+                        //resetSignUpForm();
+                    } else {
+                        //
+                    }
+                }, error:function (err) {
+                    console.log(err);
+                }, complete:function () {
+                    loginSubmitBtn.html(login_frm_submit_btn_txt);
+                }
+            });
 
 
             // let data = {

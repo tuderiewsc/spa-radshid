@@ -63,6 +63,8 @@ if(is_admin()){
 }
 
 
+
+
 // Shortcodes
 add_action('init', function(){
 	add_shortcode('spa_form' , 'rad_show_spa_form');
@@ -72,6 +74,7 @@ add_action('init', function(){
 	add_shortcode('home_top_links' , 'rad_show_home_top_links');
 	add_shortcode('affilate_separator' , 'affilate_separator_section');
 	add_shortcode('sipaad_separator' , 'sipaad_separator_section');
+	add_shortcode('affilate_dash' , 'affilate_dash_page');
 });
 function rad_show_spa_form($atts, $content = null){
 	include(plugin_dir_path( __FILE__ ).'site/views/spa_form.php');
@@ -93,5 +96,8 @@ function affilate_separator_section($atts, $content = null){
 }
 function sipaad_separator_section($atts, $content = null){
 	include(plugin_dir_path( __FILE__ ).'site/views/sipaad_separator_section.php');
+}
+function affilate_dash_page($atts, $content = null){
+	include(plugin_dir_path( __FILE__ ).'site/views/affilate_dash_page.php');
 }
 // Shortcodes

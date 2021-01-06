@@ -1,3 +1,3 @@
 <?php
 
-echo 'Written By Outsider';
+echo 'A Plugin for Radshid';

@@ -2,13 +2,11 @@
 
 
 <div class="container-fluid">
-	<?php //$random_posts_args = array( 'post_type' => 'post', 'post_status' => 'publish', 'nopaging' => true, 'order' => 'ASC', 'orderby' => 'rand', 'cat' => $Grid_catID, 'cache_results' => true ) ?>
-	<?php //$random_post = new WP_Query( $random_posts_args ); ?>
 	<?php
 	$args1 = array(
 		'numberposts' => 25,
 		'offset' => 0,
-		'category' => [16,322], // put 0 for all cats
+		'category' => get_option('RADtools_random_posts_cat' , ''), // put 0 for all cats
 		'orderby' => 'post_date',
 		'order' => 'DESC',
 		'post_type' => 'post',
