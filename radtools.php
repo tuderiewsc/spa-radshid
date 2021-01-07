@@ -20,6 +20,7 @@ add_action('plugins_loaded', function(){
 //define('RAD_INC', plugin_dir_path(__FILE__) . 'inc/');
 define('RAD_ADMIN', plugin_dir_path(__FILE__) . 'admin/');
 define('RAD_ADMIN_VIEW', plugin_dir_path(__FILE__) . 'admin/view/');
+define('RAD_INCS', plugin_dir_path(__FILE__) . 'inc/');
 define('RAD_CSS', plugin_dir_url(__FILE__) . 'css/');
 define('RAD_JS', plugin_dir_url(__FILE__) . 'js/');
 define('RAD_ASSETS', plugin_dir_url(__FILE__) . 'assets/');
@@ -34,7 +35,7 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_script('myscripts', RAD_JS.'scripts.js' , '1.0.0');
 	wp_localize_script( 'myscripts', 'RadAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
-		'security' => wp_create_nonce( '(H+MbPeShVmYq3t6' )
+		'security' => wp_create_nonce( '82ybuh2nuwbex887' )
 	));
 	wp_enqueue_media();
 	// styles
@@ -57,47 +58,14 @@ add_action( 'wp_enqueue_scripts', function(){
 //}
 
 
+
 if(is_admin()){
 	require(RAD_ADMIN . 'admin_proccess.php');
-	//require(HMDS_ADMIN . 'ajax_requests.php');
+	require(RAD_ADMIN . 'ajax_requests.php');
 }
+// Short codes
+require (RAD_INCS . 'shortcode.php');
 
 
 
 
-// Shortcodes
-add_action('init', function(){
-	add_shortcode('spa_form' , 'rad_show_spa_form');
-	add_shortcode('home_top_banner' , 'rad_show_top_banner');
-	add_shortcode('home_agency_carousel' , 'rad_show_agency_carousel');
-	add_shortcode('home_random_posts' , 'rad_show_home_random_posts');
-	add_shortcode('home_top_links' , 'rad_show_home_top_links');
-	add_shortcode('affilate_separator' , 'affilate_separator_section');
-	add_shortcode('sipaad_separator' , 'sipaad_separator_section');
-	add_shortcode('affilate_dash' , 'affilate_dash_page');
-});
-function rad_show_spa_form($atts, $content = null){
-	include(plugin_dir_path( __FILE__ ).'site/views/spa_form.php');
-}
-function rad_show_top_banner($atts, $content = null){
-	include(plugin_dir_path( __FILE__ ).'site/views/top_banner.php');
-}
-function rad_show_agency_carousel($atts, $content = null){
-	include(plugin_dir_path( __FILE__ ).'site/views/agency_carousel.php');
-}
-function rad_show_home_random_posts($atts, $content = null){
-	include(plugin_dir_path( __FILE__ ).'site/views/random_posts.php');
-}
-function rad_show_home_top_links($atts, $content = null){
-	include(plugin_dir_path( __FILE__ ).'site/views/top_links.php');
-}
-function affilate_separator_section($atts, $content = null){
-	include(plugin_dir_path( __FILE__ ).'site/views/affilate_separator_section.php');
-}
-function sipaad_separator_section($atts, $content = null){
-	include(plugin_dir_path( __FILE__ ).'site/views/sipaad_separator_section.php');
-}
-function affilate_dash_page($atts, $content = null){
-	include(plugin_dir_path( __FILE__ ).'site/views/affilate_dash_page.php');
-}
-// Shortcodes

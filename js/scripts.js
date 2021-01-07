@@ -1,12 +1,16 @@
-/* Version 6 */
+/* Version 7 */
 
 jQuery(document).ready(function($){
+
+    jQuery.event.special.touchstart = {
+        setup: function( _, ns, handle ){
+            this.addEventListener("touchstart", handle, { passive: true });
+        }
+    };
 
     // inits
     $('a[href="#login_tab"]').click();
     new WOW().init();
-    //$('body').scrollspy({ target: '.navbar' });
-    //document.addEventListener('touchstart', handler, {passive: true});
 
 
     // Constants
@@ -50,108 +54,34 @@ jQuery(document).ready(function($){
         if (username !== '' && password !== '' ) {
             loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
 
-
-            if (window.location.protocol.indexOf('https') === 0){
-                var el = document.createElement('meta');
-                el.setAttribute('http-equiv', 'Content-Security-Policy');
-                el.setAttribute('content', 'upgrade-insecure-requests');
-                document.head.append(el);
-            }
-
-            // fetch('http://spa.radshid.com/WebMethods/Users.aspx/LoginUser/', {
-            //     method: 'post',
-            //     //mode: 'cors',
-            //     crossDomain: true,
-            //     // credentials: 'same-origin',
-            //     headers: {
-            //         'Accept': 'application/json, text/plain, */*',
-            //         'Content-Type': 'application/json',
-            //     },
-            //     body:{
-            //         "username": username,
-            //         "password": password,
-            //         "rememberMe": false
-            //     }
-            // }).then(res=>res.json())
-            //     .then(res => console.log(res));
-
-
+            let data = {
+                action: 'spaLogin',
+                security : RadAjax.security,
+                "username": username,
+                "password": password,
+                "act": 'login'
+            };
             $.ajax({
-                headers: { "Accept": "application/json"},
-                url: 'http://spa.radshid.com/WebMethods/Users.aspx/LoginUser',
+                url: RadAjax.ajaxurl,
                 type: 'POST',
-                crossDomain: true,
-                //credentials: 'same-origin',
-                data: {
-                    "username": username,
-                    "password": password,
-                    "rememberMe": false
-                },
-                dataType: 'JSON',
-                timeout:10000,
-                success: function (data , xhr) {
-                    console.log('data: ' + data);
-                    console.log('xhr: ' + xhr);
-                    if (xhr === 'success'){
-                        //resetSignUpForm();
+                data: data,
+                success: function (res) {
+                    let resObj = JSON.parse(res.slice(0 , -1));
+                    let token = JSON.parse(resObj).token;
+                    if (token !== undefined){
+                        window.location.href= 'http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false;
                     } else {
-                        //
+                        alert('error');
                     }
+                    console.log(token);
                 }, error:function (err) {
                     console.log(err);
-                }, complete:function () {
+                },complete:function () {
                     loginSubmitBtn.html(login_frm_submit_btn_txt);
                 }
             });
-
-
-            // let data = {
-            //     act: 'login',
-            //     username: username,
-            //     pass: password
-            // };
-            // window.location.href= 'http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'';
-
         }
     });
-
-    // $('#spa_login_btn').click(function () {
-    //     event.preventDefault();
-    //     var user_name = $('#exampleInputEmail1').val();
-    //     var pass = $('#exampleInputPassword1').val();
-    //     //var nonce = $('#planet_nonce').val();
-    //     var data = {
-    //         action: '/spa.radshid.com',
-    //         security: SpaAjax.security,
-    //         //act: 'login',
-    //         username: 'demo',
-    //         pass: '11112'
-    //     };
-    //     //window.location.href= 'http://spa.radshid.com/?act=' + data.act + '&username=demo&pass=111132';
-    //     $.ajax({
-    //         url: SpaAjax.ajaxurl,
-    //         //url: '/spa.radshid.ir',
-    //         type: 'GET',
-    //         xhrFields: {
-    //             withCredentials: true
-    //         },
-    //         async: true,
-    //         crossDomain: true,
-    //         data: data,
-    //         dataType: 'JSON',
-    //         success: function (res , textStatus , xhr) {
-    //             //var res= $.parseJSON( res );
-    //             console.log('res ' + res);
-    //             console.log('textStatus: ' + textStatus);
-    //             console.log('xhr: ' + xhr);
-    //         }
-    //         , error: function (err) {
-    //             console.log(err);
-    //         }
-    //         , complete: function () {
-    //         }
-    //     })
-    // })
     /* Login Form */
 
 
@@ -167,7 +97,7 @@ jQuery(document).ready(function($){
         let pass_confirm = register_frm.find('input#register_password_confirm_input').val();
         let mobile = register_frm.find('input#register_mobile_input').val();
         let email = register_frm.find('input#register_email_input').val();
-        let gps_serial = register_frm.find('input#register_gps_serial_input').val();
+        let imei = register_frm.find('input#register_gps_serial_input').val();
         let reg_code = register_frm.find('input#register_reg_code_input').val();
         let car_name = register_frm.find('input#register_car_name_input').val();
         let driver_name = register_frm.find('input#register_driver_name_input').val();
@@ -177,11 +107,11 @@ jQuery(document).ready(function($){
         // Regex validation
         let passReg = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{4,}$/;
         let emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-        let phoneReg = /^([+]\d{2})?\d{10}$/;
+        let phoneReg = /^([+]\d{2})?\d{11}$/;
         let gpsReg = /^([+]\d{2})?\d{15}$/;
         let is_pass_valid = passReg.test( pass );
         let is_mobile_valid = phoneReg.test( mobile );
-        let is_gps_serial_valid = gpsReg.test( gps_serial );
+        let is_imei_valid = gpsReg.test( imei );
         let is_admin_phone_valid = phoneReg.test( admin_phone );
 
         let is_sim_phone_valid =false;
@@ -196,7 +126,7 @@ jQuery(document).ready(function($){
         InputValidation(is_pass_valid , register_frm , 'register_password_input', 'valid');
         InputValidation(is_mobile_valid , register_frm , 'register_mobile_input', 'valid');
         InputValidation(is_email_valid , register_frm , 'register_email_input', 'valid');
-        InputValidation(is_gps_serial_valid , register_frm , 'register_gps_serial_input', 'valid');
+        InputValidation(is_imei_valid , register_frm , 'register_gps_serial_input', 'valid');
         InputValidation(reg_code , register_frm , 'register_reg_code_input', 'empty');
         InputValidation(car_name , register_frm , 'register_car_name_input', 'empty');
         InputValidation(driver_name , register_frm , 'register_driver_name_input', 'empty');
@@ -213,48 +143,49 @@ jQuery(document).ready(function($){
             register_frm.find('input#register_password_confirm_input').css('borderColor', '#e1e1e1');
         }
 
-        if (name !=='' && family !=='' && username !=='' && is_pass_valid && pass===pass_confirm && is_mobile_valid && is_email_valid && is_gps_serial_valid
+        if (name !=='' && family !=='' && username !=='' && is_pass_valid && pass===pass_confirm && is_mobile_valid && is_email_valid && is_imei_valid
             && reg_code !=='' && car_name !=='' && is_admin_phone_valid && is_sim_phone_valid) {
             registerSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
-            $.ajax({
-                url: 'http://api.radshid.com/api/v1/users',
-                type: 'POST',
-                data: {
-                    "avl":{
-                        "Imei": gps_serial,
-                        "RegisterCode": reg_code
-                    },
-                    "Car":{
-                        "Title": car_name,
-                        "SimPhone": sim_phone
-                    },
-                    "User":{
-                        "Mobile": mobile,
-                        "FirstName": name,
-                        "LastName": family,
-                        "Username": username,
-                        "Password": pass
 
-                    },
-                    "Domain":"www.radshid.com",
-                    "AdminPhone":admin_phone
-                },
-                //dataType: 'JSON',
-                success: function (data , xhr) {
-                    if (xhr === 'success'){
-                        console.log('data: ' + data);
-                        console.log('xhr: ' + xhr);
-                        //resetSignUpForm();
-                    } else {
-                        alert('error in send data');
+
+            let data = {
+                action: 'spaRegister',
+                security : RadAjax.security,
+                "Imei": imei,
+                "RegisterCode": reg_code,
+                "Title": car_name,
+                "SimPhone": sim_phone,
+                "DriverName": driver_name,
+                "Mobile": mobile,
+                "FirstName": name,
+                "LastName": family,
+                "Username": username,
+                "Password": pass,
+                "Email": email,
+                "Domain": "radshid.com",
+                "AdminPhone": admin_phone
+            };
+            $.ajax({
+                url: RadAjax.ajaxurl,
+                type: 'POST',
+                data: data,
+                success: function (res , xhr) {
+                    let resObj = JSON.parse(res.slice(0 , -1));
+                    let status = JSON.parse(resObj).status;
+                    //console.log('status: ' + status);
+                    if (status !== 400){
+                        console.log('Ok');
+                    }else {
+                        console.log('Not Ok');
                     }
+
                 }, error:function (err) {
                     console.log(err);
-                }, complete:function () {
+                },complete:function () {
                     registerSubmitBtn.html(register_frm_submit_btn_txt);
-                },timeout:1000000
+                }
             });
-        }else {
+        } else {
             alert(register_frm_err_notify);
         }
     });

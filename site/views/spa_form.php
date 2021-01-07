@@ -121,7 +121,7 @@
             <div class="form-row">
                 <div class="col-12 mb-3 required">
                     <label for="register_mobile_input"><?php _e('Mobile Number' , 'radshid_lan'); ?></label>
-                    <input type="text" class="form-control " id="register_mobile_input" name="txtMobile" maxlength="10"
+                    <input type="text" class="form-control " id="register_mobile_input" name="txtMobile" maxlength="11"
                     onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                     <i class="fa fa-check valid_input"></i>
                     <div class="invalid-feedback">
@@ -196,7 +196,7 @@
             <div class="form-row">
                 <div class="col-12 mb-3 required">
                     <label for="register_admin_phone_input"><?php _e('Admin Phone' , 'radshid_lan'); ?></label>
-                    <input type="text" class="form-control " id="register_admin_phone_input" name="txtAdminPhone" maxlength="10"
+                    <input type="text" class="form-control " id="register_admin_phone_input" name="txtAdminPhone" maxlength="11"
                     onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                     <i class="fa fa-check valid_input"></i>
                     <div class="invalid-feedback">
@@ -212,7 +212,7 @@
             <div class="form-row">
                 <div class="col-12 mb-3">
                     <label for="register_sim_phone_input"><?php _e('Sim Phone' , 'radshid_lan'); ?></label>
-                    <input type="text" class="form-control" id="register_sim_phone_input" name="txtSimPhone" maxlength="10"
+                    <input type="text" class="form-control" id="register_sim_phone_input" name="txtSimPhone" maxlength="11"
                     onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                     <i class="fa fa-check valid_input"></i>
                     <div class="invalid-feedback">

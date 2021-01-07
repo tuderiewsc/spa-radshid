@@ -1,11 +1,15 @@
 /* Version 1.0.10 */
 
+ul#avia-menu{
+display: none;
+}
+
 
 /*#Colors{*/
-    /*color:#a81010; !* old red *!*/
-    /*color:#B71C1C;*/
-    /*color:#D50000;*/
-    /*color:#1c272b;*/
+/*color:#a81010; !* old red *!*/
+/*color:#B71C1C;*/
+/*color:#D50000;*/
+/*color:#1c272b;*/
 /*}*/
 
 
@@ -445,7 +449,7 @@ form .valid_input{
 }
 
 /*.linkItem:hover img{*/
-    /*transform: scale(1.05);*/
+/*transform: scale(1.05);*/
 /*}*/
 .linkItem a p.linkItemText{
     text-align: center;
@@ -806,7 +810,7 @@ footer.socket_color{
     width: 100%;
 }
 .scroll_links .navbar-nav{
-   display: flex;
+    display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-content: center;
@@ -816,11 +820,6 @@ footer.socket_color{
 .scroll_links .navbar-nav .nav-item{
 
 }
-
-
-/*ul#avia-menu{*/
-    /*display: none;*/
-/*}*/
 /* Affilate Dash Page Section */
 
 
@@ -883,6 +882,10 @@ footer.socket_color{
         flex: auto;
         width: 100%;
         margin: 10px auto;
+    }
+
+    .card-deck .card a img{
+        height: 150px;
     }
 
     .separator {
