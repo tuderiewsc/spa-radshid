@@ -6,9 +6,10 @@ function radtools_creat_admin_menu(){
 		$radtools_page_hook = add_menu_page(
 			__('Radshid Tools', 'radshid_lan'),
 			__('Radshid Tools', 'radshid_lan'),
-			'manage_options',
+			'edit_posts',
 			'rad_tools',
-			function(){include(RAD_ADMIN_VIEW . 'settings.php');}
+			function(){include(RAD_ADMIN_VIEW . 'settings.php');},
+			'dashicons-location' // plugin_dir_url( __FILE__ ) . '/../../assets/images/icons_images/car.png',
 		);
 
 		add_submenu_page(
@@ -40,8 +41,8 @@ function RADtools_setting_header1_callback() {
 	echo '<div class="clearfix"></div><br>';
 }
 function RADtools_setting_posts_cat_callback(){
-	echo '<input class="ltr left-align" type="text" name="RADtools_random_posts_cat" id="RADtools_random_posts_cat" 
-	value="' . get_option('RADtools_random_posts_cat','[16,322]') . '" 
+	echo '<input class="ltr left-align" type="text" name="RADtools_random_posts_cat" id="RADtools_random_posts_cat"
+	value="' . get_option('RADtools_random_posts_cat','[16,322]') . '"
 	 style="max-width: 100%;min-width: 400px" required/>';
 }
 

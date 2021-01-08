@@ -1,6 +1,5 @@
 <?php
 //require(RAD_ADMIN . 'admin_proccess.php');
-
 ?>
 <div class="wrap">
 	<?php settings_errors();?>
