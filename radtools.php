@@ -3,7 +3,7 @@
  * Plugin Name: Radshid Customization
  * Plugin URI: https://radshid.com/
  * Description: Spa For Radshid Site.
- * Version: 1.1.0
+ * Version: 1.3
  * Author: Outsider
  * Author URI: https://radshid.com/
  * Text Domain: radshid_lan
@@ -32,7 +32,7 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_script('bootstrap', RAD_JS.'bootstrap.min.js');
 	wp_enqueue_script('owlcarousel', RAD_JS.'owl.carousel.min.js');
 	wp_enqueue_script('wow', RAD_JS.'wow.min.js');
-	wp_enqueue_script('myscripts', RAD_JS.'scripts.js' , '1.0.0');
+	wp_enqueue_script('myscripts', RAD_JS.'scripts.js' , '1.3');
 	wp_localize_script( 'myscripts', 'RadAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'security' => wp_create_nonce( '82ybuh2nuwbex887' )
@@ -43,7 +43,7 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_style( 'owl_carousel_theme', RAD_CSS . 'owl.theme.default.min.css');
 	wp_enqueue_style( 'bootstrap', RAD_CSS . 'bootstrap.min.css');
 	wp_enqueue_style( 'animate_css', RAD_CSS . 'animate.min.css');
-	wp_enqueue_style( 'mystyles', RAD_CSS . 'rad-styles.css' , '1.0.0');
+	wp_enqueue_style( 'mystyles', RAD_CSS . 'rad-styles.css' , '1.3');
 });
 // load css&js
 

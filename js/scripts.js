@@ -1,4 +1,4 @@
-/* Version 7 */
+/* Version 1.3 */
 
 jQuery(document).ready(function($){
 
@@ -129,9 +129,11 @@ jQuery(document).ready(function($){
         InputValidation(is_imei_valid , register_frm , 'register_gps_serial_input', 'valid');
         InputValidation(reg_code , register_frm , 'register_reg_code_input', 'empty');
         InputValidation(car_name , register_frm , 'register_car_name_input', 'empty');
-        InputValidation(driver_name , register_frm , 'register_driver_name_input', 'empty');
         InputValidation(is_admin_phone_valid , register_frm , 'register_admin_phone_input', 'valid');
         InputValidation(is_sim_phone_valid , register_frm , 'register_sim_phone_input', 'valid');
+
+        register_frm.find('input#register_driver_name_input').siblings('.valid_input').css('display', 'block');
+
 
         if (pass !== pass_confirm){
             register_frm.find('#match_pass').css('display', 'block');
@@ -172,13 +174,21 @@ jQuery(document).ready(function($){
                 success: function (res , xhr) {
                     let resObj = JSON.parse(res.slice(0 , -1));
                     let status = JSON.parse(resObj).status;
-                    //console.log('status: ' + status);
-                    if (status !== 400){
-                        console.log('Ok');
+                    let title = JSON.parse(resObj).title;
+                    console.log('title: ' + title);
+                    if (status !== 400 && title === 'DeviceIsInUse.'){
+                        console.log('اطلاعات شما قبلا در پایگاه داده ثبت شده است');
+                        document.getElementById("register_frm").reset();
+                    } else if(status === 400 && title === 'Bad Request'){
+                        console.log('خطا در ورودی ها! لطفا پارامترهای ورودی را مجدااً بررسی کنید.');
+                        register_frm.find('input#register_gps_serial_input').css('borderColor' , 'orangered').siblings('.valid_input').css('display', 'none');
+                        register_frm.find('input#register_reg_code_input').css('borderColor' , 'orangered').siblings('.valid_input').css('display', 'none');
+                    } else if (status !== 400 && title !== 'One or more validation errors occurred') {
+                        console.log('ثبت نام با موفقیت انجام شد');
+                        document.getElementById("register_frm").reset();
                     }else {
-                        console.log('Not Ok');
+                        console.log('خطا در ورودی ها! لطفا پارامترهای ورودی را مجدااً بررسی کنید.');
                     }
-
                 }, error:function (err) {
                     console.log(err);
                 },complete:function () {
