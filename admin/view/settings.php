@@ -1,6 +1,5 @@
-<?php
-//require(RAD_ADMIN . 'admin_proccess.php');
-?>
+<?php defined( 'ABSPATH' ) or die( 'No script kiddies please!' ); ?>
+
 <div class="wrap">
 	<?php settings_errors();?>
 	<form method="post" action="options.php">

@@ -1,4 +1,4 @@
-<?php defined('ABSPATH') || exit; ?>
+<?php defined( 'ABSPATH' ) or die( 'No script kiddies please!' ); ?>
 
 
 	<div class="row">

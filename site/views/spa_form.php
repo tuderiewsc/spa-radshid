@@ -1,4 +1,4 @@
-<?php defined('ABSPATH') || exit; ?>
+<?php defined( 'ABSPATH' ) or die( 'No script kiddies please!' ); ?>
 
 
 
@@ -7,17 +7,22 @@
     <h3 class="card-deck-title" data-hover="120" id=""><?php _e('Login to spa system' , 'radshid_lan'); ?></h3>
 
     <div id="spa_container">
-        <div class="spa_container_div">
-            <figure class="spa_logo">
-                <img src="<?php echo RAD_ASSETS. '/images/spa_form/Winter.png'  ?>" alt="سامانه ردسابی رادشید">
-            </figure>
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center spa_container_img">
+<!--            <figure class="spa_logo">-->
+<!--                <img src="--><?php //echo RAD_ASSETS. '/images/spa_form/Winter.png'  ?><!--" alt="سامانه ردسابی رادشید">-->
+<!--            </figure>-->
+            <h3 class="spa_container_title mb-4">سامانه همکاری در فروش</h3>
+            <p class="spa_container_text">
+                در سیستم کسب درآمد رادشید هر شخص می تواند با یک عضویت ساده و ایجاد یک پنل شخصی به ازای هر فروش محصول، پورسانت دریافت نماید. این روش که افیلیت مارکتینگ نام دارد، از مهم ترین شیوه های کسب درآمد اینترنتی است که همه می توانند به راحتی فقط از طریق شبکه های اجتماعی مانند کانال تلگرام ، اینستاگرام و یا سایت، روشی بدون دردسر برای کسب درآمد آنلاین خود ایجاد نمایند .
+                در این روش فروش، همکاران محترم رادشید به کمک لینک اختصاصی که برای محصولات در پنل شخصی خود ایجاد می نمایند مشتریان را به سایت رادشید هدایت و پس از هر خرید مشتری مقدار پورسانت مد نظر برای همکاران محاسبه می گردد که در پنل شخصی  قابل مشاهده میباشد .
+            </p>
         </div>
-        <div class="spa_container_div">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center spa_container_frm">
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#login_tab"><?php _e('Login' , 'radshid_lan'); ?></a></li>
-                <li><a data-toggle="tab" href="#register_tab"><?php _e('Register' , 'radshid_lan'); ?> </a></li>
+                <li class="nav-tab active"><a data-toggle="tab" href="#login_tab"><?php _e('Login' , 'radshid_lan'); ?></a></li>
+                <li class="nav-tab"><a data-toggle="tab" href="#register_tab"><?php _e('Register' , 'radshid_lan'); ?> </a></li>
             </ul>
-            <div class="tab-content container">
+            <div class="tab-content container-fluid">
                 <div id="login_tab" class="tab-pane fade in active">
                     <form id="login_frm">
                         <div class="form-row">
@@ -51,17 +56,17 @@
                             </div>
                         </div>
 
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
+<!--                        <div class="form-check">-->
+<!--                            <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+<!--                            <label class="form-check-label" for="exampleCheck1">Check me out</label>-->
+<!--                        </div>-->
                         <button type="button" class="btn btn-success btn-block" id="login_frm_submit_btn">
 					        <?php _e('Login' , 'radshid_lan'); ?>
-                            <!--                <i class="fa fa-circle-o-notch align-middle mx-1"></i>-->
                         </button>
                     </form>
                     <input type="hidden" value="<?php _e('Login' , 'radshid_lan'); ?>" id="login_frm_submit_btn_txt">
                 </div>
+
                 <div id="register_tab" class="tab-pane fade">
                     <form id="register_frm">
                         <div class="form-row">
@@ -218,7 +223,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-12 mb-3">
+                            <div class="col-12 mb-3 required">
                                 <label for="register_sim_phone_input"><?php _e('Sim Phone' , 'radshid_lan'); ?></label>
                                 <input type="text" class="form-control" id="register_sim_phone_input" name="txtSimPhone" maxlength="11"
                                        onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
@@ -234,6 +239,11 @@
                     </form>
                     <input type="hidden" value="<?php _e('Register' , 'radshid_lan'); ?>" id="register_frm_submit_btn_txt">
                     <input type="hidden" value="<?php _e('Please correct showed errors first' , 'radshid_lan'); ?>" id="register_frm_err_notify">
+                    <input type="hidden" value="<?php _e('Please correct Inputs parameters' , 'radshid_lan'); ?>" id="register_frm_inputs_err_notify">
+                    <input type="hidden" value="<?php _e('You Have Registered Before' , 'radshid_lan'); ?>" id="register_frm_already_registered">
+                    <input type="hidden" value="<?php _e('Registered Has Done Successfully' , 'radshid_lan'); ?>" id="register_frm_success">
+                    <input type="hidden" value="<?php _e('You LoggedIn Successfully' , 'radshid_lan'); ?>" id="login_frm_success">
+                    <input type="hidden" value="<?php _e('Username Or Password Are Incorrect' , 'radshid_lan'); ?>" id="login_frm_error">
                 </div>
             </div>
 

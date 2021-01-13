@@ -1,12 +1,12 @@
-/* Version 1.3 */
+/* Version 1.7 */
 
 jQuery(document).ready(function($){
 
-    jQuery.event.special.touchstart = {
-        setup: function( _, ns, handle ){
-            this.addEventListener("touchstart", handle, { passive: true });
-        }
-    };
+    // jQuery.event.special.touchstart = {
+    //     setup: function( _, ns, handle ){
+    //         this.addEventListener("touchstart", handle, { passive: true });
+    //     }
+    // };
 
     // inits
     $('a[href="#login_tab"]').click();
@@ -17,6 +17,11 @@ jQuery(document).ready(function($){
     const login_frm_submit_btn_txt = $('#login_frm_submit_btn_txt').val();
     const register_frm_submit_btn_txt = $('#register_frm_submit_btn_txt').val();
     const register_frm_err_notify = $('#register_frm_err_notify').val();
+    const register_frm_inputs_err_notify = $('#register_frm_inputs_err_notify').val();
+    const register_frm_already_registered = $('#register_frm_already_registered').val();
+    const register_frm_success = $('#register_frm_success').val();
+    const login_frm_success = $('#login_frm_success').val();
+    const login_frm_error = $('#login_frm_error').val();
     /* -------------------------------------------------------------------------------------------------- */
 
 
@@ -40,6 +45,8 @@ jQuery(document).ready(function($){
         loginPassInput.attr('type' , 'password');
         $(this).removeClass('fa-eye-slash').addClass('fa-eye');
     });
+
+
 
     let loginSubmitBtn = $('#login_frm_submit_btn');
     loginSubmitBtn.on('click' , function (e) {
@@ -69,13 +76,27 @@ jQuery(document).ready(function($){
                     let resObj = JSON.parse(res.slice(0 , -1));
                     let token = JSON.parse(resObj).token;
                     if (token !== undefined){
-                        window.location.href= 'http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false;
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'success',
+                            title: '',
+                            text: login_frm_success,
+                            showConfirmButton: 'بسیار خُب'
+                        });
+                        window.open('http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false, '_blank');
                     } else {
-                        alert('error');
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'error',
+                            title: 'خطا!',
+                            text: login_frm_error,
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
                     }
-                    console.log(token);
+                    //console.log(token);
                 }, error:function (err) {
-                    console.log(err);
+                    //console.log(err);
                 },complete:function () {
                     loginSubmitBtn.html(login_frm_submit_btn_txt);
                 }
@@ -113,10 +134,9 @@ jQuery(document).ready(function($){
         let is_mobile_valid = phoneReg.test( mobile );
         let is_imei_valid = gpsReg.test( imei );
         let is_admin_phone_valid = phoneReg.test( admin_phone );
+        let is_sim_phone_valid = phoneReg.test( sim_phone );
 
-        let is_sim_phone_valid =false;
         let is_email_valid =false;
-        sim_phone !== '' ? is_sim_phone_valid = phoneReg.test( sim_phone ) : is_sim_phone_valid = true;
         email !== '' ? is_email_valid = emailReg.test( email ) : is_email_valid = true;
 
         // Show invalid feedback
@@ -138,7 +158,7 @@ jQuery(document).ready(function($){
         if (pass !== pass_confirm){
             register_frm.find('#match_pass').css('display', 'block');
             register_frm.find('input#register_password_confirm_input').siblings('.valid_input').css('display', 'none');
-            register_frm.find('input#register_password_confirm_input').css('borderColor', 'orangered');
+            register_frm.find('input#register_password_confirm_input').css('borderColor', '#D50000');
         } else {
             register_frm.find('#match_pass').css('display', 'none');
             register_frm.find('input#register_password_confirm_input').siblings('.valid_input').css('display', 'block');
@@ -175,28 +195,60 @@ jQuery(document).ready(function($){
                     let resObj = JSON.parse(res.slice(0 , -1));
                     let status = JSON.parse(resObj).status;
                     let title = JSON.parse(resObj).title;
-                    console.log('title: ' + title);
+                    //console.log('title: ' + title);
                     if (status !== 400 && title === 'DeviceIsInUse.'){
-                        console.log('اطلاعات شما قبلا در پایگاه داده ثبت شده است');
-                        document.getElementById("register_frm").reset();
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'info',
+                            title: 'خطا!',
+                            text: register_frm_already_registered,
+                            showConfirmButton: 'بسیار خُب'
+                        });
                     } else if(status === 400 && title === 'Bad Request'){
-                        console.log('خطا در ورودی ها! لطفا پارامترهای ورودی را مجدااً بررسی کنید.');
-                        register_frm.find('input#register_gps_serial_input').css('borderColor' , 'orangered').siblings('.valid_input').css('display', 'none');
-                        register_frm.find('input#register_reg_code_input').css('borderColor' , 'orangered').siblings('.valid_input').css('display', 'none');
-                    } else if (status !== 400 && title !== 'One or more validation errors occurred') {
-                        console.log('ثبت نام با موفقیت انجام شد');
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'error',
+                            title: 'خطا!',
+                            text: register_frm_inputs_err_notify,
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        register_frm.find('input#register_gps_serial_input').css('borderColor' , '#D50000').siblings('.valid_input').css('display', 'none');
+                        register_frm.find('input#register_reg_code_input').css('borderColor' , '#D50000').siblings('.valid_input').css('display', 'none');
+                    } else if (status === 201 && title !== 'One or more validation errors occurred') {
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'success',
+                            title: '',
+                            text: register_frm_success,
+                            showConfirmButton: 'بسیار خُب'
+                        });
                         document.getElementById("register_frm").reset();
                     }else {
-                        console.log('خطا در ورودی ها! لطفا پارامترهای ورودی را مجدااً بررسی کنید.');
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'error',
+                            title: 'خطا!',
+                            text: register_frm_inputs_err_notify,
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
                     }
                 }, error:function (err) {
-                    console.log(err);
+                    //console.log(err);
                 },complete:function () {
                     registerSubmitBtn.html(register_frm_submit_btn_txt);
                 }
             });
         } else {
-            alert(register_frm_err_notify);
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'خطا!',
+                text: register_frm_err_notify,
+                showConfirmButton: false,
+                timer: 1500
+            });
         }
     });
     /* Register Form */
@@ -290,6 +342,13 @@ jQuery(document).ready(function($){
     });
     /* Password Recovery Form */
 
+    /* Spa Form */
+    $('.nav-tab').click(function () {
+        $('.nav-tab').removeClass('active');
+        $(this).addClass('active');
+    });
+    /* Spa Form */
+
 
 
     /* Owl Carousel */
@@ -355,6 +414,7 @@ jQuery(document).ready(function($){
     /* Strip Length */
 
 
+
 });
 
 
@@ -380,7 +440,7 @@ function InputValidation(value , form , input_id , type='empty'){
         if (value === ''){
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'block');
             form.find('input#' + input_id).siblings('.valid_input').css('display', 'none');
-            form.find('input#' + input_id).css('borderColor', 'orangered');
+            form.find('input#' + input_id).css('borderColor', '#D50000');
         } else {
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'none');
             form.find('input#' + input_id).siblings('.valid_input').css('display', 'block');
@@ -390,7 +450,7 @@ function InputValidation(value , form , input_id , type='empty'){
         if (!value){
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'block');
             form.find('input#' + input_id).siblings('.valid_input').css('display', 'none');
-            form.find('input#' + input_id).css('borderColor', 'orangered');
+            form.find('input#' + input_id).css('borderColor', '#D50000');
         } else {
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'none');
             form.find('input#' + input_id).siblings('.valid_input').css('display', 'block');

@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+
 add_action('admin_menu', 'radtools_creat_admin_menu');
 function radtools_creat_admin_menu(){
 		global $radtools_page_hook;

@@ -10,11 +10,13 @@
  * Domain Path: /languages
  */
 
-defined('ABSPATH') || exit;
+defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 add_action('plugins_loaded', function(){
 	load_plugin_textdomain('radshid_lan', false, basename(plugin_dir_path(__FILE__)) . '/languages/');
 });
+
+
 
 
 //define('RAD_INC', plugin_dir_path(__FILE__) . 'inc/');
@@ -30,10 +32,11 @@ add_action( 'wp_enqueue_scripts', function(){
 	// scripts
 	wp_enqueue_script('popper', RAD_JS.'popper.min.js' , array('jquery', 'media-upload'));
 	wp_enqueue_script('bootstrap', RAD_JS.'bootstrap.min.js');
-	wp_enqueue_script('owlcarousel', RAD_JS.'owl.carousel.min.js');
+	wp_enqueue_script('owlCarousel', RAD_JS.'owl.carousel.min.js');
 	wp_enqueue_script('wow', RAD_JS.'wow.min.js');
-	wp_enqueue_script('myscripts', RAD_JS.'scripts.js' , '1.3');
-	wp_localize_script( 'myscripts', 'RadAjax', array(
+	wp_enqueue_script('sweetAlert', RAD_JS.'sweetalert2.all.min.js');
+	wp_enqueue_script('myScripts', RAD_JS.'scripts.js' , '1.3');
+	wp_localize_script( 'myScripts', 'RadAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'security' => wp_create_nonce( '82ybuh2nuwbex887' )
 	));

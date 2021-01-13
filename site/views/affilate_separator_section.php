@@ -1,7 +1,7 @@
-<?php defined('ABSPATH') || exit; ?>
+<?php defined( 'ABSPATH' ) or die( 'No script kiddies please!' ); ?>
 
 
-	<div class="row">
+<div class="row">
         <div class="separator my-5">
             <div class="separator_sub" id="separator_sub_right">
                 <h3 class="separator_sub_title mb-4">سیستم همکاری در فروش</h3>

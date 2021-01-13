@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+
 function spaLogin_callback(){
 	check_ajax_referer( '82ybuh2nuwbex887', 'security' );
 

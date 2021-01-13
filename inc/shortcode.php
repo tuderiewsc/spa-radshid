@@ -1,4 +1,6 @@
-<?php defined('ABSPATH') || exit;
+<?php
+
+defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 
 add_action('init', function(){

@@ -2,17 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/sweetalert2.all.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/affilate.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icons_images/affilate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/fuel-station.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icons_images/fuel-station.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/separator_images/affilate_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/separator_images/affilate_image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/separator_images/sipaad_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/separator_images/sipaad_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin_proccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin_proccess.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/ajax_requests.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/ajax_requests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view/settings.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/rad-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/rad-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/shortcode.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/radtools.php" beforeDir="false" afterPath="$PROJECT_DIR$/radtools.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/affilate_dash_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/affilate_dash_page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/affilate_separator_section.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/affilate_separator_section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/agency_carousel.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/agency_carousel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/random_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/random_posts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/sipaad_separator_section.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/sipaad_separator_section.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/spa_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/spa_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/top_banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/top_banner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/top_links.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/top_links.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,39 +33,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/radtools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-              <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
-              <folding>
-                <element signature="e#6#254#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site/views/spa_form.php">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site/views/spa_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/views/affilate_separator_section.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="10" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="872" lean-forward="true" selection-start-line="872" selection-end-line="872" />
-              <folding>
-                <element signature="e#18533#18619#0" />
-                <element signature="e#18620#18781#0" />
-                <element signature="e#18782#20633#0" />
-                <element signature="e#20634#20941#0" />
-                <element signature="e#20942#21209#0" />
-                <element signature="e#21210#21731#0" />
-                <element signature="e#21732#22054#0" />
-              </folding>
+            <state relative-caret-position="497">
+              <caret line="224" column="22" selection-start-line="224" selection-start-column="22" selection-end-line="224" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -65,12 +69,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="916">
-              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+            <state relative-caret-position="576">
+              <caret line="94" column="27" lean-forward="true" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#1603#3502#0" />
-                <element signature="n#!!block;n#InputValidation#0" />
               </folding>
             </state>
           </provider>
@@ -81,28 +83,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>separator</find>
-      <find>psfw-inner-wrap</find>
-      <find>.card-deck .card a img</find>
-      <find>tomato</find>
-      <find>username</find>
-      <find>400</find>
-      <find>gif</find>
-      <find>top_banner_Title</find>
-      <find>...</find>
-      <find>zoomIn</find>
-      <find>Ztools_settings_options</find>
-      <find>RADtools_setting_add_planet_url_callback</find>
-      <find>zoomIn wow</find>
-      <find>fadeIn wow</find>
-      <find>link_items</find>
       <find>RADtools_settings_options</find>
       <find>linkItem</find>
       <find>linkItemText</find>
@@ -118,10 +105,23 @@
       <find>1.1.1</find>
       <find>valid_input</find>
       <find>b71c1c</find>
+      <find>single_add_to_cart_button</find>
+      <find>InputValidation</find>
+      <find>spa_container_div</find>
+      <find>&lt;?php defined('ABSPATH') || exit; ?&gt;</find>
+      <find>exit</find>
+      <find>مجدااً</find>
+      <find>nav-tabs</find>
+      <find>.psfw-total-lightbox-content .psfw-close-lightbox</find>
+      <find>nav-tab</find>
+      <find>tomato</find>
+      <find>orangered</find>
+      <find>Please correct showed errors first</find>
+      <find>register_frm_err_notify</find>
+      <find>Check</find>
+      <find>#spa_container form input</find>
     </findStrings>
     <replaceStrings>
-      <replace>e61d0f</replace>
-      <replace>#card-deck-title-text</replace>
       <replace>Gandom</replace>
       <replace>0.4s</replace>
       <replace>0.8s</replace>
@@ -150,6 +150,8 @@
       <replace>=&gt;</replace>
       <replace>spaLogin</replace>
       <replace>maxlength=&quot;11&quot;</replace>
+      <replace>&lt;?php defined( 'ABSPATH' ) or die( 'No script kiddies please!' ); ?&gt;</replace>
+      <replace>#D50000</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\wordpress\wp-content\plugins\ztools</dir>
@@ -183,17 +185,21 @@
         <option value="$PROJECT_DIR$/site/views/affilate_separator_section_one.php" />
         <option value="$PROJECT_DIR$/site/views/affilate_separator_section_two.php" />
         <option value="$PROJECT_DIR$/site/views/top_banner.php" />
-        <option value="$PROJECT_DIR$/site/views/agency_carousel.php" />
-        <option value="$PROJECT_DIR$/site/views/affilate_dash_page.php" />
-        <option value="$PROJECT_DIR$/admin/view/settings.php" />
         <option value="$PROJECT_DIR$/site/views/top_links.php" />
         <option value="$PROJECT_DIR$/site/views/random_posts.php" />
-        <option value="$PROJECT_DIR$/admin/admin_proccess.php" />
-        <option value="$PROJECT_DIR$/admin/view/about.php" />
-        <option value="$PROJECT_DIR$/inc/shortcode.php" />
-        <option value="$PROJECT_DIR$/admin/ajax_requests.php" />
-        <option value="$PROJECT_DIR$/site/views/affilate_separator_section.php" />
         <option value="$PROJECT_DIR$/site/views/sipaad_separator_section.php" />
+        <option value="$PROJECT_DIR$/js/sweetalert2.all.min.js" />
+        <option value="$PROJECT_DIR$/js/jquery.validate.min.js" />
+        <option value="$PROJECT_DIR$/js/additional-methods.min.js" />
+        <option value="$PROJECT_DIR$/site/views/affilate_dash_page.php" />
+        <option value="$PROJECT_DIR$/site/views/affilate_separator_section.php" />
+        <option value="$PROJECT_DIR$/site/views/agency_carousel.php" />
+        <option value="$PROJECT_DIR$/admin/view/about.php" />
+        <option value="$PROJECT_DIR$/admin/view/settings.php" />
+        <option value="$PROJECT_DIR$/admin/admin_proccess.php" />
+        <option value="$PROJECT_DIR$/admin/ajax_requests.php" />
+        <option value="$PROJECT_DIR$/inc/functions.php" />
+        <option value="$PROJECT_DIR$/inc/shortcode.php" />
         <option value="$PROJECT_DIR$/radtools.php" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/site/views/spa_form.php" />
@@ -201,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -223,30 +229,7 @@
             <path>
               <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
               <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="spa_form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="inc" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
@@ -371,7 +354,14 @@
       <workItem from="1609910024547" duration="21928000" />
       <workItem from="1609996187753" duration="11983000" />
       <workItem from="1610171876518" duration="47000" />
-      <workItem from="1610172643458" duration="15992000" />
+      <workItem from="1610172643458" duration="17138000" />
+      <workItem from="1610258309980" duration="7021000" />
+      <workItem from="1610343705324" duration="2219000" />
+      <workItem from="1610351633716" duration="3048000" />
+      <workItem from="1610429510816" duration="6779000" />
+      <workItem from="1610454502986" duration="446000" />
+      <workItem from="1610455652953" duration="1032000" />
+      <workItem from="1610523913794" duration="6902000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -398,7 +388,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363858000" />
+    <option name="totallyTimeSpent" value="392451000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -410,12 +400,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15511727" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1663113" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.30877572" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.30877572" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.28277355" />
@@ -504,13 +495,6 @@
     <entry file="file://$PROJECT_DIR$/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/wow.min.js" />
     <entry file="file://$PROJECT_DIR$/css/owl.carousel.min.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -532,120 +516,36 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/images/separator_images/affilate_image.jpg" />
-    <entry file="file://$PROJECT_DIR$/site/views/agency_carousel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/views/affilate_dash_page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/view/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/view/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/shortcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/functions.php">
+    <entry file="file://$PROJECT_DIR$/js/sweetalert2.all.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
-          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <caret line="1" column="24700" selection-start-line="1" selection-start-column="24700" selection-end-line="1" selection-end-column="24700" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/scripts.js">
+    <entry file="file://$PROJECT_DIR$/js/jquery.validate.min.js" />
+    <entry file="file://$PROJECT_DIR$/js/additional-methods.min.js" />
+    <entry file="file://$PROJECT_DIR$/site/views/affilate_dash_page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="916">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1603#3502#0" />
-            <element signature="n#!!block;n#InputValidation#0" />
-          </folding>
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin_proccess.php">
+    <entry file="file://$PROJECT_DIR$/site/views/agency_carousel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state>
+          <caret column="68" lean-forward="true" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/ajax_requests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-          <folding>
-            <element signature="n#spaLogin_callback#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/site/views/random_posts.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/site/views/sipaad_separator_section.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/views/affilate_separator_section.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="109" selection-start-line="14" selection-start-column="109" selection-end-line="14" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/radtools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-          <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
-          <folding>
-            <element signature="e#6#254#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/views/random_posts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="49" selection-start-line="47" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/views/top_links.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="16" column="118" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="118" />
         </state>
       </provider>
     </entry>
@@ -656,26 +556,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/views/spa_form.php">
+    <entry file="file://$PROJECT_DIR$/site/views/top_links.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="118" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/view/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/view/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin_proccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/ajax_requests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="n#spaLogin_callback#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/shortcode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/radtools.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/views/affilate_separator_section.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="94" column="27" lean-forward="true" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="872" lean-forward="true" selection-start-line="872" selection-end-line="872" />
-          <folding>
-            <element signature="e#18533#18619#0" />
-            <element signature="e#18620#18781#0" />
-            <element signature="e#18782#20633#0" />
-            <element signature="e#20634#20941#0" />
-            <element signature="e#20942#21209#0" />
-            <element signature="e#21210#21731#0" />
-            <element signature="e#21732#22054#0" />
-          </folding>
+        <state relative-caret-position="497">
+          <caret line="224" column="22" selection-start-line="224" selection-start-column="22" selection-end-line="224" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/views/spa_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
         </state>
       </provider>
     </entry>
