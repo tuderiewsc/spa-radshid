@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Radshid Customization\n"
-"POT-Creation-Date: 2020-11-09 09:54+0330\n"
-"PO-Revision-Date: 2020-11-09 09:56+0330\n"
+"POT-Creation-Date: 2021-01-16 15:26+0330\n"
+"PO-Revision-Date: 2021-01-16 15:59+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -21,9 +21,197 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: views/spa_form.php:7
+#: admin/admin_proccess.php:9 admin/admin_proccess.php:10
+msgid "Radshid Tools"
+msgstr "ابزارهای رادشید"
+
+#: admin/admin_proccess.php:19 admin/admin_proccess.php:20
+msgid "About"
+msgstr "درباره ما"
+
+#: admin/admin_proccess.php:30
+msgid "RADtools Settings"
+msgstr "تنظیمات پلاگین"
+
+#: admin/admin_proccess.php:32
+msgid "User Panel Settings"
+msgstr "تنظیمات پنل کاربری"
+
+#: admin/admin_proccess.php:34
+msgid "Random Posts Category"
+msgstr "دسته بندی پست های تصادفی"
+
+#: site/views/affilate_separator_section.php:7
+msgid "Affilate Marketing System"
+msgstr "سیستم همکاری در فروش"
+
+#: site/views/agency_carousel.php:9
+msgid "Our Customers"
+msgstr "مشتریان ما"
+
+#: site/views/agency_carousel.php:11
+msgid "More"
+msgstr "بیشتر"
+
+#: site/views/random_posts.php:49
+msgid "Articles"
+msgstr "مقالات"
+
+#: site/views/sipaad_separator_section.php:12
+msgid "Sipaad Tracker"
+msgstr "ردیاب سیپاد"
+
+#: site/views/spa_form.php:10 site/views/spa_form.php:53
+#: site/views/spa_form.php:56
 msgid "Login"
 msgstr "ورود"
+
+#: site/views/spa_form.php:11 site/views/spa_form.php:227
+#: site/views/spa_form.php:235
+msgid "Register"
+msgstr "ثبت نام"
+
+#: site/views/spa_form.php:24 site/views/spa_form.php:84
+msgid "Username"
+msgstr "نام کاربری"
+
+#: site/views/spa_form.php:26 site/views/spa_form.php:88
+msgid "Please enter your username"
+msgstr "لطفا نام کاربری خود را وارد کنید."
+
+#: site/views/spa_form.php:42
+msgid "Please enter your password"
+msgstr "لطفا رمز عبور خود را وارد کنید."
+
+#: site/views/spa_form.php:64
+msgid "Name"
+msgstr "نام"
+
+#: site/views/spa_form.php:68
+msgid "Please enter your name"
+msgstr "لطفا نام خود را وارد کنید."
+
+#: site/views/spa_form.php:74
+msgid "Family"
+msgstr "نام خانوادگی"
+
+#: site/views/spa_form.php:78
+msgid "Please enter your family"
+msgstr "لطفا نام خانوادگی خود را وارد کنید."
+
+#: site/views/spa_form.php:99
+msgid "Password"
+msgstr "رمز عبور"
+
+#: site/views/spa_form.php:103
+msgid "Please enter a valid password"
+msgstr "لطفا یک رمز عبور معتبر وارد کنید!"
+
+#: site/views/spa_form.php:113
+msgid "Password Confirm"
+msgstr "تایید رمز عبور"
+
+#: site/views/spa_form.php:117
+msgid "Please enter your password again"
+msgstr "لطفا رمز عبور را مجددا وارد کنید."
+
+#: site/views/spa_form.php:120
+msgid "Password and its confirm does not match"
+msgstr "رمز عبور با تکرار آن مطابقت ندارد!"
+
+#: site/views/spa_form.php:126
+msgid "Mobile Number"
+msgstr "شماره همراه"
+
+#: site/views/spa_form.php:131
+msgid "Please enter your a valid mobile number"
+msgstr "لطفا یک شماره همراه معتبر وارد کنید!"
+
+#: site/views/spa_form.php:137
+msgid "Email"
+msgstr "ایمیل"
+
+#: site/views/spa_form.php:141
+msgid "Please enter a valid email address"
+msgstr "لطفا یک ایمیل معتبر وارد کنید!"
+
+#: site/views/spa_form.php:151
+msgid "Gps Serial"
+msgstr "سریال  جی پی اس"
+
+#: site/views/spa_form.php:156
+msgid "Please enter a valid gps serial"
+msgstr "لطفا یک سریال جی پی اس معتبر وارد کنید!"
+
+#: site/views/spa_form.php:166
+msgid "Register Code"
+msgstr "شناسه ثبت نام"
+
+#: site/views/spa_form.php:171
+msgid "Please enter a valid register code"
+msgstr "لطفا یک شناسه ثبت نام معتبر وارد کنید!"
+
+#: site/views/spa_form.php:181
+msgid "Car Name"
+msgstr "نام خودرو"
+
+#: site/views/spa_form.php:185
+msgid "Please enter your car name"
+msgstr "لطفا نام خودروی خود را وارد کنید!"
+
+#: site/views/spa_form.php:191
+msgid "Driver Name"
+msgstr "نام راننده"
+
+#: site/views/spa_form.php:195
+msgid "Please enter your driver name"
+msgstr "لطفا نام راننده را وارد کنید!"
+
+#: site/views/spa_form.php:201
+msgid "Admin Phone"
+msgstr "شماره سرپرست"
+
+#: site/views/spa_form.php:206
+msgid "Please enter a valid admin phone"
+msgstr "لطفا یک شماره سرپرست معتبر وارد کنید!"
+
+#: site/views/spa_form.php:217
+msgid "Sim Phone"
+msgstr "شماره سیم کارت"
+
+#: site/views/spa_form.php:222
+msgid "Please enter a valid sim phone"
+msgstr "لطفا یک شماره سیم کارت معتبر وارد کنید!"
+
+#: site/views/spa_form.php:231 site/views/spa_form.php:236
+msgid "Please correct showed errors first"
+msgstr "لطفا ابتدا خطاهای موجود را تصحیح کنید!"
+
+#: site/views/spa_form.php:237
+msgid "Please correct Inputs parameters"
+msgstr ""
+"لطفا پارامترهای ورودی (سریال جی پی اس یا شناسه ثبت نام) را مجددا کنترل "
+"کنید!"
+
+#: site/views/spa_form.php:238
+msgid "You Have Registered Before"
+msgstr "شما قبلا در سامانه ثبت نام کرده اید!"
+
+#: site/views/spa_form.php:239
+msgid "Registered Has Done Successfully"
+msgstr "ثبت نام با موفقیت انجام شد."
+
+#: site/views/spa_form.php:240
+msgid "You LoggedIn Successfully"
+msgstr "شما با موفقیت وارد شدید."
+
+#: site/views/spa_form.php:241
+msgid "Username Or Password Are Incorrect"
+msgstr "نام کاربری یا رمز عبور اشتباه وارد شده است!"
+
+#: site/views/spa_form.php:242
+msgid "Error In Authentication"
+msgstr "خطا در اعتبارسنجی!"
 
 #. Plugin Name of the plugin/theme
 msgid "Radshid Customization"

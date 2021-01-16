@@ -3,7 +3,7 @@
  * Plugin Name: Radshid Customization
  * Plugin URI: https://radshid.com/
  * Description: Spa For Radshid Site.
- * Version: 1.3
+ * Version: 1.4
  * Author: Outsider
  * Author URI: https://radshid.com/
  * Text Domain: radshid_lan
@@ -51,17 +51,6 @@ add_action( 'wp_enqueue_scripts', function(){
 // load css&js
 
 
-
-//register_activation_hook(__FILE__, 'hmds_activation_func');
-//function hmds_activation_func(){
-//}
-//
-//register_uninstall_hook(__FILE__, 'hmds_uninstall_func');
-//function hmds_uninstall_func(){
-//}
-
-
-
 if(is_admin()){
 	require(RAD_ADMIN . 'admin_proccess.php');
 	require(RAD_ADMIN . 'ajax_requests.php');
@@ -70,5 +59,11 @@ if(is_admin()){
 require (RAD_INCS . 'shortcode.php');
 
 
+
+register_activation_hook(__FILE__, function () {
+	register_uninstall_hook(__FILE__, function (){
+		delete_option('RADtools_settings_options');
+	});
+});
 
 

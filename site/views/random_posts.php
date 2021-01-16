@@ -4,7 +4,7 @@
 <div class="container-fluid">
 	<?php
 	$args1 = array(
-		'numberposts' => 25,
+		'numberposts' => 10,
 		'offset' => 0,
 		'category' => get_option('RADtools_random_posts_cat' , ''), // put 0 for all cats
 		'orderby' => 'post_date',
@@ -46,7 +46,7 @@
 
 
 		<div class="card-deck">
-            <h3 class="card-deck-title" data-hover="65" id="articles">مقالات</h3>
+            <h3 class="card-deck-title" data-hover="65" id="articles"><?php echo __('Articles' , 'radshid_lan')?></h3>
             <div class="card" >
 				<a href="<?php echo get_the_permalink( $ids1[$random_ids1[0]], false ); ?>" target="_blank">
 					<figure class="card-img-top">

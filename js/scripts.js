@@ -1,12 +1,5 @@
-/* Version 1.7 */
-
+/* Version 1.8 */
 jQuery(document).ready(function($){
-
-    // jQuery.event.special.touchstart = {
-    //     setup: function( _, ns, handle ){
-    //         this.addEventListener("touchstart", handle, { passive: true });
-    //     }
-    // };
 
     // inits
     $('a[href="#login_tab"]').click();
@@ -22,6 +15,7 @@ jQuery(document).ready(function($){
     const register_frm_success = $('#register_frm_success').val();
     const login_frm_success = $('#login_frm_success').val();
     const login_frm_error = $('#login_frm_error').val();
+    const frm_error_authentication = $('#frm_error_authentication').val();
     /* -------------------------------------------------------------------------------------------------- */
 
 
@@ -47,8 +41,7 @@ jQuery(document).ready(function($){
     });
 
 
-
-    let loginSubmitBtn = $('#login_frm_submit_btn');
+    const loginSubmitBtn = $('#login_frm_submit_btn');
     loginSubmitBtn.on('click' , function (e) {
         e.preventDefault();
         let login_frm = $('#login_frm');
@@ -61,9 +54,11 @@ jQuery(document).ready(function($){
         if (username !== '' && password !== '' ) {
             loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
 
+            let nonce = $('#rad_login_nonce').val();
             let data = {
                 action: 'spaLogin',
                 security : RadAjax.security,
+                nonce: nonce,
                 "username": username,
                 "password": password,
                 "act": 'login'
@@ -73,6 +68,24 @@ jQuery(document).ready(function($){
                 type: 'POST',
                 data: data,
                 success: function (res) {
+                    if (res.res === 'Authenticate Error') {
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'bottom',
+                            showConfirmButton: false,
+                            timer: 4000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.addEventListener('mouseenter', Swal.stopTimer)
+                                toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                        });
+                        Toast.fire({
+                            icon: 'error',
+                            title: frm_error_authentication
+                        });
+                        return;
+                    }
                     let resObj = JSON.parse(res.slice(0 , -1));
                     let token = JSON.parse(resObj).token;
                     if (token !== undefined){
@@ -85,21 +98,45 @@ jQuery(document).ready(function($){
                         });
                         window.open('http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false, '_blank');
                     } else {
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'error',
-                            title: 'خطا!',
-                            text: login_frm_error,
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'bottom',
                             showConfirmButton: false,
-                            timer: 1500
+                            timer: 4000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.addEventListener('mouseenter', Swal.stopTimer)
+                                toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                        });
+                        Toast.fire({
+                            icon: 'error',
+                            title: login_frm_error
                         });
                     }
-                    //console.log(token);
-                }, error:function (err) {
-                    //console.log(err);
+                },
+                error:function (jqXHR, textStatus, errorThrown) {
+                    if(textStatus==="timeout") {
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'bottom',
+                            showConfirmButton: false,
+                            timer: 4000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.addEventListener('mouseenter', Swal.stopTimer)
+                                toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                        });
+                        Toast.fire({
+                            icon: 'error',
+                            title: 'خطا در اتصال به سرور!'
+                        });
+                    }
                 },complete:function () {
                     loginSubmitBtn.html(login_frm_submit_btn_txt);
-                }
+                },
+                timeout:10000
             });
         }
     });
@@ -168,11 +205,13 @@ jQuery(document).ready(function($){
         if (name !=='' && family !=='' && username !=='' && is_pass_valid && pass===pass_confirm && is_mobile_valid && is_email_valid && is_imei_valid
             && reg_code !=='' && car_name !=='' && is_admin_phone_valid && is_sim_phone_valid) {
             registerSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
+            $('#regAlert').css('visibility','hidden').removeClass('wow');
 
-
+            let nonce = $('#rad_register_nonce').val();
             let data = {
                 action: 'spaRegister',
                 security : RadAjax.security,
+                nonce: nonce,
                 "Imei": imei,
                 "RegisterCode": reg_code,
                 "Title": car_name,
@@ -192,29 +231,62 @@ jQuery(document).ready(function($){
                 type: 'POST',
                 data: data,
                 success: function (res , xhr) {
+                    if (res.res === 'Authenticate Error') {
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'bottom',
+                            showConfirmButton: false,
+                            timer: 4000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.addEventListener('mouseenter', Swal.stopTimer)
+                                toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                        });
+                        Toast.fire({
+                            icon: 'error',
+                            title: frm_error_authentication
+                        });
+                        return;
+                    }
                     let resObj = JSON.parse(res.slice(0 , -1));
                     let status = JSON.parse(resObj).status;
                     let title = JSON.parse(resObj).title;
                     //console.log('title: ' + title);
                     if (status !== 400 && title === 'DeviceIsInUse.'){
-                        Swal.fire({
-                            position: 'center',
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'bottom',
+                            showConfirmButton: false,
+                            timer: 4000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.addEventListener('mouseenter', Swal.stopTimer)
+                                toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                        });
+                        Toast.fire({
                             icon: 'info',
-                            title: 'خطا!',
-                            text: register_frm_already_registered,
-                            showConfirmButton: 'بسیار خُب'
+                            title: register_frm_already_registered
                         });
                     } else if(status === 400 && title === 'Bad Request'){
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'error',
-                            title: 'خطا!',
-                            text: register_frm_inputs_err_notify,
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'bottom',
                             showConfirmButton: false,
-                            timer: 1500
+                            timer: 4000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.addEventListener('mouseenter', Swal.stopTimer)
+                                toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
                         });
-                        register_frm.find('input#register_gps_serial_input').css('borderColor' , '#D50000').siblings('.valid_input').css('display', 'none');
-                        register_frm.find('input#register_reg_code_input').css('borderColor' , '#D50000').siblings('.valid_input').css('display', 'none');
+                        Toast.fire({
+                            icon: 'error',
+                            title: register_frm_inputs_err_notify
+                        });
+                        register_frm.find('input#register_gps_serial_input').siblings('.valid_input').css('display', 'none').siblings('.invalid-feedback').css('display', 'block');
+                        register_frm.find('input#register_reg_code_input').siblings('.valid_input').css('display', 'none').siblings('.invalid-feedback').css('display', 'block');
                     } else if (status === 201 && title !== 'One or more validation errors occurred') {
                         Swal.fire({
                             position: 'center',
@@ -225,34 +297,51 @@ jQuery(document).ready(function($){
                         });
                         document.getElementById("register_frm").reset();
                     }else {
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'error',
-                            title: 'خطا!',
-                            text: register_frm_inputs_err_notify,
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'bottom',
                             showConfirmButton: false,
-                            timer: 1500
+                            timer: 4000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.addEventListener('mouseenter', Swal.stopTimer)
+                                toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                        });
+                        Toast.fire({
+                            icon: 'error',
+                            title: register_frm_inputs_err_notify
                         });
                     }
-                }, error:function (err) {
-                    //console.log(err);
-                },complete:function () {
-                    registerSubmitBtn.html(register_frm_submit_btn_txt);
+                },error:function (jqXHR, textStatus, errorThrown) {
+                    if(textStatus==="timeout") {
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'bottom',
+                            showConfirmButton: false,
+                            timer: 4000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                                toast.addEventListener('mouseenter', Swal.stopTimer)
+                                toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                        });
+                        Toast.fire({
+                            icon: 'error',
+                            title: 'خطا در اتصال به سرور!'
+                        });
+                    }
                 }
+                ,complete:function () {
+                    registerSubmitBtn.html(register_frm_submit_btn_txt);
+                },
+                timeout:10000
             });
         } else {
-            Swal.fire({
-                position: 'center',
-                icon: 'error',
-                title: 'خطا!',
-                text: register_frm_err_notify,
-                showConfirmButton: false,
-                timer: 1500
-            });
+            $('#regAlert').css('visibility','visible').addClass('wow');
         }
     });
     /* Register Form */
-
 
 
     /* Password Recovery Form */
@@ -408,9 +497,11 @@ jQuery(document).ready(function($){
     let elm1 = $('.card-deck').find('.card-deck-title#products');
     let elm2 = $('.card-deck').find('.card-deck-title#customers');
     let elm3 = $('.card-deck').find('.card-deck-title#articles');
+    let elm4 = $('.card-deck').find('.card-deck-title#spa');
     stripLength(elm1);
     stripLength(elm2);
     stripLength(elm3);
+    stripLength(elm4);
     /* Strip Length */
 
 
@@ -421,11 +512,14 @@ jQuery(document).ready(function($){
 function stripLength(elm) {
     let len = elm.data('hover');
     switch(len) {
-        case 95:
-            elm.addClass('middle');
+        case 275:
+            elm.addClass('xlarge');
             break;
         case 110:
             elm.addClass('large');
+            break;
+        case 95:
+            elm.addClass('middle');
             break;
         case 65:
             elm.addClass('small');
