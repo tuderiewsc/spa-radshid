@@ -1,14 +1,14 @@
-/* Version 1.8 */
+/* Version 1.10 */
 
 
-/*ul#avia-menu{*/
-/*display: none;*/
-/*}*/
-/*.fullsize .container{*/
-    /*max-width: 100% !important;*/
-   /*width: 100% !important;*/
-    /*padding: 0 !important;*/
-/*}*/
+ul#avia-menu{
+display: none;
+}
+.fullsize .container{
+    max-width: 100% !important;
+   width: 100% !important;
+    padding: 0 !important;
+}
 
 
 html{
@@ -151,11 +151,11 @@ a:hover, a:focus, a:visited {
 }
 #login_frm_submit_btn{
     height: 36px;
-    background-color: #00796B;
+    background-color: #cb2027;
     color: #eee;
 }
 #login_frm_submit_btn:hover{
-    background-color: #00897B;
+    background-color: #D50000;
 }
 .spa_container_title {
     text-align: right;
@@ -180,6 +180,14 @@ form .valid_input{
     top: 30px;
     font-size: 1.5em;
     color: #00796B;
+    display: none;
+}
+form .invalid_input{
+    position: absolute;
+    left: 15px;
+    top: 32px;
+    font-size: 1.125em;
+    color: tomato;
     display: none;
 }
 
@@ -211,16 +219,20 @@ form .text-muted {
     display: none;
 }
 
-
 .spa_container_frm{
-    border-radius: 0;
+    border-radius: 0 !important;
     margin: 24px auto;
+    border: 2px groove #37474F !important;
 }
 .spa_container_frm .nav-tabs{
     padding: 0;
     margin: 0;
     border-radius: 0;
     border: none;
+    border-bottom: 2px groove #37474F;
+}
+.spa_container_frm .nav-tabs li:first-child{
+    border-left: 2px groove #37474F;
 }
 .spa_container_frm .nav-tabs li{
     position: relative;
@@ -229,7 +241,7 @@ form .text-muted {
     width: 50%;
     height: 40px;
     border-radius: 0;
-    padding: 24px 0;
+    padding: 15px 0;
     transition: 0.3s ease-in-out;
 }
 .spa_container_frm .nav-tabs li.active:after{
@@ -238,8 +250,8 @@ form .text-muted {
     left: 50%;
     bottom: 0;
     width: 40%;
-    border: 2px solid #B71C1C;
-    background-color: #B71C1C;
+    /*border: 2px solid #cb2027;*/
+    background-color: #cb2027;
 }
 
 .spa_container_frm .nav-tabs li.active:before{
@@ -248,13 +260,13 @@ form .text-muted {
     right: 50%;
     bottom: 0;
     width: 40%;
-    border: 2px solid #B71C1C;
-    background-color: #B71C1C;
+    /*border: 2px solid #cb2027;*/
+    background-color: #cb2027;
 }
 
 
 .spa_container_frm .nav-tabs li.active{
-    background: #1c272b;
+    background-color: #cb2027;
 }
 .spa_container_frm .nav-tabs li.active a{
     color: #eeeeee;
@@ -268,6 +280,7 @@ form .text-muted {
     height: 40px;
     line-height: 40px;
     font-weight: bold;
+    font-size: 1.125em;
 }
 
 .spa_container_frm form{
@@ -296,8 +309,8 @@ span.input-group-text {
     border-radius: 0;
 }
 button#register_frm_submit_btn {
-    background-color: #B71C1C;
-    border-color: #B71C1C;
+    background-color: #cb2027;
+    border-color: #cb2027;
     color: #eee;
 }
 button#register_frm_submit_btn:hover {
@@ -448,7 +461,7 @@ button#register_frm_submit_btn:hover {
 
 .card-deck .more_link:hover{
     text-decoration: none;
-    color: #B71C1C !important;
+    color: #cb2027 !important;
 }
 .card-deck .more_link i{
     position: absolute;
@@ -468,7 +481,7 @@ button#register_frm_submit_btn:hover {
 .card-deck .more_link:hover i{
     visibility: visible;
     left: 0;
-    color: #B71C1C;
+    color: #cb2027;
     z-index: 0;
 }
 
@@ -477,7 +490,7 @@ button#register_frm_submit_btn:hover {
     position: absolute;
     bottom: -1px;
     right: 0;
-    border-bottom: 1px solid #B71C1C;
+    border-bottom: 1px solid #cb2027;
     border-radius: 20px;
     transition: 0.3s ease;
     -webkit-transition: 0.3s ease;
@@ -687,7 +700,7 @@ footer.socket_color{
     top: calc(50% - 20px);
     border: 5px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 5px solid #B71C1C;
+    border-top: 5px solid #cb2027;
     width: 40px;
     height: 40px;
     animation: spin 0.5s linear infinite;
@@ -781,7 +794,7 @@ footer.socket_color{
     color: #757575 !important;
 }
 .psfw-share-wrap a:hover{
-    color: #B71C1C !important;
+    color: #cb2027 !important;
 }
 .psfw-top-hover-wrap{
     background-color: #1c272b !important;
@@ -886,7 +899,7 @@ footer.socket_color{
 }
 
 .separator_link{
-    background: #B71C1C;
+    background: #cb2027;
     color: #eee !important;
     border-radius: 0 !important;
     padding: 8px 25px;
@@ -900,6 +913,15 @@ footer.socket_color{
 .separator_link:hover{
     background: #e61d0f;
     border: none;
+}
+
+#spa_separator_content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#spa_separator_content p{
+    width: 100%;
 }
 /* Affilate Separator Section */
 
@@ -935,7 +957,7 @@ footer.socket_color{
     border-radius: 0;
 }
 ::-webkit-scrollbar-thumb {
-    background: #B71C1C;
+    background: #cb2027;
     border-radius: 0;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -955,9 +977,6 @@ footer.socket_color{
 #register_frm::-webkit-scrollbar-thumb:hover {
     background: #455A64;
 }
-
-
-
 /* ScrollBars */
 
 
@@ -975,6 +994,10 @@ footer.socket_color{
     }
     .linkItem {
         padding: 24px;
+    }
+
+    #spa_separator_content p{
+        width: 150%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -1073,6 +1096,10 @@ footer.socket_color{
     .card-deck .card-deck-title{
         font-size: 1.25em;
     }
+
+    #spa_separator_content p{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 600px) {
     .top_banner{
@@ -1105,6 +1132,13 @@ footer.socket_color{
     .card-deck {
         padding: 0;
     }
+    #spa_separator_content img{
+        display: none;
+    }
+    .spa_container_frm .nav-tabs li{
+        padding: 10px 0;
+    }
+
 }
 @media screen and (max-width: 400px) {
     .top_banner{

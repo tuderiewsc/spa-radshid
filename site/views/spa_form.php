@@ -5,10 +5,10 @@ sc
 <div class="row">
     <div class="separator reverseOnMob my-5">
         <div class="separator_sub">
-            <div class="spa_container_frm">
+            <div class="spa_container_frm bounceIn wow" data-wow-duration="0.5s" data-wow-delay="0.5s">
                 <ul class="nav nav-tabs">
-                    <li class="nav-tab active"><a data-toggle="tab" href="#login_tab"><?php _e('Login' , 'radshid_lan'); ?></a></li>
-                    <li class="nav-tab"><a data-toggle="tab" href="#register_tab"><?php _e('Register' , 'radshid_lan'); ?> </a></li>
+                    <li class="nav-tab active"><a data-toggle="tab" href="#login_tab" onclick="(function(e){e.preventDefault();})(event)"><?php _e('Login' , 'radshid_lan'); ?></a></li>
+                    <li class="nav-tab"><a data-toggle="tab" href="#register_tab" onclick="(function(e){e.preventDefault();})(event)"><?php _e('Register' , 'radshid_lan'); ?> </a></li>
                 </ul>
                 <div class="tab-content container-fluid">
                     <div id="login_tab" class="tab-pane fade in active">
@@ -64,6 +64,7 @@ sc
                                     <label for="register_name_input"><?php _e('Name' , 'radshid_lan'); ?></label>
                                     <input type="text" class="form-control " id="register_name_input" name="txtName">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter your name' , 'radshid_lan'); ?></span>
                                     </div>
@@ -74,6 +75,7 @@ sc
                                     <label for="register_family_input"><?php _e('Family' , 'radshid_lan'); ?></label>
                                     <input type="text" class="form-control " id="register_family_input" name="txtLastName">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter your family' , 'radshid_lan'); ?></span>
                                     </div>
@@ -84,6 +86,7 @@ sc
                                     <label for="register_username_input"><?php _e('Username' , 'radshid_lan'); ?></label>
                                     <input type="text" class="form-control " id="register_username_input" name="txtRUsername">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter your username' , 'radshid_lan'); ?></span>
                                     </div>
@@ -99,12 +102,13 @@ sc
                                     <label for="register_password_input"><?php _e('Password' , 'radshid_lan'); ?></label>
                                     <input type="password" class="form-control " id="register_password_input" name="txtRPass1">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter a valid password' , 'radshid_lan'); ?></span>
                                     </div>
                                     <small id="passwordHelp" class="form-text text-muted">
                                         جهت امنیت بیشتر لطفا از کلمات عبور ساده استفاده ننمایید،
-                                        کلمه عبور باید حداقل شامل اعداد و حروف باشد و نمی تواند شامل کاراکترهای فارسی باشد
+                                        کلمه عبور باید حداقل 4 حرف و  شامل اعداد و حروف باشد و نمی تواند شامل کاراکترهای فارسی باشد
                                     </small>
                                 </div>
                             </div>
@@ -113,6 +117,7 @@ sc
                                     <label for="register_password_confirm_input"><?php _e('Password Confirm' , 'radshid_lan'); ?></label>
                                     <input type="password" class="form-control " id="register_password_confirm_input" name="txtRPass2">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter your password again' , 'radshid_lan'); ?></span>
                                     </div>
@@ -127,6 +132,7 @@ sc
                                     <input type="text" class="form-control " id="register_mobile_input" name="txtMobile" maxlength="11"
                                            onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter your a valid mobile number' , 'radshid_lan'); ?></span>
                                     </div>
@@ -137,6 +143,7 @@ sc
                                     <label for="register_email_input"><?php _e('Email' , 'radshid_lan'); ?></label>
                                     <input type="email" class="form-control " id="register_email_input" name="txtEmail" >
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter a valid email address' , 'radshid_lan'); ?></span>
                                     </div>
@@ -152,6 +159,7 @@ sc
                                     <input type="text" class="form-control " id="register_gps_serial_input" name="txtGpsSerial" maxlength="15"
                                            onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter a valid gps serial' , 'radshid_lan'); ?></span>
                                     </div>
@@ -167,6 +175,7 @@ sc
                                     <input type="text" class="form-control " id="register_reg_code_input" name="txtRegisterCode"
                                            onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter a valid register code' , 'radshid_lan'); ?></span>
                                     </div>
@@ -181,6 +190,7 @@ sc
                                     <label for="register_car_name_input"><?php _e('Car Name' , 'radshid_lan'); ?></label>
                                     <input type="text" class="form-control " id="register_car_name_input" name="txtCarName">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter your car name' , 'radshid_lan'); ?></span>
                                     </div>
@@ -191,6 +201,7 @@ sc
                                     <label for="register_driver_name_input"><?php _e('Driver Name' , 'radshid_lan'); ?></label>
                                     <input type="text" class="form-control " id="register_driver_name_input" name="txtDriverName">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter your driver name' , 'radshid_lan'); ?></span>
                                     </div>
@@ -202,6 +213,7 @@ sc
                                     <input type="text" class="form-control " id="register_admin_phone_input" name="txtAdminPhone" maxlength="11"
                                            onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter a valid admin phone' , 'radshid_lan'); ?></span>
                                     </div>
@@ -218,6 +230,7 @@ sc
                                     <input type="text" class="form-control" id="register_sim_phone_input" name="txtSimPhone" maxlength="11"
                                            onkeyup="this.value = this.value.replace(/[^\d]+/g, '');">
                                     <i class="fa fa-check valid_input"></i>
+                                    <i class="fa fa-warning invalid_input"></i>
                                     <div class="invalid-feedback">
                                         <span><?php _e('Please enter a valid sim phone' , 'radshid_lan'); ?></span>
                                     </div>
@@ -242,16 +255,21 @@ sc
                         <input type="hidden" value="<?php _e('Error In Authentication' , 'radshid_lan'); ?>" id="frm_error_authentication">
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="separator_sub" id="separator_sub_left">
             <div>
-                <h3 class="separator_sub_title mb-4">سیستم همکاری در فروش</h3>
-                <p class="separator_sub_text">
-                    در سیستم کسب درآمد رادشید هر شخص می تواند با یک عضویت ساده و ایجاد یک پنل شخصی به ازای هر فروش محصول، پورسانت دریافت نماید. این روش که افیلیت مارکتینگ نام دارد، از مهم ترین شیوه های کسب درآمد اینترنتی است که همه می توانند به راحتی فقط از طریق شبکه های اجتماعی مانند کانال تلگرام ، اینستاگرام و یا سایت، روشی بدون دردسر برای کسب درآمد آنلاین خود ایجاد نمایند .
-                    در این روش فروش، همکاران محترم رادشید به کمک لینک اختصاصی که برای محصولات در پنل شخصی خود ایجاد می نمایند مشتریان را به سایت رادشید هدایت و پس از هر خرید مشتری مقدار پورسانت مد نظر برای همکاران محاسبه می گردد که در پنل شخصی  قابل مشاهده میباشد .
-                </p>
+                <h3 class="separator_sub_title mb-4"><?php echo __('SPA System' , 'radshid_lan')?></h3>
+                <div id="spa_separator_content">
+                    <p class="separator_sub_text">
+                        سامانه مدیریت ناوگان رادشید یک سیستم یکپارچه مبتنی بر وب ، مطابق با ساختارهای بین المللی امنیت و اینترنت اشیا ، با برقراری ارتباط بین دستگاه های ردیاب  و مدیران ، به ارائه گزارشات مختلف و همچنین اعمال برخی دستورات مورد نیاز می پردازد.
+                        این سامانه با توجه به نیاز مشتری و همچنین بر اساس پروتکل های بین المللی برنامه ریزی شده است و ابزارها و گزارشات مورد نیاز کاربر را به سریعترین روش ارائه می دهد.
+                    </p>
+                    <figure>
+                        <img src="<?php echo RAD_ASSETS. '/images/spa_form/Login-Winter.png'  ?>" alt="سامانه مدیریت ناوگان">
+                    </figure>
+                </div>
+<!--                <a href="https://radshid.com/?p=5869" class="btn btn-dark btn-lg pull-right separator_link" target="_blank">اطلاعات بیشتر</a>-->
             </div>
         </div>
     </div>

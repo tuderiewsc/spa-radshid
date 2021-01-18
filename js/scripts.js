@@ -1,4 +1,5 @@
-/* Version 1.8 */
+/* Version 1.10 */
+
 jQuery(document).ready(function($){
 
     // inits
@@ -9,11 +10,9 @@ jQuery(document).ready(function($){
     // Constants
     const login_frm_submit_btn_txt = $('#login_frm_submit_btn_txt').val();
     const register_frm_submit_btn_txt = $('#register_frm_submit_btn_txt').val();
-    const register_frm_err_notify = $('#register_frm_err_notify').val();
     const register_frm_inputs_err_notify = $('#register_frm_inputs_err_notify').val();
     const register_frm_already_registered = $('#register_frm_already_registered').val();
     const register_frm_success = $('#register_frm_success').val();
-    const login_frm_success = $('#login_frm_success').val();
     const login_frm_error = $('#login_frm_error').val();
     const frm_error_authentication = $('#frm_error_authentication').val();
     /* -------------------------------------------------------------------------------------------------- */
@@ -30,6 +29,21 @@ jQuery(document).ready(function($){
     /* Top Banner */
 
 
+    /* Toasts */
+    const BottomToast = Swal.mixin({
+        toast: true,
+        position: 'bottom',
+        showConfirmButton: false,
+        timer: 4000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer);
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+    /* Toasts */
+
+
     /* Login Form */
     let loginPassInput = $('#login_pass_input');
     $('#password_input_container').find('i').hover(function() {
@@ -39,7 +53,6 @@ jQuery(document).ready(function($){
         loginPassInput.attr('type' , 'password');
         $(this).removeClass('fa-eye-slash').addClass('fa-eye');
     });
-
 
     const loginSubmitBtn = $('#login_frm_submit_btn');
     loginSubmitBtn.on('click' , function (e) {
@@ -52,7 +65,7 @@ jQuery(document).ready(function($){
         password === '' ? login_frm.find('input#login_pass_input').siblings('.invalid-feedback').css('display', 'block') : login_frm.find('input#login_pass_input').siblings('.invalid-feedback').css('display', 'none');
 
         if (username !== '' && password !== '' ) {
-            loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
+            loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>').attr('disabled', true);
 
             let nonce = $('#rad_login_nonce').val();
             let data = {
@@ -69,18 +82,7 @@ jQuery(document).ready(function($){
                 data: data,
                 success: function (res) {
                     if (res.res === 'Authenticate Error') {
-                        const Toast = Swal.mixin({
-                            toast: true,
-                            position: 'bottom',
-                            showConfirmButton: false,
-                            timer: 4000,
-                            timerProgressBar: true,
-                            didOpen: (toast) => {
-                                toast.addEventListener('mouseenter', Swal.stopTimer)
-                                toast.addEventListener('mouseleave', Swal.resumeTimer)
-                            }
-                        });
-                        Toast.fire({
+                        BottomToast.fire({
                             icon: 'error',
                             title: frm_error_authentication
                         });
@@ -93,23 +95,19 @@ jQuery(document).ready(function($){
                             position: 'center',
                             icon: 'success',
                             title: '',
-                            text: login_frm_success,
-                            showConfirmButton: 'بسیار خُب'
-                        });
-                        window.open('http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false, '_blank');
-                    } else {
-                        const Toast = Swal.mixin({
-                            toast: true,
-                            position: 'bottom',
-                            showConfirmButton: false,
-                            timer: 4000,
-                            timerProgressBar: true,
-                            didOpen: (toast) => {
-                                toast.addEventListener('mouseenter', Swal.stopTimer)
-                                toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            text: 'خوش آمدید ' + username,
+                            showConfirmButton: true,
+                            confirmButtonText: 'وورد به سامانه'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                document.getElementById("login_frm").reset();
+                                window.open('http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false, '_blank');
+                            } else {
+                                Swal.fire('ورود لغو شد!', '', 'info')
                             }
                         });
-                        Toast.fire({
+                    } else {
+                        BottomToast.fire({
                             icon: 'error',
                             title: login_frm_error
                         });
@@ -117,24 +115,13 @@ jQuery(document).ready(function($){
                 },
                 error:function (jqXHR, textStatus, errorThrown) {
                     if(textStatus==="timeout") {
-                        const Toast = Swal.mixin({
-                            toast: true,
-                            position: 'bottom',
-                            showConfirmButton: false,
-                            timer: 4000,
-                            timerProgressBar: true,
-                            didOpen: (toast) => {
-                                toast.addEventListener('mouseenter', Swal.stopTimer)
-                                toast.addEventListener('mouseleave', Swal.resumeTimer)
-                            }
-                        });
-                        Toast.fire({
+                        BottomToast.fire({
                             icon: 'error',
                             title: 'خطا در اتصال به سرور!'
                         });
                     }
                 },complete:function () {
-                    loginSubmitBtn.html(login_frm_submit_btn_txt);
+                    loginSubmitBtn.html(login_frm_submit_btn_txt).attr('disabled', false);
                 },
                 timeout:10000
             });
@@ -189,23 +176,21 @@ jQuery(document).ready(function($){
         InputValidation(is_admin_phone_valid , register_frm , 'register_admin_phone_input', 'valid');
         InputValidation(is_sim_phone_valid , register_frm , 'register_sim_phone_input', 'valid');
 
-        register_frm.find('input#register_driver_name_input').siblings('.valid_input').css('display', 'block');
+        register_frm.find('input#register_driver_name_input').siblings('.valid_input').css('display', 'block').siblings('.invalid_input').css('display', 'none');
 
 
         if (pass !== pass_confirm){
             register_frm.find('#match_pass').css('display', 'block');
-            register_frm.find('input#register_password_confirm_input').siblings('.valid_input').css('display', 'none');
-            register_frm.find('input#register_password_confirm_input').css('borderColor', '#D50000');
+            register_frm.find('input#register_password_confirm_input').siblings('.valid_input').css('display', 'none').siblings('.invalid_input').css('display', 'block');
         } else {
             register_frm.find('#match_pass').css('display', 'none');
-            register_frm.find('input#register_password_confirm_input').siblings('.valid_input').css('display', 'block');
-            register_frm.find('input#register_password_confirm_input').css('borderColor', '#e1e1e1');
+            register_frm.find('input#register_password_confirm_input').siblings('.valid_input').css('display', 'block').siblings('.invalid_input').css('display', 'none');
         }
 
         if (name !=='' && family !=='' && username !=='' && is_pass_valid && pass===pass_confirm && is_mobile_valid && is_email_valid && is_imei_valid
             && reg_code !=='' && car_name !=='' && is_admin_phone_valid && is_sim_phone_valid) {
-            registerSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
-            $('#regAlert').css('visibility','hidden').removeClass('wow');
+            registerSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>').attr('disabled', true);
+            $('#regAlert').fadeOut(500);
 
             let nonce = $('#rad_register_nonce').val();
             let data = {
@@ -232,18 +217,7 @@ jQuery(document).ready(function($){
                 data: data,
                 success: function (res , xhr) {
                     if (res.res === 'Authenticate Error') {
-                        const Toast = Swal.mixin({
-                            toast: true,
-                            position: 'bottom',
-                            showConfirmButton: false,
-                            timer: 4000,
-                            timerProgressBar: true,
-                            didOpen: (toast) => {
-                                toast.addEventListener('mouseenter', Swal.stopTimer)
-                                toast.addEventListener('mouseleave', Swal.resumeTimer)
-                            }
-                        });
-                        Toast.fire({
+                        BottomToast.fire({
                             icon: 'error',
                             title: frm_error_authentication
                         });
@@ -252,189 +226,154 @@ jQuery(document).ready(function($){
                     let resObj = JSON.parse(res.slice(0 , -1));
                     let status = JSON.parse(resObj).status;
                     let title = JSON.parse(resObj).title;
-                    //console.log('title: ' + title);
                     if (status !== 400 && title === 'DeviceIsInUse.'){
-                        const Toast = Swal.mixin({
-                            toast: true,
-                            position: 'bottom',
-                            showConfirmButton: false,
-                            timer: 4000,
-                            timerProgressBar: true,
-                            didOpen: (toast) => {
-                                toast.addEventListener('mouseenter', Swal.stopTimer)
-                                toast.addEventListener('mouseleave', Swal.resumeTimer)
-                            }
-                        });
-                        Toast.fire({
+                        BottomToast.fire({
                             icon: 'info',
                             title: register_frm_already_registered
                         });
                     } else if(status === 400 && title === 'Bad Request'){
-                        const Toast = Swal.mixin({
-                            toast: true,
-                            position: 'bottom',
-                            showConfirmButton: false,
-                            timer: 4000,
-                            timerProgressBar: true,
-                            didOpen: (toast) => {
-                                toast.addEventListener('mouseenter', Swal.stopTimer)
-                                toast.addEventListener('mouseleave', Swal.resumeTimer)
-                            }
-                        });
-                        Toast.fire({
+                        BottomToast.fire({
                             icon: 'error',
                             title: register_frm_inputs_err_notify
                         });
-                        register_frm.find('input#register_gps_serial_input').siblings('.valid_input').css('display', 'none').siblings('.invalid-feedback').css('display', 'block');
-                        register_frm.find('input#register_reg_code_input').siblings('.valid_input').css('display', 'none').siblings('.invalid-feedback').css('display', 'block');
+                        register_frm.find('input#register_gps_serial_input').siblings('.valid_input').css('display', 'none').siblings('.invalid-feedback').css('display', 'block').siblings('.invalid_input').css('display', 'block');
+                        register_frm.find('input#register_reg_code_input').siblings('.valid_input').css('display', 'none').siblings('.invalid-feedback').css('display', 'block').siblings('.invalid_input').css('display', 'block');
                     } else if (status === 201 && title !== 'One or more validation errors occurred') {
                         Swal.fire({
                             position: 'center',
                             icon: 'success',
                             title: '',
                             text: register_frm_success,
-                            showConfirmButton: 'بسیار خُب'
+                            showConfirmButton: true,
+                            confirmButtonText: 'بسیار خُب'
                         });
                         document.getElementById("register_frm").reset();
                     }else {
-                        const Toast = Swal.mixin({
-                            toast: true,
-                            position: 'bottom',
-                            showConfirmButton: false,
-                            timer: 4000,
-                            timerProgressBar: true,
-                            didOpen: (toast) => {
-                                toast.addEventListener('mouseenter', Swal.stopTimer)
-                                toast.addEventListener('mouseleave', Swal.resumeTimer)
-                            }
-                        });
-                        Toast.fire({
+                        BottomToast.fire({
                             icon: 'error',
                             title: register_frm_inputs_err_notify
                         });
                     }
                 },error:function (jqXHR, textStatus, errorThrown) {
                     if(textStatus==="timeout") {
-                        const Toast = Swal.mixin({
-                            toast: true,
-                            position: 'bottom',
-                            showConfirmButton: false,
-                            timer: 4000,
-                            timerProgressBar: true,
-                            didOpen: (toast) => {
-                                toast.addEventListener('mouseenter', Swal.stopTimer)
-                                toast.addEventListener('mouseleave', Swal.resumeTimer)
-                            }
-                        });
-                        Toast.fire({
+                        BottomToast.fire({
                             icon: 'error',
                             title: 'خطا در اتصال به سرور!'
                         });
                     }
                 }
                 ,complete:function () {
-                    registerSubmitBtn.html(register_frm_submit_btn_txt);
+                    registerSubmitBtn.html(register_frm_submit_btn_txt).attr('disabled', false);
                 },
                 timeout:10000
             });
         } else {
-            $('#regAlert').css('visibility','visible').addClass('wow');
+            setTimeout(function () {
+                $('#regAlert').fadeIn().css('visibility','visible').effect( "shake", 100 );
+            },500)
         }
     });
     /* Register Form */
 
 
     /* Password Recovery Form */
-    $('select#password_recovery_method').on('change' , function () {
-        let selected_val = $(this).val();
-        if (selected_val === '2'){
-            $('#password_recovery_sms_method').css('display' , 'block');
-            $('#password_recovery_email_method').css('display' , 'none');
-        } else {
-            $('#password_recovery_sms_method').css('display' , 'none');
-            $('#password_recovery_email_method').css('display' , 'block');
-        }
-    });
-
-    let password_recovery_frm_submit_btn = $('#password_recovery_frm_submit_btn');
-    password_recovery_frm_submit_btn.on('click' , function (e) {
-        e.preventDefault();
-        let password_recovery_frm = $('#password_recovery_frm');
-        let username = password_recovery_frm.find('input#password_recovery_username_input').val();
-        let email = password_recovery_frm.find('input#password_recovery_email_input').val();
-        let phone = password_recovery_frm.find('input#password_recovery_phone_input').val();
-
-        let emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-        let phoneReg = /^([+]\d{2})?\d{10}$/;
-        let is_email_valid = emailReg.test( email );
-        let is_phone_valid = phoneReg.test( phone );
-
-        // Show invalid feedback
-        InputValidation(username , password_recovery_frm , 'password_recovery_username_input' , 'empty');
-        InputValidation(is_email_valid , password_recovery_frm , 'password_recovery_email_input' , 'valid');
-        InputValidation(is_phone_valid , password_recovery_frm , 'password_recovery_phone_input' , 'valid');
-
-        username === '' ? password_recovery_frm.find('input#password_recovery_username_input').siblings('.invalid-feedback').css('display', 'block') : login_frm.find('input#password_recovery_username_input').siblings('.invalid-feedback').css('display', 'none');
-        !is_email_valid ? password_recovery_frm.find('input#password_recovery_email_input').siblings('.invalid-feedback').css('display', 'block') : login_frm.find('input#password_recovery_email_input').siblings('.invalid-feedback').css('display', 'none');
-        !is_phone_valid ? password_recovery_frm.find('input#password_recovery_phone_input').siblings('.invalid-feedback').css('display', 'block') : login_frm.find('input#password_recovery_phone_input').siblings('.invalid-feedback').css('display', 'none');
-
-
-        let selected_method = $('select#password_recovery_method').val();
-
-        return;
-
-        if (selected_method === '1'){
-            if (username !== '' && password !== '' ) {
-                loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
-
-                $.ajax({
-                    url: '/url',
-                    type: 'POST',
-                    data: { 'username':username ,'pass':password },
-                    dataType: 'JSON',
-                    success: function (data , xhr) {
-                        if (xhr === 'success'){
-                            //resetSignUpForm();
-                        } else {
-                            //
-                        }
-                    }, error:function (err) {
-                        console.log(err);
-                    }, complete:function () {
-                        loginSubmitBtn.html(login_frm_submit_btn_txt);
-                    },timeout:10000
-                });
-            }
-        } else {
-            if (username !== '' && password !== '' ) {
-                loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
-
-                $.ajax({
-                    url: '/url',
-                    type: 'POST',
-                    data: { 'username':username ,'pass':password },
-                    dataType: 'JSON',
-                    success: function (data , xhr) {
-                        if (xhr === 'success'){
-                            //resetSignUpForm();
-                        } else {
-                            //
-                        }
-                    }, error:function (err) {
-                        console.log(err);
-                    }, complete:function () {
-                        loginSubmitBtn.html(login_frm_submit_btn_txt);
-                    },timeout:10000
-                });
-            }
-        }
-    });
+    // $('select#password_recovery_method').on('change' , function () {
+    //     let selected_val = $(this).val();
+    //     if (selected_val === '2'){
+    //         $('#password_recovery_sms_method').css('display' , 'block');
+    //         $('#password_recovery_email_method').css('display' , 'none');
+    //     } else {
+    //         $('#password_recovery_sms_method').css('display' , 'none');
+    //         $('#password_recovery_email_method').css('display' , 'block');
+    //     }
+    // });
+    //
+    // let password_recovery_frm_submit_btn = $('#password_recovery_frm_submit_btn');
+    // password_recovery_frm_submit_btn.on('click' , function (e) {
+    //     e.preventDefault();
+    //     let password_recovery_frm = $('#password_recovery_frm');
+    //     let username = password_recovery_frm.find('input#password_recovery_username_input').val();
+    //     let email = password_recovery_frm.find('input#password_recovery_email_input').val();
+    //     let phone = password_recovery_frm.find('input#password_recovery_phone_input').val();
+    //
+    //     let emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    //     let phoneReg = /^([+]\d{2})?\d{10}$/;
+    //     let is_email_valid = emailReg.test( email );
+    //     let is_phone_valid = phoneReg.test( phone );
+    //
+    //     // Show invalid feedback
+    //     InputValidation(username , password_recovery_frm , 'password_recovery_username_input' , 'empty');
+    //     InputValidation(is_email_valid , password_recovery_frm , 'password_recovery_email_input' , 'valid');
+    //     InputValidation(is_phone_valid , password_recovery_frm , 'password_recovery_phone_input' , 'valid');
+    //
+    //     username === '' ? password_recovery_frm.find('input#password_recovery_username_input').siblings('.invalid-feedback').css('display', 'block') : login_frm.find('input#password_recovery_username_input').siblings('.invalid-feedback').css('display', 'none');
+    //     !is_email_valid ? password_recovery_frm.find('input#password_recovery_email_input').siblings('.invalid-feedback').css('display', 'block') : login_frm.find('input#password_recovery_email_input').siblings('.invalid-feedback').css('display', 'none');
+    //     !is_phone_valid ? password_recovery_frm.find('input#password_recovery_phone_input').siblings('.invalid-feedback').css('display', 'block') : login_frm.find('input#password_recovery_phone_input').siblings('.invalid-feedback').css('display', 'none');
+    //
+    //
+    //     let selected_method = $('select#password_recovery_method').val();
+    //
+    //     return;
+    //
+    //     if (selected_method === '1'){
+    //         if (username !== '' && password !== '' ) {
+    //             loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
+    //
+    //             $.ajax({
+    //                 url: '/url',
+    //                 type: 'POST',
+    //                 data: { 'username':username ,'pass':password },
+    //                 dataType: 'JSON',
+    //                 success: function (data , xhr) {
+    //                     if (xhr === 'success'){
+    //                         //resetSignUpForm();
+    //                     } else {
+    //                         //
+    //                     }
+    //                 }, error:function (err) {
+    //                     console.log(err);
+    //                 }, complete:function () {
+    //                     loginSubmitBtn.html(login_frm_submit_btn_txt);
+    //                 },timeout:10000
+    //             });
+    //         }
+    //     } else {
+    //         if (username !== '' && password !== '' ) {
+    //             loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>');
+    //
+    //             $.ajax({
+    //                 url: '/url',
+    //                 type: 'POST',
+    //                 data: { 'username':username ,'pass':password },
+    //                 dataType: 'JSON',
+    //                 success: function (data , xhr) {
+    //                     if (xhr === 'success'){
+    //                         //resetSignUpForm();
+    //                     } else {
+    //                         //
+    //                     }
+    //                 }, error:function (err) {
+    //                     console.log(err);
+    //                 }, complete:function () {
+    //                     loginSubmitBtn.html(login_frm_submit_btn_txt);
+    //                 },timeout:10000
+    //             });
+    //         }
+    //     }
+    // });
     /* Password Recovery Form */
 
     /* Spa Form */
     $('.nav-tab').click(function () {
         $('.nav-tab').removeClass('active');
         $(this).addClass('active');
+        $('html,body').animate({
+            scrollTop: ($(".spa_container_frm").offset().top) - 150
+        }, 100);
+    });
+
+    $('.nav-tab').find('a').click(function (e) {
+        e.preventDefault();
     });
     /* Spa Form */
 
@@ -494,17 +433,16 @@ jQuery(document).ready(function($){
 
 
     /* Strip Length */
-    let elm1 = $('.card-deck').find('.card-deck-title#products');
-    let elm2 = $('.card-deck').find('.card-deck-title#customers');
-    let elm3 = $('.card-deck').find('.card-deck-title#articles');
-    let elm4 = $('.card-deck').find('.card-deck-title#spa');
+    const card_deck =  $('.card-deck');
+    let elm1 = card_deck.find('.card-deck-title#products');
+    let elm2 = card_deck.find('.card-deck-title#customers');
+    let elm3 = card_deck.find('.card-deck-title#articles');
+    let elm4 = card_deck.find('.card-deck-title#spa');
     stripLength(elm1);
     stripLength(elm2);
     stripLength(elm3);
     stripLength(elm4);
     /* Strip Length */
-
-
 
 });
 
@@ -533,21 +471,21 @@ function InputValidation(value , form , input_id , type='empty'){
     if (type === 'empty'){
         if (value === ''){
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'block');
-            form.find('input#' + input_id).siblings('.valid_input').css('display', 'none');
+            form.find('input#' + input_id).siblings('.valid_input').css('display', 'none').siblings('.invalid_input').css('display', 'block');
             form.find('input#' + input_id).css('borderColor', '#D50000');
         } else {
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'none');
-            form.find('input#' + input_id).siblings('.valid_input').css('display', 'block');
+            form.find('input#' + input_id).siblings('.valid_input').css('display', 'block').siblings('.invalid_input').css('display', 'none');
             form.find('input#' + input_id).css('borderColor', '#e1e1e1');
         }
     } else {
         if (!value){
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'block');
-            form.find('input#' + input_id).siblings('.valid_input').css('display', 'none');
+            form.find('input#' + input_id).siblings('.valid_input').css('display', 'none').siblings('.invalid_input').css('display', 'block');
             form.find('input#' + input_id).css('borderColor', '#D50000');
         } else {
             form.find('input#' + input_id).siblings('.invalid-feedback').css('display', 'none');
-            form.find('input#' + input_id).siblings('.valid_input').css('display', 'block');
+            form.find('input#' + input_id).siblings('.valid_input').css('display', 'block').siblings('.invalid_input').css('display', 'none');
             form.find('input#' + input_id).css('borderColor', '#e1e1e1');
         }
     }

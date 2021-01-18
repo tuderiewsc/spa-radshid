@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Radshid Customization\n"
-"POT-Creation-Date: 2021-01-16 15:26+0330\n"
-"PO-Revision-Date: 2021-01-16 15:59+0330\n"
+"POT-Creation-Date: 2021-01-18 14:00+0330\n"
+"PO-Revision-Date: 2021-01-18 14:01+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa\n"
@@ -66,16 +66,16 @@ msgstr "ردیاب سیپاد"
 msgid "Login"
 msgstr "ورود"
 
-#: site/views/spa_form.php:11 site/views/spa_form.php:227
-#: site/views/spa_form.php:235
+#: site/views/spa_form.php:11 site/views/spa_form.php:240
+#: site/views/spa_form.php:248
 msgid "Register"
 msgstr "ثبت نام"
 
-#: site/views/spa_form.php:24 site/views/spa_form.php:84
+#: site/views/spa_form.php:24 site/views/spa_form.php:86
 msgid "Username"
 msgstr "نام کاربری"
 
-#: site/views/spa_form.php:26 site/views/spa_form.php:88
+#: site/views/spa_form.php:26 site/views/spa_form.php:91
 msgid "Please enter your username"
 msgstr "لطفا نام کاربری خود را وارد کنید."
 
@@ -87,131 +87,134 @@ msgstr "لطفا رمز عبور خود را وارد کنید."
 msgid "Name"
 msgstr "نام"
 
-#: site/views/spa_form.php:68
+#: site/views/spa_form.php:69
 msgid "Please enter your name"
 msgstr "لطفا نام خود را وارد کنید."
 
-#: site/views/spa_form.php:74
+#: site/views/spa_form.php:75
 msgid "Family"
 msgstr "نام خانوادگی"
 
-#: site/views/spa_form.php:78
+#: site/views/spa_form.php:80
 msgid "Please enter your family"
 msgstr "لطفا نام خانوادگی خود را وارد کنید."
 
-#: site/views/spa_form.php:99
+#: site/views/spa_form.php:102
 msgid "Password"
 msgstr "رمز عبور"
 
-#: site/views/spa_form.php:103
+#: site/views/spa_form.php:107
 msgid "Please enter a valid password"
 msgstr "لطفا یک رمز عبور معتبر وارد کنید!"
 
-#: site/views/spa_form.php:113
+#: site/views/spa_form.php:117
 msgid "Password Confirm"
 msgstr "تایید رمز عبور"
 
-#: site/views/spa_form.php:117
+#: site/views/spa_form.php:122
 msgid "Please enter your password again"
 msgstr "لطفا رمز عبور را مجددا وارد کنید."
 
-#: site/views/spa_form.php:120
+#: site/views/spa_form.php:125
 msgid "Password and its confirm does not match"
 msgstr "رمز عبور با تکرار آن مطابقت ندارد!"
 
-#: site/views/spa_form.php:126
+#: site/views/spa_form.php:131
 msgid "Mobile Number"
 msgstr "شماره همراه"
 
-#: site/views/spa_form.php:131
+#: site/views/spa_form.php:137
 msgid "Please enter your a valid mobile number"
 msgstr "لطفا یک شماره همراه معتبر وارد کنید!"
 
-#: site/views/spa_form.php:137
+#: site/views/spa_form.php:143
 msgid "Email"
 msgstr "ایمیل"
 
-#: site/views/spa_form.php:141
+#: site/views/spa_form.php:148
 msgid "Please enter a valid email address"
 msgstr "لطفا یک ایمیل معتبر وارد کنید!"
 
-#: site/views/spa_form.php:151
+#: site/views/spa_form.php:158
 msgid "Gps Serial"
 msgstr "سریال  جی پی اس"
 
-#: site/views/spa_form.php:156
+#: site/views/spa_form.php:164
 msgid "Please enter a valid gps serial"
 msgstr "لطفا یک سریال جی پی اس معتبر وارد کنید!"
 
-#: site/views/spa_form.php:166
+#: site/views/spa_form.php:174
 msgid "Register Code"
 msgstr "شناسه ثبت نام"
 
-#: site/views/spa_form.php:171
+#: site/views/spa_form.php:180
 msgid "Please enter a valid register code"
 msgstr "لطفا یک شناسه ثبت نام معتبر وارد کنید!"
 
-#: site/views/spa_form.php:181
+#: site/views/spa_form.php:190
 msgid "Car Name"
 msgstr "نام خودرو"
 
-#: site/views/spa_form.php:185
+#: site/views/spa_form.php:195
 msgid "Please enter your car name"
 msgstr "لطفا نام خودروی خود را وارد کنید!"
 
-#: site/views/spa_form.php:191
+#: site/views/spa_form.php:201
 msgid "Driver Name"
 msgstr "نام راننده"
 
-#: site/views/spa_form.php:195
+#: site/views/spa_form.php:206
 msgid "Please enter your driver name"
 msgstr "لطفا نام راننده را وارد کنید!"
 
-#: site/views/spa_form.php:201
+#: site/views/spa_form.php:212
 msgid "Admin Phone"
 msgstr "شماره سرپرست"
 
-#: site/views/spa_form.php:206
+#: site/views/spa_form.php:218
 msgid "Please enter a valid admin phone"
 msgstr "لطفا یک شماره سرپرست معتبر وارد کنید!"
 
-#: site/views/spa_form.php:217
+#: site/views/spa_form.php:229
 msgid "Sim Phone"
 msgstr "شماره سیم کارت"
 
-#: site/views/spa_form.php:222
+#: site/views/spa_form.php:235
 msgid "Please enter a valid sim phone"
 msgstr "لطفا یک شماره سیم کارت معتبر وارد کنید!"
 
-#: site/views/spa_form.php:231 site/views/spa_form.php:236
+#: site/views/spa_form.php:244 site/views/spa_form.php:249
 msgid "Please correct showed errors first"
 msgstr "لطفا ابتدا خطاهای موجود را تصحیح کنید!"
 
-#: site/views/spa_form.php:237
+#: site/views/spa_form.php:250
 msgid "Please correct Inputs parameters"
 msgstr ""
-"لطفا پارامترهای ورودی (سریال جی پی اس یا شناسه ثبت نام) را مجددا کنترل "
-"کنید!"
+"لطفا پارامترهای ورودی (سریال جی پی اس یا شناسه ثبت نام) را مجددا کنترل کنید!"
 
-#: site/views/spa_form.php:238
+#: site/views/spa_form.php:251
 msgid "You Have Registered Before"
 msgstr "شما قبلا در سامانه ثبت نام کرده اید!"
 
-#: site/views/spa_form.php:239
+#: site/views/spa_form.php:252
 msgid "Registered Has Done Successfully"
 msgstr "ثبت نام با موفقیت انجام شد."
 
-#: site/views/spa_form.php:240
+#: site/views/spa_form.php:253
 msgid "You LoggedIn Successfully"
 msgstr "شما با موفقیت وارد شدید."
 
-#: site/views/spa_form.php:241
+#: site/views/spa_form.php:254
 msgid "Username Or Password Are Incorrect"
 msgstr "نام کاربری یا رمز عبور اشتباه وارد شده است!"
 
-#: site/views/spa_form.php:242
+#: site/views/spa_form.php:255
 msgid "Error In Authentication"
 msgstr "خطا در اعتبارسنجی!"
+
+#: site/views/spa_form.php:262
+msgid "SPA System"
+msgstr "سامانه مدیریت ناوگان"
 
 #. Plugin Name of the plugin/theme
 msgid "Radshid Customization"

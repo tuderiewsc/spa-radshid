@@ -18,7 +18,6 @@ add_action('plugins_loaded', function(){
 
 
 
-
 //define('RAD_INC', plugin_dir_path(__FILE__) . 'inc/');
 define('RAD_ADMIN', plugin_dir_path(__FILE__) . 'admin/');
 define('RAD_ADMIN_VIEW', plugin_dir_path(__FILE__) . 'admin/view/');
@@ -30,7 +29,8 @@ define('RAD_ASSETS', plugin_dir_url(__FILE__) . 'assets/');
 // load css&js
 add_action( 'wp_enqueue_scripts', function(){
 	// scripts
-	wp_enqueue_script('popper', RAD_JS.'popper.min.js' , array('jquery', 'media-upload'));
+	wp_enqueue_script('popper', RAD_JS.'popper.min.js' , array('jquery', 'media-upload', 'jquery-ui'));
+	wp_enqueue_script('jquery-ui', RAD_JS.'jquery-ui.min.js', '1.8.6');
 	wp_enqueue_script('bootstrap', RAD_JS.'bootstrap.min.js');
 	wp_enqueue_script('owlCarousel', RAD_JS.'owl.carousel.min.js');
 	wp_enqueue_script('wow', RAD_JS.'wow.min.js');
