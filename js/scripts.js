@@ -278,7 +278,7 @@ jQuery(document).ready(function($){
             });
         } else {
             setTimeout(function () {
-                $('#regAlert').fadeIn().css('visibility','visible').effect( "shake", 100 );
+                $('#regAlert').css('visibility','visible').effect( "shake", 700 );
             },500)
         }
     });
