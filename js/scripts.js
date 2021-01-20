@@ -1,4 +1,4 @@
-/* Version 1.10 */
+/* Version 1.11 */
 
 jQuery(document).ready(function($){
 
@@ -40,6 +40,13 @@ jQuery(document).ready(function($){
             toast.addEventListener('mouseenter', Swal.stopTimer);
             toast.addEventListener('mouseleave', Swal.resumeTimer)
         }
+    });
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+            confirmButton: 'btn btn-success',
+            cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
     });
     /* Toasts */
 
@@ -91,19 +98,20 @@ jQuery(document).ready(function($){
                     let resObj = JSON.parse(res.slice(0 , -1));
                     let token = JSON.parse(resObj).token;
                     if (token !== undefined){
-                        Swal.fire({
+                        swalWithBootstrapButtons.fire({
                             position: 'center',
                             icon: 'success',
                             title: '',
-                            text: 'خوش آمدید ' + username,
+                            text: 'خوش آمدید ' + username + ' عزیز',
                             showConfirmButton: true,
-                            confirmButtonText: 'وورد به سامانه'
+                            confirmButtonText: 'ورود به سامانه',
+                            showCloseButton: true
                         }).then((result) => {
                             if (result.isConfirmed) {
                                 document.getElementById("login_frm").reset();
                                 window.open('http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false, '_blank');
                             } else {
-                                Swal.fire('ورود لغو شد!', '', 'info')
+                                swalWithBootstrapButtons.fire('ورود لغو شد!', '', 'info')
                             }
                         });
                     } else {
@@ -239,11 +247,12 @@ jQuery(document).ready(function($){
                         register_frm.find('input#register_gps_serial_input').siblings('.valid_input').css('display', 'none').siblings('.invalid-feedback').css('display', 'block').siblings('.invalid_input').css('display', 'block');
                         register_frm.find('input#register_reg_code_input').siblings('.valid_input').css('display', 'none').siblings('.invalid-feedback').css('display', 'block').siblings('.invalid_input').css('display', 'block');
                     } else if (status === 201 && title !== 'One or more validation errors occurred') {
-                        Swal.fire({
+                        swalWithBootstrapButtons.fire({
                             position: 'center',
                             icon: 'success',
                             title: '',
                             text: register_frm_success,
+                            showCloseButton: true,
                             showConfirmButton: true,
                             confirmButtonText: 'بسیار خُب'
                         });
@@ -363,16 +372,17 @@ jQuery(document).ready(function($){
     // });
     /* Password Recovery Form */
 
+
     /* Spa Form */
-    $('.nav-tab').click(function () {
-        $('.nav-tab').removeClass('active');
+    const navTab = $('.nav-tab');
+    navTab.click(function () {
+        navTab.removeClass('active');
         $(this).addClass('active');
         $('html,body').animate({
             scrollTop: ($(".spa_container_frm").offset().top) - 150
         }, 100);
     });
-
-    $('.nav-tab').find('a').click(function (e) {
+    navTab.find('a').click(function (e) {
         e.preventDefault();
     });
     /* Spa Form */

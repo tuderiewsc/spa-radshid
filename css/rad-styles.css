@@ -1,14 +1,14 @@
-/* Version 1.10 */
+/* Version 1.11 */
 
 
-ul#avia-menu{
-display: none;
-}
-.fullsize .container{
-    max-width: 100% !important;
-   width: 100% !important;
-    padding: 0 !important;
-}
+/*ul#avia-menu{*/
+/*display: none;*/
+/*}*/
+/*.fullsize .container{*/
+    /*max-width: 100% !important;*/
+   /*width: 100% !important;*/
+    /*padding: 0 !important;*/
+/*}*/
 
 
 html{
@@ -288,6 +288,9 @@ form .text-muted {
     height: auto;
     overflow: auto;
     max-height: 300px;
+}
+.spa_container_frm form#login_frm{
+    padding: 40px 20px;
 }
 .spa_container_frm form input{
     margin: 0 !important;
@@ -858,7 +861,7 @@ footer.socket_color{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     align-content: center;
     font-family: Samim,iranyekan,Sans-serif;
     border-radius: 0 !important;
@@ -867,7 +870,7 @@ footer.socket_color{
 .separator_sub {
     width: 50%;
     text-align: center;
-    padding: 50px;
+    padding: 25px 50px;
     user-select: none;
 }
 
@@ -882,13 +885,14 @@ footer.socket_color{
     width: 400px;
     height: auto;
     border-radius: 50%;
+    padding: 15px;
 }
 
 .separator_sub_title {
     font-family: iranyekan,Samim,Sans-serif!important;
     color: #eee !important;
     text-align: right;
-    font-size: 2.5em;
+    font-size: 2.125em;
 }
 .separator_sub_text {
     color: #bdbdbd !important;
@@ -916,9 +920,14 @@ footer.socket_color{
 }
 
 #spa_separator_content{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    width: 100%;
+}
+#spa_separator_content figure{
+    shape-outside: circle(40% at 60% 50%);
+    float: left;
+    width: 275px;
+    height: auto;
+    padding: 30px;
 }
 #spa_separator_content p{
     width: 100%;
@@ -1072,10 +1081,7 @@ footer.socket_color{
         width: 200px;
     }
 
-    h3.separator_sub_title {
-        text-align: center;
-        font-size: 1.5em;
-    }
+
     p.separator_sub_text {
         font-size: 13px;
     }
@@ -1118,6 +1124,9 @@ footer.socket_color{
         padding: 0 20px;
         margin: 40px auto;
     }
+    #spa_separator_content figure{
+        display: none;
+    }
 }
 @media screen and (max-width: 500px) {
     .top_banner{
@@ -1132,9 +1141,7 @@ footer.socket_color{
     .card-deck {
         padding: 0;
     }
-    #spa_separator_content img{
-        display: none;
-    }
+
     .spa_container_frm .nav-tabs li{
         padding: 10px 0;
     }

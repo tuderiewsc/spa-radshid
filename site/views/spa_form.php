@@ -1,14 +1,13 @@
 <?php defined( 'ABSPATH' ) or die( 'No script kiddies please!' ); ?>
 
-sc
 
-<div class="row">
+<div class="row" id="spaForms">
     <div class="separator reverseOnMob my-5">
-        <div class="separator_sub">
-            <div class="spa_container_frm bounceIn wow" data-wow-duration="0.5s" data-wow-delay="0.5s">
+        <div class="separator_sub" id="separator_sub_right">
+            <div class="spa_container_frm bounceIn wow" data-wow-duration="0.5s" data-wow-delay="0.5s" >
                 <ul class="nav nav-tabs">
-                    <li class="nav-tab active"><a data-toggle="tab" href="#login_tab" onclick="(function(e){e.preventDefault();})(event)"><?php _e('Login' , 'radshid_lan'); ?></a></li>
-                    <li class="nav-tab"><a data-toggle="tab" href="#register_tab" onclick="(function(e){e.preventDefault();})(event)"><?php _e('Register' , 'radshid_lan'); ?> </a></li>
+                    <li class="nav-tab active"><a data-toggle="tab" href="#login_tab"><?php _e('Login' , 'radshid_lan'); ?></a></li>
+                    <li class="nav-tab"><a data-toggle="tab" href="#register_tab"><?php _e('Register' , 'radshid_lan'); ?> </a></li>
                 </ul>
                 <div class="tab-content container-fluid">
                     <div id="login_tab" class="tab-pane fade in active">
@@ -241,7 +240,7 @@ sc
                             </button>
 
                             <div class="alert alert-warning my-3 zoomIn" role="alert" id="regAlert" data-wow-duration="2s" data-wow-delay="1s">
-	                            <?php _e('Please correct showed errors first' , 'radshid_lan'); ?>
+								<?php _e('Please correct showed errors first' , 'radshid_lan'); ?>
                                 <i class="fa fa-warning fa-2x"></i>
                             </div>
                         </form>
@@ -257,19 +256,18 @@ sc
                 </div>
             </div>
         </div>
-        <div class="separator_sub" id="separator_sub_left">
+        <div class="separator_sub">
             <div>
                 <h3 class="separator_sub_title mb-4"><?php echo __('SPA System' , 'radshid_lan')?></h3>
                 <div id="spa_separator_content">
-                    <p class="separator_sub_text">
-                        سامانه مدیریت ناوگان رادشید یک سیستم یکپارچه مبتنی بر وب ، مطابق با ساختارهای بین المللی امنیت و اینترنت اشیا ، با برقراری ارتباط بین دستگاه های ردیاب  و مدیران ، به ارائه گزارشات مختلف و همچنین اعمال برخی دستورات مورد نیاز می پردازد.
-                        این سامانه با توجه به نیاز مشتری و همچنین بر اساس پروتکل های بین المللی برنامه ریزی شده است و ابزارها و گزارشات مورد نیاز کاربر را به سریعترین روش ارائه می دهد.
-                    </p>
-                    <figure>
-                        <img src="<?php echo RAD_ASSETS. '/images/spa_form/Login-Winter.png'  ?>" alt="سامانه مدیریت ناوگان">
-                    </figure>
+                        <figure>
+                            <img src="<?php echo RAD_ASSETS. '/images/spa_form/Login-Winter.png'  ?>" alt="سامانه مدیریت ناوگان">
+                        </figure>
+                        <p class="separator_sub_text">
+                            سامانه مدیریت ناوگان رادشید یک سیستم یکپارچه مبتنی بر وب ، مطابق با ساختارهای بین المللی امنیت و اینترنت اشیا ، با برقراری ارتباط بین دستگاه های ردیاب  و مدیران ، به ارائه گزارشات مختلف و همچنین اعمال برخی دستورات مورد نیاز می پردازد.
+                            این سامانه با توجه به نیاز مشتری و همچنین بر اساس پروتکل های بین المللی برنامه ریزی شده است و ابزارها و گزارشات مورد نیاز کاربر را به سریعترین روش ارائه می دهد.
+                        </p>
                 </div>
-<!--                <a href="https://radshid.com/?p=5869" class="btn btn-dark btn-lg pull-right separator_link" target="_blank">اطلاعات بیشتر</a>-->
             </div>
         </div>
     </div>

@@ -27,7 +27,7 @@
 					</a>
 				</div>
 				<div class="linkItem">
-					<a href="http://spa.radshid.com/">
+					<a href="#spaForms">
                         <img class="linkItemImg zoomIn" src="<?php echo RAD_ASSETS. '/images/icons_images/truck.png'  ?>" alt=""
                              data-wow-duration="0.5s" data-wow-delay="0.9s">
                         <p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">مدیریت ناوگان</p>
