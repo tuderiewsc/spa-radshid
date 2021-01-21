@@ -1,4 +1,4 @@
-/* Version 1.11 */
+/* Version 1.12 */
 
 jQuery(document).ready(function($){
 
@@ -32,9 +32,9 @@ jQuery(document).ready(function($){
     /* Toasts */
     const BottomToast = Swal.mixin({
         toast: true,
-        position: 'bottom',
+        position: 'center',
         showConfirmButton: false,
-        timer: 4000,
+        timer: 5000,
         timerProgressBar: true,
         didOpen: (toast) => {
             toast.addEventListener('mouseenter', Swal.stopTimer);
@@ -109,7 +109,8 @@ jQuery(document).ready(function($){
                         }).then((result) => {
                             if (result.isConfirmed) {
                                 document.getElementById("login_frm").reset();
-                                window.open('http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false, '_blank');
+                                //window.open('http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false, '_blank');
+                                window.location.href = 'http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false;
                             } else {
                                 swalWithBootstrapButtons.fire('ورود لغو شد!', '', 'info')
                             }
@@ -278,7 +279,7 @@ jQuery(document).ready(function($){
             });
         } else {
             setTimeout(function () {
-                $('#regAlert').css('visibility','visible').effect( "shake", 700 );
+                $('#regAlert').css('visibility','visible');
             },500)
         }
     });

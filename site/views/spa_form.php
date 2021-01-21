@@ -239,7 +239,7 @@
 								<?php _e('Register' , 'radshid_lan'); ?>
                             </button>
 
-                            <div class="alert alert-warning my-3 zoomIn" role="alert" id="regAlert" data-wow-duration="2s" data-wow-delay="1s">
+                            <div class="alert alert-warning my-3 zoomIn" role="alert" id="regAlert">
 								<?php _e('Please correct showed errors first' , 'radshid_lan'); ?>
                                 <i class="fa fa-warning fa-2x"></i>
                             </div>

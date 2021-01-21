@@ -12,26 +12,26 @@
 						<p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">انواع ردیاب خودرو</p>
 					</a>
 				</div>
+                <div class="linkItem">
+                    <a href="http://spa.radshid.com/" target="_blank">
+                        <img class="linkItemImg zoomIn" src="<?php echo RAD_ASSETS. '/images/icons_images/truck.png'  ?>" alt=""
+                             data-wow-duration="0.5s" data-wow-delay="0.3s">
+                        <p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">ورود به سامانه مدیریت ناوگان</p>
+                    </a>
+                </div>
 				<div class="linkItem">
 					<a href="https://radshid.com/?p=12732">
                         <img class="linkItemImg zoomIn" src="<?php echo RAD_ASSETS. '/images/icons_images/man.png'  ?>" alt=""
-                             data-wow-duration="0.5s" data-wow-delay="0.3s">
+                             data-wow-duration="0.5s" data-wow-delay="0.6s">
                         <p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">انواع ردیاب شخصی</p>
 					</a>
 				</div>
 				<div class="linkItem">
 					<a href="https://radshid.com/?p=12885">
                         <img class="linkItemImg zoomIn" src="<?php echo RAD_ASSETS. '/images/icons_images/tablet.png'  ?>" alt=""
-                             data-wow-duration="0.5s" data-wow-delay="0.6s">
+                             data-wow-duration="0.5s" data-wow-delay="0.9s">
                         <p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">گجت های صنعتی</p>
 					</a>
-				</div>
-				<div class="linkItem">
-					<a href="#spaForms">
-                        <img class="linkItemImg zoomIn" src="<?php echo RAD_ASSETS. '/images/icons_images/truck.png'  ?>" alt=""
-                             data-wow-duration="0.5s" data-wow-delay="0.9s">
-                        <p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">مدیریت ناوگان</p>
-                    </a>
 				</div>
 				<div class="linkItem">
 					<a href="https://radshid.com/become-an-affiliate/">

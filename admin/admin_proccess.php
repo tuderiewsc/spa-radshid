@@ -8,7 +8,7 @@ function radtools_creat_admin_menu(){
 		$radtools_page_hook = add_menu_page(
 			__('Radshid Tools', 'radshid_lan'),
 			__('Radshid Tools', 'radshid_lan'),
-			'edit_posts',
+			'administrator',
 			'rad_tools',
 			function(){include(RAD_ADMIN_VIEW . 'settings.php');},
 			'dashicons-location' // plugin_dir_url( __FILE__ ) . '/../../assets/images/icons_images/car.png',
@@ -18,7 +18,7 @@ function radtools_creat_admin_menu(){
 			'rad_tools',
 			__('About', 'radshid_lan'),
 			__('About', 'radshid_lan'),
-			'manage_options',
+			'administrator',
 			'rad_tools_about',
 			function(){include(RAD_ADMIN_VIEW . 'about.php');}
 		);
