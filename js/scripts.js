@@ -1,10 +1,11 @@
-/* Version 1.12 */
-
+/* Version 1.16 */
 jQuery(document).ready(function($){
 
     // inits
     $('a[href="#login_tab"]').click();
     new WOW().init();
+    const bLazy = new Blazy();
+
 
 
     // Constants
@@ -25,7 +26,7 @@ jQuery(document).ready(function($){
         $('.top_banner_Slogan').css('visibility' , 'visibile').addClass('wow');
         $('.linkItemImg').css('visibility' , 'visibile').addClass('wow');
         $('.linkItemText').css('visibility' , 'visibile').addClass('wow');
-    }, 500);
+    }, 200);
     /* Top Banner */
 
 
@@ -72,7 +73,6 @@ jQuery(document).ready(function($){
         password === '' ? login_frm.find('input#login_pass_input').siblings('.invalid-feedback').css('display', 'block') : login_frm.find('input#login_pass_input').siblings('.invalid-feedback').css('display', 'none');
 
         if (username !== '' && password !== '' ) {
-            loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>').attr('disabled', true);
 
             let nonce = $('#rad_login_nonce').val();
             let data = {
@@ -87,6 +87,9 @@ jQuery(document).ready(function($){
                 url: RadAjax.ajaxurl,
                 type: 'POST',
                 data: data,
+                beforeSend: function () {
+                    loginSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>').attr('disabled', true);
+                },
                 success: function (res) {
                     if (res.res === 'Authenticate Error') {
                         BottomToast.fire({
@@ -110,7 +113,8 @@ jQuery(document).ready(function($){
                             if (result.isConfirmed) {
                                 document.getElementById("login_frm").reset();
                                 //window.open('http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false, '_blank');
-                                window.location.href = 'http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false;
+                                window.location.replace('http://spa.radshid.com/index.aspx?act=' + data.act + '&username='+username+'&pass='+password+'&rememberMe='+false);
+                                return false;
                             } else {
                                 swalWithBootstrapButtons.fire('ورود لغو شد!', '', 'info')
                             }
@@ -198,8 +202,7 @@ jQuery(document).ready(function($){
 
         if (name !=='' && family !=='' && username !=='' && is_pass_valid && pass===pass_confirm && is_mobile_valid && is_email_valid && is_imei_valid
             && reg_code !=='' && car_name !=='' && is_admin_phone_valid && is_sim_phone_valid) {
-            registerSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>').attr('disabled', true);
-            $('#regAlert').fadeOut(500);
+
 
             let nonce = $('#rad_register_nonce').val();
             let data = {
@@ -224,6 +227,10 @@ jQuery(document).ready(function($){
                 url: RadAjax.ajaxurl,
                 type: 'POST',
                 data: data,
+                beforeSend: function () {
+                    registerSubmitBtn.html('<i class="fa fa-circle-o-notch fa-spin align-middle mx-1"></i>').attr('disabled', true);
+                    $('#regAlert').fadeOut(500);
+                },
                 success: function (res , xhr) {
                     if (res.res === 'Authenticate Error') {
                         BottomToast.fire({
