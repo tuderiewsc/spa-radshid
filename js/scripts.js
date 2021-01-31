@@ -1,10 +1,9 @@
-/* Version 1.16 */
+/* Version 1.17 */
 jQuery(document).ready(function($){
 
     // inits
     $('a[href="#login_tab"]').click();
     new WOW().init();
-    const bLazy = new Blazy();
 
 
 

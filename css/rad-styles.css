@@ -1,4 +1,4 @@
-/* Version 1.16 */
+/* Version 1.17 */
 
 
 /*ul#avia-menu{*/
@@ -37,7 +37,7 @@ a:hover, a:focus, a:visited {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     border-radius: 0 !important;
     margin-top: 35px;
     height: calc(100vh - 250px);
@@ -583,30 +583,30 @@ button#register_frm_submit_btn:hover {
     align-content: center;
     margin-top: -30px;
 }
-.linkItem {
+.link_items .linkItem {
     min-width: 15%;
-    width: 16%;
+    width: auto;
     text-align: center;
     padding: 15px;
     border-radius: 0 !important;
 }
-.linkItem.odd{
+.link_items .linkItem.odd{
     background: #ffffff;
 }
-.linkItem.even{
+.link_items .linkItem.even{
     background: #ffffff;
 }
-.linkItem a{
+.link_items .linkItem a{
     text-align: center;
     color: #eee;
     font-size: 1.25em;
     font-family: iranyekan,Samim,Sans-serif!important;
 }
-.linkItem a:hover{
+.link_items .linkItem a:hover{
     color: #fff !important;
     text-decoration: none;
 }
-.linkItem a img.linkItemImg{
+.link_items .linkItem a img.linkItemImg{
     width: 50px;
     height: auto;
     visibility: hidden;
@@ -619,7 +619,7 @@ button#register_frm_submit_btn:hover {
 /*.linkItem:hover img{*/
 /*transform: scale(1.05);*/
 /*}*/
-.linkItem a p.linkItemText{
+.link_items .linkItem a p.linkItemText{
     text-align: center;
     margin: 0;
     padding: 0;
@@ -628,7 +628,7 @@ button#register_frm_submit_btn:hover {
     color: #1c272b;
     visibility: hidden;
 }
-.linkItem a i{
+.link_items .linkItem a i{
     font-size: 4em;
     -webkit-transition: 0.3s ease-in-out;
     -ms-transition: 0.3s ease-in-out;
@@ -636,8 +636,40 @@ button#register_frm_submit_btn:hover {
     -moz-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
-.linkItem:hover i{
+.link_items .linkItem:hover i{
     transform:scale(1.1);
+}
+
+
+.icon_links .linkItem{
+    text-align: center;
+    border-radius: 0 !important;
+    margin: 8px 0;
+}
+.icon_links .linkItem i{
+    padding: 10px;
+    color: #1c272b;
+    font-size: 4em;
+    /*-webkit-text-stroke: 2px #000;*/
+    /*-webkit-text-fill-color: transparent;*/
+}
+
+.icon_links .linkItemTitle {
+    color: #1c272b;
+    font-size: 1.5em;
+    font-family: iranyekan,Samim,Sans-serif!important;
+}
+.icon_links .linkItemText {
+    padding: 0 20%;
+    text-align-last: center;
+}
+.icon_links .linkItemText span{
+    color: #757575;
+    font-size: 13px;
+    font-family: Samim,iranyekan,Sans-serif!important;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 2;
 }
 /* Top Links */
 
@@ -666,6 +698,39 @@ button#register_frm_submit_btn:hover {
 footer.socket_color{
     background-color: #1c272b !important;
 }
+
+
+/* New Slider */
+.wpsp-slider-section .wpsp-product-section{
+    width: 90%;
+    margin: auto !important;
+}
+.wpsp-slider-section .wpspro-product-data a.wpsp-product-image {
+    border: none !important;
+}
+.wpsp-slider-section .wpsp-product-title a {
+    color: #1c272b !important;
+    font-family: iranyekan,Samim,Sans-serif !important;
+    line-height: 2 !important;
+}
+.wpsp-slider-section .woocommerce-Price-amount.amount {
+    color: #cb2027 !important;
+    font-size: 1.25em;
+}
+.wpsp-slider-section .wpsp-cart-button p {
+    text-align: center;
+}
+.wpsp-slider-section .add_to_cart_inline a{
+    border-radius: 0 !important;
+    font-family: iranyekan,Samim,Sans-serif !important;
+}
+.wpsp-slider-section .wpsp-product-img{
+    padding: 35px;
+}
+/* New Slider */
+
+
+
 /* for Radshid */
 
 /* The typing effect */
@@ -687,7 +752,7 @@ footer.socket_color{
     }
 }
 
-/* laoding circle */
+/* loading circle */
 .loader-container{
     position: absolute;
     left: 0;
@@ -720,7 +785,7 @@ footer.socket_color{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-/* laoding circle */
+/* loading circle */
 
 
 .avia_textblock p {
@@ -1016,7 +1081,7 @@ footer.socket_color{
 }
 @media screen and (max-width: 768px) {
     ::-webkit-scrollbar {
-        width: 4px;
+        width: 2px;
     }
     .top_banner{
         /*background: linear-gradient(to left , rgba(0,0,0,0.8),rgba(38,50,56,0.3)), url(../assets/images/TopBg-mobile.gif);*/
@@ -1150,6 +1215,9 @@ footer.socket_color{
     }
 }
 @media screen and (max-width: 500px) {
+    .link_items .linkItem{
+        width: 50%;
+    }
     .top_banner{
         height: 225px;
     }

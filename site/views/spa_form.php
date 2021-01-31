@@ -261,7 +261,7 @@
                 <h3 class="separator_sub_title mb-4"><?php echo __('SPA System' , 'radshid_lan')?></h3>
                 <div id="spa_separator_content">
                         <figure>
-                            <img class="b-lazy" data-src="<?php echo RAD_ASSETS. '/images/spa_form/Login-Winter.png'  ?>" alt="سامانه مدیریت ناوگان">
+                            <img src="<?php echo RAD_ASSETS. '/images/spa_form/Login-Winter.png'  ?>" alt="سامانه مدیریت ناوگان">
                         </figure>
                         <p class="separator_sub_text">
                             سامانه مدیریت ناوگان رادشید یک سیستم یکپارچه مبتنی بر وب ، مطابق با ساختارهای بین المللی امنیت و اینترنت اشیا ، با برقراری ارتباط بین دستگاه های ردیاب  و مدیران ، به ارائه گزارشات مختلف و همچنین اعمال برخی دستورات مورد نیاز می پردازد.
