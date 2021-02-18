@@ -1,22 +1,22 @@
-/* Version 1.17 */
+/* Version 1.19 */
 
 
-/*ul#avia-menu{*/
-     /*display: none;*/
- /*}*/
-/*.fullsize .container{*/
-    /*max-width: 100% !important;*/
-    /*width: 100% !important;*/
-    /*padding: 0 !important;*/
-/*}*/
+ul#avia-menu{
+     display: none;
+ }
+.fullsize .container{
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+}
 
 
-/*html{*/
-    /*scroll-behavior: smooth;*/
-/*}*/
-/*html:focus-within{*/
-    /*scroll-behavior: smooth;*/
-/*}*/
+html{
+    scroll-behavior: smooth;
+}
+html:focus-within{
+    scroll-behavior: smooth;
+}
 
 @font-face {
     font-family: "Samim";
@@ -32,15 +32,15 @@ a:hover, a:focus, a:visited {
 
 .top_banner{
     position: relative;
-    background: linear-gradient(to left , rgba(0,0,0,0.8),rgba(38,50,56,0.3)), url(../assets/images/TopBg.jpg);
-    /*background: linear-gradient(to left , transparent , transparent), url(../assets/images/TopBg.gif);*/
+    /*background: linear-gradient(to left , rgba(0,0,0,0.8),rgba(38,50,56,0.3)), url(../assets/images/TopBg.gif);*/
+    background: linear-gradient(to left , transparent , transparent), url(../assets/images/TopBg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     border-radius: 0 !important;
     margin-top: 35px;
-    height: calc(100vh - 250px);
+    height: calc(100vh - 400px);
 }
 
 .top_banner_container{
@@ -72,7 +72,7 @@ a:hover, a:focus, a:visited {
 }
 
 .top_banner .top_banner_Title{
-    visibility: hidden;
+    display: none;
     width: 100%;
     color: #ffffff;
     font-size:3em;
@@ -81,17 +81,28 @@ a:hover, a:focus, a:visited {
     user-select: none;
     padding: 0;
     margin: 0;
+    font-family: iranyekan,Sans-serif!important;
+}
+.top_banner .top_banner_Title > .site_title{
+    color: #cb2027;
 }
 .top_banner .top_banner_Slogan{
-    visibility: hidden;
-    width: 100%;
-    color: #eeeeee;
+    overflow: hidden;  /* Ensures the content is not revealed until the animation */
+    width: auto;
+    color: transparent;
     text-align: center;
     user-select: none;
     padding: 0;
-    margin: 0 auto;
     font-size: 1.75em;
     font-family: Samim,iranyekan,Sans-serif!important;
+}
+
+.top_banner .top_banner_Slogan.typeWritter{
+    border-right: 0.15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: normal; /* Adjust as needed */
+    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 
@@ -628,6 +639,7 @@ button#register_frm_submit_btn:hover {
     color: #1c272b;
     visibility: hidden;
 }
+
 .link_items .linkItem a i{
     font-size: 4em;
     -webkit-transition: 0.3s ease-in-out;
@@ -640,11 +652,17 @@ button#register_frm_submit_btn:hover {
     transform:scale(1.1);
 }
 
-
+.icon_links{
+    visibility: hidden;
+}
 .icon_links .linkItem{
     text-align: center;
     border-radius: 0 !important;
-    margin: 8px 0;
+    margin: 24px 0;
+}
+.icon_links .linkItem a img {
+    width: 60px;
+    height: auto;
 }
 .icon_links .linkItem i{
     padding: 10px;
@@ -656,8 +674,10 @@ button#register_frm_submit_btn:hover {
 
 .icon_links .linkItemTitle {
     color: #1c272b;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-family: iranyekan,Samim,Sans-serif!important;
+    margin: 10px auto;
+    visibility: hidden;
 }
 .icon_links .linkItemText {
     padding: 0 20%;
@@ -700,7 +720,10 @@ footer.socket_color{
 }
 
 
-/* New Slider */
+/* Woocommerce Slider */
+.wpsp-product-title{
+    text-align:center !important;
+}
 .wpsp-slider-section .wpsp-product-section{
     width: 90%;
     margin: auto !important;
@@ -709,13 +732,24 @@ footer.socket_color{
     border: none !important;
 }
 .wpsp-slider-section .wpsp-product-title a {
+    float:right;
+    width:100%;
+    direction:rtl;
     color: #1c272b !important;
     font-family: iranyekan,Samim,Sans-serif !important;
     line-height: 2 !important;
+    margin: 15px auto;
+    font-size: 1em !important;
+    font-weight: lighter !important;
 }
 .wpsp-slider-section .woocommerce-Price-amount.amount {
     color: #cb2027 !important;
-    font-size: 1.25em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.wpsp-slider-section #sp-woo-product-slider-pro14780.wpsp-product-section .wpsp-product-price{
+    font-weight: lighter !important;
 }
 .wpsp-slider-section .wpsp-cart-button p {
     text-align: center;
@@ -723,33 +757,36 @@ footer.socket_color{
 .wpsp-slider-section .add_to_cart_inline a{
     border-radius: 0 !important;
     font-family: iranyekan,Samim,Sans-serif !important;
+    padding: 12px 24px !important;
+    margin-top: 24px !important;
+    font-size: 12px !important;
+    font-weight: lighter !important;
 }
 .wpsp-slider-section .wpsp-product-img{
     padding: 35px;
 }
-/* New Slider */
+.wpsp-slider-section .wpsp-cart-button a.added_to_cart {
+    color: teal;
+    font-weight: bold;
+    line-height: 7;
+}
+.digcon input#reg_email{
+    text-indent: 70px;
+}
+/* Woocommerce Slider */
 
 
 
 /* for Radshid */
-
 /* The typing effect */
 @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+    from { width: 0 }
+    to { width: 100% }
 }
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: tomato;
-    }
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
 }
 
 /* loading circle */
@@ -758,9 +795,11 @@ footer.socket_color{
     left: 0;
     top: 0;
     width: 100%;
-    background: #ffffff;
+    background: transparent;
     height: 100%;
     border-radius: 0 !important;
+    opacity: 0.6;
+    display: none;
 }
 .loader-container .loader_circle {
     position: absolute;
@@ -940,10 +979,10 @@ footer.socket_color{
 }
 
 .separator_sub#separator_sub_right{
-    margin-right: 75px;
+    margin-right: 50px;
 }
 .separator_sub#separator_sub_left{
-    margin-left: 75px;
+    margin-left: 50px;
 }
 
 .separator_sub_image img{
@@ -1000,7 +1039,7 @@ footer.socket_color{
 }
 
 .separator.reverseOnMob .separator_sub_text{
-    margin-left: 75px;
+    margin-left: 50px;
 }
 /* Affilate Separator Section */
 
@@ -1058,14 +1097,16 @@ footer.socket_color{
 }
 /* ScrollBars */
 
+.owl-carousel span {
+    background: #D6D6D6 !important;
+}
+.owl-carousel .active span {
+    background: #686868 !important;
+}
 
 
 /* Responsive */
-@media screen and (max-width: 1300px) {
-    .linkItem {
-        padding: 16px;
-    }
-}
+
 @media screen and (max-width: 1000px) {
     .card-deck {
         padding: 0 90px;
@@ -1088,14 +1129,11 @@ footer.socket_color{
         background-size: cover;
         background-attachment: initial;
         margin-top: -24px !important;
-        /*height: 300px;*/
     }
     .top_banner #topBannerLoading{
         height: 400px;
     }
-    .responsive #top .logo {
-        padding: 0 65px;
-    }
+
     .top_banner .top_banner_Title{
         font-size: 2em;
     }

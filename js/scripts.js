@@ -17,15 +17,22 @@ jQuery(document).ready(function($){
     const frm_error_authentication = $('#frm_error_authentication').val();
     /* -------------------------------------------------------------------------------------------------- */
 
+    $('.icon_links').css('visibility' , 'visible');
+    $('.linkItemTitle').css('visibility' , 'visible').addClass('wow');
+
 
     /* Top Banner */
-    $('.loader-container').css('display' , 'none').remove();
+    //$('.loader-container').css('display' , 'none').remove();
     setTimeout(function () {
-        $('.top_banner_Title').css('visibility' , 'visibile').addClass('wow');
-        $('.top_banner_Slogan').css('visibility' , 'visibile').addClass('wow');
-        $('.linkItemImg').css('visibility' , 'visibile').addClass('wow');
-        $('.linkItemText').css('visibility' , 'visibile').addClass('wow');
-    }, 200);
+        $('.top_banner_Title').fadeIn();
+        //$('.linkItemTitle').css('visibility' , 'visible').addClass('wow');
+    }, 1000);
+
+    setTimeout(function () {
+        $('.top_banner_Slogan').addClass('typeWritter').css('color' , '#eee');
+    }, 2500);
+
+
     /* Top Banner */
 
 

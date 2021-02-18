@@ -18,7 +18,6 @@ add_action('plugins_loaded', function(){
 
 
 
-//define('RAD_INC', plugin_dir_path(__FILE__) . 'inc/');
 define('RAD_ADMIN', plugin_dir_path(__FILE__) . 'admin/');
 define('RAD_ADMIN_VIEW', plugin_dir_path(__FILE__) . 'admin/view/');
 define('RAD_INCS', plugin_dir_path(__FILE__) . 'inc/');
@@ -34,7 +33,6 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_script('owlCarousel', RAD_JS.'owl.carousel.min.js');
 	wp_enqueue_script('wow', RAD_JS.'wow.min.js');
 	wp_enqueue_script('sweetAlert', RAD_JS.'sweetalert2.all.min.js');
-	wp_enqueue_script('blazy', RAD_JS.'blazy.min.js');
 	wp_enqueue_script('myScripts', RAD_JS.'scripts.js' , '1.3');
 	wp_localize_script( 'myScripts', 'RadAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
@@ -56,7 +54,8 @@ if(is_admin()){
 	require(RAD_ADMIN . 'ajax_requests.php');
 }
 // Short codes
-require (RAD_INCS . 'shortcode.php');
+require(RAD_INCS . 'shortcode.php');
+//require(RAD_INCS . 'functions.php');
 
 
 

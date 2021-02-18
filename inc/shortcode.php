@@ -11,7 +11,11 @@ add_action('init', function(){
 	add_shortcode('affilate_separator' , 'affilate_separator_section');
 	add_shortcode('sipaad_separator' , 'sipaad_separator_section');
 	add_shortcode('affilate_dash' , 'affilate_dash_page');
+	add_shortcode('mellat' , 'mellat_page');
 });
+function mellat_page($atts, $content = null){
+	include(plugin_dir_path( __FILE__ ).'../site/views/mellat_test.php');
+}
 function rad_show_spa_form($atts, $content = null){
 	include(plugin_dir_path( __FILE__ ).'../site/views/spa_form.php');
 }

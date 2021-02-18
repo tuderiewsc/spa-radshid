@@ -1,9 +1,6 @@
 <?php defined( 'ABSPATH' ) or die( 'No script kiddies please!' ); ?>
 
 
-<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-
-
 <div class="top_links">
     <div class="container-fluid" style="padding: 0;margin: 0">
 		<div class="row justify-content-center">
@@ -11,106 +8,102 @@
 <!--                <div class="linkItem col-lg-4 col-md-4 col-sm-6">-->
 <!--                    <a href="https://radshid.com/?p=12762">-->
 <!--                        <i class="fa fa-car"></i>-->
-<!--                        <h2 class="linkItemTitle wow" data-wow-duration="0.5s" data-wow-delay="0s">انواع ردیاب خودرو</h2>-->
+<!--                        <h2 class="linkItemTitle"> ردیاب خودرو</h2>-->
 <!--                        <p class="linkItemText fadeIn wow" data-wow-duration="0.5s" data-wow-delay="0s">-->
-<!--                            <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</span>-->
+<!--                            <span>ردیاب خودرو یک دستگاه الکترونیکی است که موقعیت خودرو (سواری ، کامیون ، اتوبوس و ... ) را ارسال می کند. موقعیت ارسال شده توسط دستگاه ردیاب خودرو را میتوان از طریق سایت ردیابی یا گوشی موبایل بر روی نقشه مشاهده کرد.</span>-->
 <!--                        </p>-->
 <!--                    </a>-->
 <!--                </div>-->
 <!--                <div class="linkItem col-lg-4 col-md-4 col-sm-6">-->
 <!--                    <a href="https://radshid.com/?p=12762">-->
 <!--                        <i class="material-icons">person</i>-->
-<!--                        <h2 class="linkItemTitle wow" data-wow-duration="0.5s" data-wow-delay="0.3s">انواع ردیاب شخصی</h2>-->
+<!--                        <h2 class="linkItemTitle">ردیاب شخصی</h2>-->
 <!--                        <p class="linkItemText fadeIn wow" data-wow-duration="0.5s" data-wow-delay="0.3s">-->
-<!--                            <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</span>-->
+<!--                            <span>ردیاب شخصی یا ردیاب شخص یک دستگاه الکترونیکی است که با دریافت سیگنالهای ماهوارههای جی پی اس (GPS) موقعیت خود را بصورت طول وعرض جغرافیایی محاسبه می کند.</span>-->
 <!--                        </p>-->
 <!--                    </a>-->
 <!--                </div>-->
 <!--                <div class="linkItem col-lg-4 col-md-4 col-sm-6">-->
 <!--                    <a href="https://radshid.com/?p=12762">-->
 <!--                        <i class="material-icons">tablet_android</i>-->
-<!--                        <h2 class="linkItemTitle wow" data-wow-duration="0.5s" data-wow-delay="0.6s">انواع گجت صنعتی</h2>-->
+<!--                        <h2 class="linkItemTitle"> گجت صنعتی</h2>-->
 <!--                        <p class="linkItemText fadeIn wow" data-wow-duration="0.5s" data-wow-delay="0.6s">-->
-<!--                            <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</span>-->
+<!--                            <span>انواع تبلت، لپ تاپ و PDA صنعتی</span>-->
 <!--                        </p>-->
 <!--                    </a>-->
 <!--                </div>-->
-<!---->
 <!--                <div class="linkItem col-lg-4 col-md-4 col-sm-6">-->
 <!--                    <a href="https://radshid.com/?p=12762">-->
 <!--                        <i class="fa fa-truck"></i>-->
-<!--                        <h2 class="linkItemTitle wow" data-wow-duration="0.5s" data-wow-delay="0.9s">ورود به سامانه ردیابی</h2>-->
+<!--                        <h2 class="linkItemTitle">ورود به سامانه ردیابی</h2>-->
 <!--                        <p class="linkItemText fadeIn wow" data-wow-duration="0.5s" data-wow-delay="0.9s">-->
-<!--                            <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</span>-->
+<!--                            <span>سامانه مدیریت ناوگان رادشید یک سیستم یکپارچه مبتنی بر وب است که مطابق با استاندارهای بین المللی امنیت و اینترنت اشیا ، به برقراری ارتباط بین دستگاه های ردیاب  و کاربر میپردازد.</span>-->
 <!--                        </p>-->
 <!--                    </a>-->
 <!--                </div>-->
 <!--                <div class="linkItem col-lg-4 col-md-4 col-sm-6">-->
 <!--                    <a href="https://radshid.com/?p=12762">-->
 <!--                        <i class="fa fa-bullhorn"></i>-->
-<!--                        <h2 class="linkItemTitle wow" data-wow-duration="0.5s" data-wow-delay="1.2s">همکاری در فرشو</h2>-->
+<!--                        <h2 class="linkItemTitle">همکاری در فروش</h2>-->
 <!--                        <p class="linkItemText fadeIn wow" data-wow-duration="0.5s" data-wow-delay="1.2s">-->
-<!--                            <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</span>-->
+<!--                            <span>این روش که افیلیت مارکتینگ نام دارد، از مهم ترین شیوه های کسب درآمد اینترنتی است که همه می توانند به راحتی فقط از طریق شبکه های اجتماعی مانند کانال تلگرام ، اینستاگرام و یا سایت، روشی بدون دردسر برای کسب درآمد آنلاین خود ایجاد نمایند .</span>-->
 <!--                        </p>-->
 <!--                    </a>-->
 <!--                </div>-->
 <!--                <div class="linkItem col-lg-4 col-md-4 col-sm-6">-->
 <!--                    <a href="https://radshid.com/?p=12762">-->
-<!--                        <i class="material-icons">local_gas_station</i>-->
-<!--                        <h2 class="linkItemTitle wow" data-wow-duration="0.5s" data-wow-delay="1.5s">سامانه سیپاد</h2>-->
+<!--                        <i class="material-icons large" style="font-size: 5em;">local_gas_station</i>-->
+<!--                        <h2 class="linkItemTitle">سامانه سیپاد</h2>-->
 <!--                        <p class="linkItemText fadeIn wow" data-wow-duration="0.5s" data-wow-delay="1.5s">-->
-<!--                            <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</span>-->
+<!--                            <span>دستگاه سیپاد حاصل طرح ملی تجهیز ناوگان حمل‌و‌نقل درون شهری و حومه‌ای و تجهیز این ناوگان به سامانه جامع پایشی است که تمامی خودروهای در حال خدمت در این حوزه اعم از مینی‌بوس، اتوبوس، ون، تاکسی، سرویس‌های مدارس و … را در برمی‌گیرد.</span>-->
 <!--                        </p>-->
 <!--                    </a>-->
 <!--                </div>-->
 <!--            </div>-->
 
 
-
-            <div class="link_items">
-                <div class="linkItem">
+            <div class="icon_links row w-100">
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
                     <a href="https://radshid.com/?p=12762">
-                        <img class="linkItemImg zoomIn" src="<?php echo RAD_ASSETS. '/images/icons_images/car.png'  ?>" alt=""
-                             data-wow-duration="0.5s" data-wow-delay="0s">
-                        <p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">انواع ردیاب خودرو</p>
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/car.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="0s"> ردیاب خودرو</h2>
                     </a>
                 </div>
-                <div class="linkItem">
-                    <a href="http://spa.radshid.com/" target="_blank">
-                        <img class="linkItemImg zoomIn" src="<?php echo RAD_ASSETS. '/images/icons_images/truck.png'  ?>" alt=""
-                             data-wow-duration="0.5s" data-wow-delay="0.3s">
-                        <p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">ورود به سامانه ردیابی</p>
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
+                    <a href="https://radshid.com/?p=12762">
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/truck.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="0.2s">ردیاب شخصی</h2>
                     </a>
                 </div>
-                <div class="linkItem">
-                    <a href="https://radshid.com/?p=12732">
-                        <img class="linkItemImg zoomIn" src="<?php echo RAD_ASSETS. '/images/icons_images/man.png'  ?>" alt=""
-                             data-wow-duration="0.5s" data-wow-delay="0.6s">
-                        <p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">انواع ردیاب شخصی</p>
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
+                    <a href="https://radshid.com/?p=12762">
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/man.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="0.4s"> گجت صنعتی</h2>
                     </a>
                 </div>
-                <div class="linkItem">
-                    <a href="https://radshid.com/?p=12885">
-                        <img class="linkItemImg zoomIn" src="<?php echo RAD_ASSETS. '/images/icons_images/tablet.png'  ?>" alt=""
-                             data-wow-duration="0.5s" data-wow-delay="0.9s">
-                        <p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">گجت های صنعتی</p>
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
+                    <a href="https://radshid.com/?p=12762">
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/tablet.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="0.6s">ورود به سامانه ردیابی</h2>
                     </a>
                 </div>
-                <div class="linkItem">
-                    <a href="https://radshid.com/become-an-affiliate/">
-                        <img class="linkItemImg zoomIn" src="<?php echo RAD_ASSETS. '/images/icons_images/affilate.png'  ?>" alt=""
-                             data-wow-duration="0.5s" data-wow-delay="1.2s">
-                        <p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">همکاری در فروش</p>
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
+                    <a href="https://radshid.com/?p=12762">
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/affilate.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="0.8s">همکاری در فروش</h2>
                     </a>
                 </div>
-                <div class="linkItem">
-                    <a href="https://radshid.com/?p=13785">
-                        <img class="linkItemImg zoomIn" src="<?php echo RAD_ASSETS. '/images/icons_images/fuel-station.png'  ?>" alt=""
-                             data-wow-duration="0.5s" data-wow-delay="1.5s">
-                        <p class="linkItemText fadeIn" data-wow-duration="0.5s" data-wow-delay="2s">سامانه سیپاد</p>
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
+                    <a href="https://radshid.com/?p=12762">
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/fuel-station.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">سامانه سیپاد</h2>
                     </a>
                 </div>
             </div>
+
+
+
+
 		</div>
 	</div>
 </div>
