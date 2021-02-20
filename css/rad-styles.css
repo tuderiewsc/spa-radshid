@@ -1,4 +1,4 @@
-/* Version 1.20 */
+/* Version 1.21 */
 
 
 ul#avia-menu{
@@ -25,6 +25,7 @@ html:focus-within{
     font-style: normal;
     font-display: swap;
 }
+
 
 a:hover, a:focus, a:visited {
     text-decoration: none !important;
@@ -94,6 +95,7 @@ a:hover, a:focus, a:visited {
     user-select: none;
     padding: 0;
     font-size: 1.75em;
+    font-weight: bold;
     font-family: Samim,iranyekan,Sans-serif!important;
 }
 

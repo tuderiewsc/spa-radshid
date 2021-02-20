@@ -3,7 +3,7 @@
  * Plugin Name: Radshid Customization
  * Plugin URI: https://radshid.com/
  * Description: Spa For Radshid Site.
- * Version: 1.5
+ * Version: 1.6
  * Author: Outsider
  * Author URI: https://radshid.com/
  * Text Domain: radshid_lan

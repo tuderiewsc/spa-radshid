@@ -1,4 +1,4 @@
-/* Version 1.20 */
+/* Version 1.21 */
 jQuery(document).ready(function($){
 
     // inits
