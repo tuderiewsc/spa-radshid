@@ -3,7 +3,6 @@ jQuery(document).ready(function($){
 
     // inits
     $('a[href="#login_tab"]').click();
-    new WOW().init();
 
 
     // const handler = (event) => {
@@ -27,7 +26,7 @@ jQuery(document).ready(function($){
 
 
     $('.icon_links').css('visibility' , 'visible');
-    $('.linkItemTitle').css('visibility' , 'visible').addClass('wow');
+    $('.linkItemTitle').css('visibility' , 'visible').addClass('animate__animated');
     $('.loader-container').css('display' , 'none').remove();
 
 

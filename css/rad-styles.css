@@ -1,14 +1,14 @@
 /* Version 1.20 */
 
 
-/*ul#avia-menu{*/
-     /*display: none;*/
- /*}*/
-/*.fullsize .container{*/
-    /*max-width: 100% !important;*/
-    /*width: 100% !important;*/
-    /*padding: 0 !important;*/
-/*}*/
+ul#avia-menu{
+     display: none;
+ }
+.fullsize .container{
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+}
 
 
 html{
@@ -680,6 +680,8 @@ button#register_frm_submit_btn:hover {
     font-family: iranyekan,Samim,Sans-serif!important;
     margin: 10px auto;
     visibility: hidden;
+    animation-duration: 0.4s;
+    animation-delay: 0.5s;
 }
 .icon_links .linkItemText {
     padding: 0 20%;
