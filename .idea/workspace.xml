@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/sipaadBanner.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/TopBg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/TopBg.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/rad-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/rad-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/shortcode.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/radtools.php" beforeDir="false" afterPath="$PROJECT_DIR$/radtools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/views/top_banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/top_banner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/views/agency_carousel.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/agency_carousel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/top_links.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/top_links.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/radtools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1091">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="213">
+              <caret line="30" selection-start-line="30" selection-end-line="32" />
               <folding>
                 <element signature="e#6#252#0#PHP" expanded="true" />
               </folding>
@@ -35,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/shortcode.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
+            <state relative-caret-position="216">
               <caret line="9" column="33" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="33" />
             </state>
           </provider>
@@ -44,8 +41,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/views/top_links.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="64" column="34" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="34" />
+            <state relative-caret-position="168">
+              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/views/agency_carousel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="837">
+              <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -53,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/views/top_banner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+            <state relative-caret-position="96">
+              <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -62,8 +71,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
-              <caret line="656" column="1" lean-forward="true" selection-start-line="656" selection-start-column="1" selection-end-line="656" selection-end-column="1" />
+            <state relative-caret-position="72">
+              <caret line="3" selection-start-line="3" selection-start-column="2" selection-end-line="10" selection-end-column="3" />
+              <folding>
+                <element signature="e#27469#27840#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,10 +83,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="264">
+              <caret line="14" lean-forward="true" selection-start-line="8" selection-end-line="14" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1361#1677#0" />
+                <element signature="e#1728#1888#0" />
+                <element signature="e#2042#2159#0" />
+                <element signature="e#2397#6166#0" />
+                <element signature="e#6323#14206#0" />
+                <element signature="e#18993#19192#0" />
+                <element signature="e#19235#19270#0" />
+                <element signature="e#19399#20260#0" />
+                <element signature="e#20327#20513#0" />
                 <element signature="n#!!block;n#stripLength#0" />
                 <element signature="n#!!block;n#InputValidation#0" />
               </folding>
@@ -94,10 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>beforeSend</find>
-      <find>TopBg</find>
-      <find>reverseOnMob</find>
-      <find>separator</find>
       <find>768</find>
       <find>&lt;img</find>
       <find>linkItem</find>
@@ -110,7 +127,6 @@
       <find>wpsp-slider-section .wpsp-product-title a</find>
       <find>digcon input#reg_email</find>
       <find>.separator.reverseOnMob .separator_sub_text</find>
-      <find>.top_banner</find>
       <find>wpsp-product-title</find>
       <find>link_item</find>
       <find>.icon_links .linkItemTitle</find>
@@ -122,8 +138,13 @@
       <find>typing</find>
       <find>linkItemTitle</find>
       <find>linkItemText</find>
-      <find>icon_links</find>
       <find>loader-container</find>
+      <find>loader_circle</find>
+      <find>owl-dots</find>
+      <find>.top_banner .top_banner_Slogan</find>
+      <find>.icon_links .linkItem</find>
+      <find>icon_links</find>
+      <find>.top_banner</find>
     </findStrings>
     <replaceStrings>
       <replace>0.3s</replace>
@@ -200,15 +221,15 @@
         <option value="$PROJECT_DIR$/admin/admin_proccess.php" />
         <option value="$PROJECT_DIR$/js/blazy.min.js" />
         <option value="$PROJECT_DIR$/site/views/affilate_separator_section.php" />
-        <option value="$PROJECT_DIR$/site/views/agency_carousel.php" />
         <option value="$PROJECT_DIR$/site/views/spa_form.php" />
         <option value="$PROJECT_DIR$/site/views/sipaad_separator_section.php" />
         <option value="$PROJECT_DIR$/inc/shortcode.php" />
         <option value="$PROJECT_DIR$/site/views/request.php" />
         <option value="$PROJECT_DIR$/inc/functions.php" />
-        <option value="$PROJECT_DIR$/radtools.php" />
         <option value="$PROJECT_DIR$/site/views/top_banner.php" />
         <option value="$PROJECT_DIR$/site/views/top_links.php" />
+        <option value="$PROJECT_DIR$/site/views/agency_carousel.php" />
+        <option value="$PROJECT_DIR$/radtools.php" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/css/rad-styles.css" />
       </list>
@@ -401,7 +422,8 @@
       <workItem from="1612617158594" duration="1081000" />
       <workItem from="1612855451913" duration="10692000" />
       <workItem from="1613547855597" duration="7187000" />
-      <workItem from="1613635985797" duration="5537000" />
+      <workItem from="1613635985797" duration="6098000" />
+      <workItem from="1613798914151" duration="9651000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -428,7 +450,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="550579000" />
+    <option name="totallyTimeSpent" value="560791000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,14 +463,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1705757" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17217484" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.30877572" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.30119178" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" visible="true" weight="0.28277355" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.28277355" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
@@ -636,22 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/views/agency_carousel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/nusoap.php" />
     <entry file="file://$PROJECT_DIR$/site/views/spa_form.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -709,43 +716,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/radtools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1091">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#6#252#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/shortcode.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="216">
           <caret line="9" column="33" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/views/top_banner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="96">
+          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/views/top_links.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="64" column="34" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="34" />
+        <state relative-caret-position="168">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/views/agency_carousel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/radtools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="30" selection-start-line="30" selection-end-line="32" />
+          <folding>
+            <element signature="e#6#252#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="264">
+          <caret line="14" lean-forward="true" selection-start-line="8" selection-end-line="14" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1361#1677#0" />
+            <element signature="e#1728#1888#0" />
+            <element signature="e#2042#2159#0" />
+            <element signature="e#2397#6166#0" />
+            <element signature="e#6323#14206#0" />
+            <element signature="e#18993#19192#0" />
+            <element signature="e#19235#19270#0" />
+            <element signature="e#19399#20260#0" />
+            <element signature="e#20327#20513#0" />
             <element signature="n#!!block;n#stripLength#0" />
             <element signature="n#!!block;n#InputValidation#0" />
           </folding>
@@ -754,8 +780,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="656" column="1" lean-forward="true" selection-start-line="656" selection-start-column="1" selection-end-line="656" selection-end-column="1" />
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-start-column="2" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="e#27469#27840#0" />
+          </folding>
         </state>
       </provider>
     </entry>

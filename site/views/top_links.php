@@ -4,7 +4,48 @@
 <div class="top_links">
     <div class="container-fluid" style="padding: 0;margin: 0">
 		<div class="row justify-content-center">
-<!--            <div class="icon_links row w-100">-->
+
+            <div class="icon_links row w-100">
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
+                    <a href="https://radshid.com/?p=12762">
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/car.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.4s" data-wow-delay="0s"> ردیاب خودرو</h2>
+                    </a>
+                </div>
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
+                    <a href="https://radshid.com/?p=12762">
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/truck.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.4s" data-wow-delay="0.1s">ردیاب شخصی</h2>
+                    </a>
+                </div>
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
+                    <a href="https://radshid.com/?p=12762">
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/man.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.4s" data-wow-delay="0.2s"> گجت صنعتی</h2>
+                    </a>
+                </div>
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
+                    <a href="https://radshid.com/?p=12762">
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/tablet.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.4s" data-wow-delay="0.3s">ورود به سامانه ردیابی</h2>
+                    </a>
+                </div>
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
+                    <a href="https://radshid.com/?p=12762">
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/affilate.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.4s" data-wow-delay="0.4s">همکاری در فروش</h2>
+                    </a>
+                </div>
+                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
+                    <a href="https://radshid.com/?p=12762">
+                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/fuel-station.png'  ?>" alt="">
+                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.4s" data-wow-delay="0.5s">سامانه سیپاد</h2>
+                    </a>
+                </div>
+            </div>
+
+
+            <!--            <div class="icon_links row w-100">-->
 <!--                <div class="linkItem col-lg-4 col-md-4 col-sm-6">-->
 <!--                    <a href="https://radshid.com/?p=12762">-->
 <!--                        <i class="fa fa-car"></i>-->
@@ -60,47 +101,6 @@
 <!--                    </a>-->
 <!--                </div>-->
 <!--            </div>-->
-
-
-            <div class="icon_links row w-100">
-                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
-                    <a href="https://radshid.com/?p=12762">
-                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/car.png'  ?>" alt="">
-                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="0s"> ردیاب خودرو</h2>
-                    </a>
-                </div>
-                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
-                    <a href="https://radshid.com/?p=12762">
-                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/truck.png'  ?>" alt="">
-                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="0.2s">ردیاب شخصی</h2>
-                    </a>
-                </div>
-                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
-                    <a href="https://radshid.com/?p=12762">
-                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/man.png'  ?>" alt="">
-                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="0.4s"> گجت صنعتی</h2>
-                    </a>
-                </div>
-                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
-                    <a href="https://radshid.com/?p=12762">
-                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/tablet.png'  ?>" alt="">
-                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="0.6s">ورود به سامانه ردیابی</h2>
-                    </a>
-                </div>
-                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
-                    <a href="https://radshid.com/?p=12762">
-                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/affilate.png'  ?>" alt="">
-                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="0.8s">همکاری در فروش</h2>
-                    </a>
-                </div>
-                <div class="linkItem col-lg-4 col-md-4 col-sm-6">
-                    <a href="https://radshid.com/?p=12762">
-                        <img class="linkItemImg" src="<?php echo RAD_ASSETS. '/images/icons_images/dark/fuel-station.png'  ?>" alt="">
-                        <h2 class="linkItemTitle zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">سامانه سیپاد</h2>
-                    </a>
-                </div>
-            </div>
-
 
 
 

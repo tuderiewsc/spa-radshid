@@ -1,9 +1,17 @@
-/* Version 1.17 */
+/* Version 1.20 */
 jQuery(document).ready(function($){
 
     // inits
     $('a[href="#login_tab"]').click();
     new WOW().init();
+
+
+    // const handler = (event) => {
+    //     event.preventDefault();
+    //     console.log(event);
+    // };
+    // let onTouchStart={handler};
+    // document.addEventListener('touchstart', onTouchStart, {passive: true});
 
 
 
@@ -17,22 +25,19 @@ jQuery(document).ready(function($){
     const frm_error_authentication = $('#frm_error_authentication').val();
     /* -------------------------------------------------------------------------------------------------- */
 
+
     $('.icon_links').css('visibility' , 'visible');
     $('.linkItemTitle').css('visibility' , 'visible').addClass('wow');
+    $('.loader-container').css('display' , 'none').remove();
 
 
     /* Top Banner */
-    //$('.loader-container').css('display' , 'none').remove();
     setTimeout(function () {
         $('.top_banner_Title').fadeIn();
-        //$('.linkItemTitle').css('visibility' , 'visible').addClass('wow');
     }, 1000);
-
     setTimeout(function () {
         $('.top_banner_Slogan').addClass('typeWritter').css('color' , '#eee');
-    }, 2500);
-
-
+    }, 2000);
     /* Top Banner */
 
 
@@ -410,7 +415,7 @@ jQuery(document).ready(function($){
         margin: 80,
         loop: true,
         nav: false,
-        //navText: ['بعدی', 'قبلی'],
+        // navText: ['بعدی', 'قبلی'],
         navElement: 'div',
         items: 1,
         slideBy: 'page',

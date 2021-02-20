@@ -14,34 +14,34 @@
                 </h3>
             <div class="owl-carousel owl-theme agency_carousel">
                 <div class="item">
-                    <img src="<?php echo RAD_ASSETS. '/images/carousel_images/aab.jpg'  ?>" alt="مشتریان رادشید">
+                    <img src="https://radshid.com/wp-content/uploads/2021/02/jam.jpg" alt="مشتریان رادشید">
                 </div>
                 <div class="item">
-                    <img src="<?php echo RAD_ASSETS. '/images/carousel_images/bargh.jpg'  ?>" alt="مشتریان رادشید">
+                    <img src="https://radshid.com/wp-content/uploads/2021/02/IRIB.jpg" alt="مشتریان رادشید">
                 </div>
                 <div class="item">
-                    <img src="<?php echo RAD_ASSETS. '/images/carousel_images/IRIB.jpg'  ?>" alt="مشتریان رادشید">
+                    <img src="https://radshid.com/wp-content/uploads/2021/02/bargh.jpg" alt="مشتریان رادشید">
                 </div>
                 <div class="item">
-                    <img src="<?php echo RAD_ASSETS. '/images/carousel_images/jam.jpg'  ?>" alt="مشتریان رادشید">
+                    <img src="https://radshid.com/wp-content/uploads/2021/02/aab.jpg" alt="مشتریان رادشید">
                 </div>
                 <div class="item">
-                    <img src="<?php echo RAD_ASSETS. '/images/carousel_images/mapna.jpg'  ?>" alt="مشتریان رادشید">
+                    <img src="https://radshid.com/wp-content/uploads/2021/02/sairan.jpg" alt="مشتریان رادشید">
                 </div>
                 <div class="item">
-                    <img src="<?php echo RAD_ASSETS. '/images/carousel_images/modiran.jpg'  ?>" alt="مشتریان رادشید">
+                    <img src="https://radshid.com/wp-content/uploads/2021/02/saderat.jpg" alt="مشتریان رادشید">
                 </div>
                 <div class="item">
-                    <img src="<?php echo RAD_ASSETS. '/images/carousel_images/pars.jpg'  ?>" alt="مشتریان رادشید">
+                    <img src="https://radshid.com/wp-content/uploads/2021/02/roozaneh.jpg" alt="مشتریان رادشید">
                 </div>
                 <div class="item">
-                    <img src="<?php echo RAD_ASSETS. '/images/carousel_images/roozaneh.jpg'  ?>" alt="مشتریان رادشید">
+                    <img src="https://radshid.com/wp-content/uploads/2021/02/pars.jpg" alt="مشتریان رادشید">
                 </div>
                 <div class="item">
-                    <img src="<?php echo RAD_ASSETS. '/images/carousel_images/saderat.jpg'  ?>" alt="مشتریان رادشید">
+                    <img src="https://radshid.com/wp-content/uploads/2021/02/modiran.jpg" alt="مشتریان رادشید">
                 </div>
                 <div class="item">
-                    <img src="<?php echo RAD_ASSETS. '/images/carousel_images/sairan.jpg'  ?>" alt="مشتریان رادشید">
+                    <img src="https://radshid.com/wp-content/uploads/2021/02/mapna.jpg" alt="مشتریان رادشید">
                 </div>
             </div>
         </div>
