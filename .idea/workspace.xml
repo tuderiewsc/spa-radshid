@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/animate.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/rad-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/rad-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/radtools.php" beforeDir="false" afterPath="$PROJECT_DIR$/radtools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/views/top_links.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/top_links.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/radtools.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="268">
+              <caret line="45" column="74" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="74" />
               <folding>
                 <element signature="e#6#252#0#PHP" expanded="true" />
               </folding>
@@ -29,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/shortcode.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="384">
+              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -64,7 +60,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="236">
               <caret line="680" column="22" lean-forward="true" selection-start-line="680" selection-start-column="22" selection-end-line="680" selection-end-column="22" />
               <folding>
                 <element signature="e#27469#27840#0" />
@@ -76,16 +72,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="216">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#1361#1677#0" />
                 <element signature="e#1728#1888#0" />
-                <element signature="e#2042#2159#0" />
-                <element signature="e#2397#6166#0" />
                 <element signature="e#6323#14206#0" />
-                <element signature="e#18993#19192#0" />
                 <element signature="e#19235#19270#0" />
                 <element signature="e#19399#20260#0" />
                 <element signature="e#20327#20513#0" />
@@ -108,7 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>background-size</find>
       <find>.link_items .linkItem</find>
       <find>laoding</find>
       <find>font-family</find>
@@ -138,6 +130,7 @@
       <find>loader_circle</find>
       <find>.icon_links .linkItemTitl</find>
       <find>wow</find>
+      <find>asyncload</find>
     </findStrings>
     <replaceStrings>
       <replace>0.3s</replace>
@@ -246,32 +239,6 @@
             <path>
               <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
               <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -416,7 +383,7 @@
       <workItem from="1612855451913" duration="10692000" />
       <workItem from="1613547855597" duration="7187000" />
       <workItem from="1613635985797" duration="6098000" />
-      <workItem from="1613798914151" duration="11608000" />
+      <workItem from="1613798914151" duration="15318000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -443,7 +410,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="562748000" />
+    <option name="totallyTimeSpent" value="566458000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,9 +426,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17217484" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16950959" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.30119178" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.30119178" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.28277355" />
@@ -727,47 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="680" column="22" lean-forward="true" selection-start-line="680" selection-start-column="22" selection-end-line="680" selection-end-column="22" />
-          <folding>
-            <element signature="e#27469#27840#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1361#1677#0" />
-            <element signature="e#1728#1888#0" />
-            <element signature="e#2042#2159#0" />
-            <element signature="e#2397#6166#0" />
-            <element signature="e#6323#14206#0" />
-            <element signature="e#18993#19192#0" />
-            <element signature="e#19235#19270#0" />
-            <element signature="e#19399#20260#0" />
-            <element signature="e#20327#20513#0" />
-            <element signature="n#!!block;n#stripLength#0" />
-            <element signature="n#!!block;n#InputValidation#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/radtools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#6#252#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/site/views/top_links.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -782,8 +708,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/shortcode.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="384">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="680" column="22" lean-forward="true" selection-start-line="680" selection-start-column="22" selection-end-line="680" selection-end-column="22" />
+          <folding>
+            <element signature="e#27469#27840#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1361#1677#0" />
+            <element signature="e#1728#1888#0" />
+            <element signature="e#6323#14206#0" />
+            <element signature="e#19235#19270#0" />
+            <element signature="e#19399#20260#0" />
+            <element signature="e#20327#20513#0" />
+            <element signature="n#!!block;n#stripLength#0" />
+            <element signature="n#!!block;n#InputValidation#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/radtools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="45" column="74" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="74" />
+          <folding>
+            <element signature="e#6#252#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

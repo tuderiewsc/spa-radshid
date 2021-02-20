@@ -25,14 +25,27 @@ define('RAD_CSS', plugin_dir_url(__FILE__) . 'css/');
 define('RAD_JS', plugin_dir_url(__FILE__) . 'js/');
 define('RAD_ASSETS', plugin_dir_url(__FILE__) . 'assets/');
 
+
+
+function add_async_forscript($url)
+{
+	if (strpos($url, '#asyncload')===false)
+		return $url;
+	else if (is_admin())
+		return str_replace('#asyncload', '', $url);
+	else
+		return str_replace('#asyncload', '', $url)."' async='async" ."' defer='defer";
+}
+add_filter('clean_url', 'add_async_forscript', 11, 1);
+
 // load css&js
 add_action( 'wp_enqueue_scripts', function(){
 	// scripts
-	wp_enqueue_script('popper', RAD_JS.'popper.min.js' , array('jquery', 'media-upload'));
-	wp_enqueue_script('bootstrap', RAD_JS.'bootstrap.min.js');
-	wp_enqueue_script('owlCarousel', RAD_JS.'owl.carousel.min.js');
-	wp_enqueue_script('sweetAlert', RAD_JS.'sweetalert2.all.min.js');
-	wp_enqueue_script('myScripts', RAD_JS.'scripts.js' , '1.3');
+	wp_enqueue_script('popper', RAD_JS.'popper.min.js#asyncload' , array('jquery', 'media-upload'));
+	wp_enqueue_script('bootstrap', RAD_JS.'bootstrap.min.js#asyncload');
+	wp_enqueue_script('owlCarousel', RAD_JS.'owl.carousel.min.js#asyncload');
+	wp_enqueue_script('sweetAlert', RAD_JS.'sweetalert2.all.min.js#asyncload');
+	wp_enqueue_script('myScripts', RAD_JS.'scripts.js#asyncload' , '1.3');
 	wp_localize_script( 'myScripts', 'RadAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'security' => wp_create_nonce( '82ybuh2nuwbex887' )
