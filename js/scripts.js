@@ -3,15 +3,18 @@ jQuery(document).ready(function($){
 
     // inits
     $('a[href="#login_tab"]').click();
+    new WOW().init();
+    $('#topCarousel').carousel({
+        'interval': 6000,
+        'ride': true
+    });
 
 
-    // const handler = (event) => {
-    //     event.preventDefault();
-    //     console.log(event);
-    // };
-    // let onTouchStart={handler};
-    // document.addEventListener('touchstart', onTouchStart, {passive: true});
-
+    const handler = (event) => {
+        event.preventDefault();
+    };
+    let onTouchStart={handler};
+    document.addEventListener('touchstart', onTouchStart, {passive: true});
 
 
     // Constants
@@ -25,18 +28,18 @@ jQuery(document).ready(function($){
     /* -------------------------------------------------------------------------------------------------- */
 
 
-    $('.icon_links').css('visibility' , 'visible');
-    $('.linkItemTitle').css('visibility' , 'visible').addClass('animate__animated');
+    //$('.icon_links').css('visibility' , 'visible');
+    $('.linkItemTitle').css('visibility' , 'visible').addClass('wow');
     $('.loader-container').css('display' , 'none').remove();
 
 
     /* Top Banner */
-    setTimeout(function () {
-        $('.top_banner_Title').fadeIn();
-    }, 1000);
-    setTimeout(function () {
-        $('.top_banner_Slogan').addClass('typeWritter').css('color' , '#eee');
-    }, 2000);
+    // setTimeout(function () {
+    //     $('.top_banner_Title').fadeIn();
+    // }, 1000);
+    // setTimeout(function () {
+    //     $('.top_banner_Slogan').addClass('typeWritter').css('color' , '#eee');
+    // }, 2000);
     /* Top Banner */
 
 
@@ -471,6 +474,8 @@ jQuery(document).ready(function($){
     stripLength(elm3);
     stripLength(elm4);
     /* Strip Length */
+
+
 
 });
 

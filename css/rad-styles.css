@@ -38,7 +38,7 @@ a:hover, a:focus, a:visited {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     border-radius: 0 !important;
     margin-top: 30px;
     height: calc(100vh - 350px);
@@ -106,6 +106,30 @@ a:hover, a:focus, a:visited {
     letter-spacing: normal; /* Adjust as needed */
     animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
+
+
+/* Slider */
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
+}
+.carousel-caption#first {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    left: 15%;
+    color: #eeeeee;
+    text-align: left;
+}
+
+.carousel-item img{
+    width: 100%;
+    max-height: 500px;
+}
+
+.carousel-control-prev , .carousel-control-next{
+    display: none;
+}
+/* Slider */
 
 
 /* Spa Form */
@@ -594,64 +618,67 @@ button#register_frm_submit_btn:hover {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: -30px;
+    margin-top: 30px;
 }
-.link_items .linkItem {
-    min-width: 15%;
+.link_items .linkItem .linkItemContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
     width: auto;
     text-align: center;
+    border-radius: 8px;
+    font-size: 1.125em;
     padding: 15px;
-    border-radius: 0 !important;
+    margin: auto 40px;
+    background-color: #bdbdbd;
 }
-.link_items .linkItem.odd{
-    background: #ffffff;
+
+.link_items .linkItem .linkItemContainer .link_cover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    background-color: #1c272b;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: -1;
+    transition: 0.2s ease-in-out;
+    border-radius: 8px;
 }
-.link_items .linkItem.even{
-    background: #ffffff;
+
+.link_items .linkItem .linkItemContainer:hover .link_cover{
+    width: 100%;
+    visibility: visible;
+    z-index: 10;
 }
-.link_items .linkItem a{
-    text-align: center;
+.link_items .linkItem .link_cover a{
+    display: none;
+    border-radius: 50px;
+    border: 1px solid #bdbdbd;
+    padding: 5px 40px;
     color: #eee;
+}
+
+.link_items .linkItem .linkItemContainer:hover .link_cover a{
+    display: block;
+}
+
+.link_items .linkItem strong{
     font-size: 1.25em;
     font-family: iranyekan,Samim,Sans-serif!important;
+    color: #757575;
 }
-.link_items .linkItem a:hover{
-    color: #fff !important;
-    text-decoration: none;
-}
-.link_items .linkItem a img.linkItemImg{
-    width: 50px;
-    height: auto;
-    visibility: hidden;
-    transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
-    -webkit-transition: 0.3s ease;
-}
-
-/*.linkItem:hover img{*/
-/*transform: scale(1.05);*/
-/*}*/
-.link_items .linkItem a p.linkItemText{
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    font-size: 13px;
-    color: #1c272b;
-    visibility: hidden;
-}
-
-.link_items .linkItem a i{
-    font-size: 4em;
-    -webkit-transition: 0.3s ease-in-out;
-    -ms-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-.link_items .linkItem:hover i{
-    transform:scale(1.1);
+.link_items .linkItem i {
+    font-size: 3.5em;
+    color: #757575;
+    /*-webkit-text-stroke: 1px #757575;*/
+    /*-webkit-text-fill-color: transparent;*/
 }
 
 .icon_links{
@@ -671,8 +698,6 @@ button#register_frm_submit_btn:hover {
     padding: 10px;
     color: #1c272b;
     font-size: 4em;
-    /*-webkit-text-stroke: 2px #000;*/
-    /*-webkit-text-fill-color: transparent;*/
 }
 
 .icon_links .linkItemTitle {
@@ -1130,7 +1155,7 @@ footer.socket_color{
         width: 2px;
     }
     .top_banner{
-        background-size: cover;
+        background-size: contain;
         background-attachment: initial;
         margin-top: -12px !important;
     }
@@ -1182,8 +1207,6 @@ footer.socket_color{
         justify-content: center;
         flex-direction: column-reverse;
     }
-
-
     .separator_sub {
         width: 90%;
         margin: 30px auto;
@@ -1234,6 +1257,17 @@ footer.socket_color{
     .separator_sub_title {
         font-size: 1.5em;
     }
+    #topCarousel{
+        margin-bottom: 40px;
+    }
+    .link_items .linkItem a {
+        border-radius: 5px;
+        font-size: 1em;
+        padding: 0;
+    }
+    .link_items .linkItem a i{
+        font-size: 3em;
+    }
 }
 @media screen and (max-width: 600px) {
     .top_banner{
@@ -1261,7 +1295,8 @@ footer.socket_color{
         width: 50px;
     }
     .link_items .linkItem{
-        width: 50%;
+        width: 100%;
+        margin: 15px auto;
     }
     .top_banner{
         height: 225px;

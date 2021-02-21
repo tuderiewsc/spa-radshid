@@ -44,6 +44,7 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_script('popper', RAD_JS.'popper.min.js#asyncload' , array('jquery', 'media-upload'));
 	wp_enqueue_script('bootstrap', RAD_JS.'bootstrap.min.js#asyncload');
 	wp_enqueue_script('owlCarousel', RAD_JS.'owl.carousel.min.js#asyncload');
+	wp_enqueue_script('wow', RAD_JS.'wow.min.js#asyncload');
 	wp_enqueue_script('sweetAlert', RAD_JS.'sweetalert2.all.min.js#asyncload');
 	wp_enqueue_script('myScripts', RAD_JS.'scripts.js#asyncload' , '1.3');
 	wp_localize_script( 'myScripts', 'RadAjax', array(
