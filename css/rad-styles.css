@@ -34,7 +34,7 @@ a:hover, a:focus, a:visited {
 .top_banner{
     position: relative;
     /*background: linear-gradient(to left , rgba(0,0,0,0.8),rgba(38,50,56,0.3)), url(../assets/images/TopBg.jpg);*/
-    background: linear-gradient(to left , transparent , transparent), url(../assets/images/TopBg.jpg);
+    /*background: linear-gradient(to left , transparent , transparent), url(../assets/images/TopBg.jpg);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -82,7 +82,7 @@ a:hover, a:focus, a:visited {
     user-select: none;
     padding: 0;
     margin: 0;
-    font-family: iranyekan,Sans-serif!important;
+    font-family: iransans,Sans-serif!important;
 }
 .top_banner .top_banner_Title > .site_title{
     color: #cb2027;
@@ -96,7 +96,7 @@ a:hover, a:focus, a:visited {
     padding: 0;
     font-size: 1.75em;
     font-weight: bold;
-    font-family: Samim,iranyekan,Sans-serif!important;
+    font-family: Samim,iransans,Sans-serif!important;
 }
 
 .top_banner .top_banner_Slogan.typeWritter{
@@ -109,6 +109,11 @@ a:hover, a:focus, a:visited {
 
 
 /* Slider */
+.carousel-inner{
+    /*height: calc(100vh - 325px);*/
+    height: auto;
+    min-height: 500px;
+}
 .carousel-control-next, .carousel-control-prev{
     width: 5%;
 }
@@ -120,15 +125,15 @@ a:hover, a:focus, a:visited {
     color: #eeeeee;
     text-align: left;
 }
-
 .carousel-item img{
     width: 100%;
+    height: 100%;
     max-height: 500px;
+    object-fit: fill;
 }
-
-.carousel-control-prev , .carousel-control-next{
-    display: none;
-}
+/*.carousel-control-prev , .carousel-control-next{*/
+    /*display: none;*/
+/*}*/
 /* Slider */
 
 
@@ -479,7 +484,7 @@ button#register_frm_submit_btn:hover {
     width: 100%;
     text-align: right;
     font-size: 1.5em;
-    font-family: iranyekan,Samim,Sans-serif!important;
+    font-family: iransans,Samim,Sans-serif!important;
     color: #424242;
     margin-bottom: 30px;
     padding: 4px;
@@ -606,7 +611,7 @@ button#register_frm_submit_btn:hover {
     color: #424242;
     text-align: justify;
     text-align-last: center;
-    font-family: Samim,iranyekan,Sans-serif!important;
+    font-family: Samim,iransans,Sans-serif!important;
 }
 
 /* Posts Grid */
@@ -618,7 +623,8 @@ button#register_frm_submit_btn:hover {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 30px;
+    margin-top:30px;
+    padding: 0 60px;
 }
 .link_items .linkItem .linkItemContainer{
     display: flex;
@@ -632,7 +638,6 @@ button#register_frm_submit_btn:hover {
     border-radius: 8px;
     font-size: 1.125em;
     padding: 15px;
-    margin: auto 40px;
     background-color: #bdbdbd;
 }
 
@@ -671,8 +676,9 @@ button#register_frm_submit_btn:hover {
 
 .link_items .linkItem strong{
     font-size: 1.25em;
-    font-family: iranyekan,Samim,Sans-serif!important;
+    font-family: iransans,Samim,Sans-serif!important;
     color: #757575;
+    font-weight: lighter;
 }
 .link_items .linkItem i {
     font-size: 3.5em;
@@ -704,7 +710,7 @@ button#register_frm_submit_btn:hover {
     color: #1c272b;
     font-size: 1em;
     font-weight: bold;
-    font-family: iranyekan,Samim,Sans-serif!important;
+    font-family: iransans,Samim,Sans-serif!important;
     margin: 10px auto;
     visibility: hidden;
     animation-duration: 0.4s;
@@ -717,7 +723,7 @@ button#register_frm_submit_btn:hover {
 .icon_links .linkItemText span{
     color: #757575;
     font-size: 13px;
-    font-family: Samim,iranyekan,Sans-serif!important;
+    font-family: Samim,iransans,Sans-serif!important;
     text-align: center;
     font-weight: lighter;
     line-height: 2;
@@ -767,7 +773,7 @@ footer.socket_color{
     width:100%;
     direction:rtl;
     color: #1c272b !important;
-    font-family: iranyekan,Samim,Sans-serif !important;
+    font-family: iransans,Samim,Sans-serif !important;
     line-height: 2 !important;
     margin: 15px auto;
     font-size: 1em !important;
@@ -787,7 +793,7 @@ footer.socket_color{
 }
 .wpsp-slider-section .add_to_cart_inline a{
     border-radius: 0 !important;
-    font-family: iranyekan,Samim,Sans-serif !important;
+    font-family: iransans,Samim,Sans-serif !important;
     padding: 12px 24px !important;
     margin-top: 24px !important;
     font-size: 12px !important;
@@ -858,13 +864,13 @@ footer.socket_color{
 
 
 .avia_textblock p {
-    font-family: Samim,iranyekan,Sans-serif!important;
+    font-family: Samim,iransans,Sans-serif!important;
 }
 .avia_textblock p span{
-    font-family: Samim,iranyekan,Sans-serif!important;
+    font-family: Samim,iransans,Sans-serif!important;
 }
 .yith-wcbm-badge-text{
-    font-family: Samim,iranyekan,Sans-serif;
+    font-family: Samim,iransans,Sans-serif;
 }
 
 /* Products Slider */
@@ -997,7 +1003,7 @@ footer.socket_color{
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    font-family: Samim,iranyekan,Sans-serif;
+    font-family: Samim,iransans,Sans-serif;
     border-radius: 0 !important;
 }
 
@@ -1023,7 +1029,7 @@ footer.socket_color{
 }
 
 .separator_sub_title {
-    font-family: iranyekan,Samim,Sans-serif!important;
+    font-family: iransans,Samim,Sans-serif!important;
     color: #eee !important;
     text-align: right;
     font-size: 2em;
@@ -1034,7 +1040,7 @@ footer.socket_color{
     line-height: 2 !important;
     font-size: 15px !important;
     text-align: justify !important;
-    font-family: Samim,iranyekan,Sans-serif!important;
+    font-family: Samim,iransans,Sans-serif!important;
 }
 
 .separator_link{
@@ -1088,9 +1094,7 @@ footer.socket_color{
     align-items: center;
     list-style-type: none;
 }
-.scroll_links .navbar-nav .nav-item{
 
-}
 /* Affilate Dash Page Section */
 
 
@@ -1136,18 +1140,19 @@ footer.socket_color{
 
 
 /* Responsive */
-
 @media screen and (max-width: 1000px) {
     .card-deck {
         padding: 0 90px;
         margin: 60px auto;
     }
-    .linkItem {
-        padding: 24px;
-    }
-
     #spa_separator_content p{
         width: 150%;
+    }
+    .link_items .linkItem strong {
+        font-size: 1em;
+    }
+    .link_items .linkItem i {
+        font-size: 3em;
     }
 }
 @media screen and (max-width: 768px) {
@@ -1173,7 +1178,7 @@ footer.socket_color{
         margin-top: 15px;
     }
     .linkItem {
-        width: 45%;
+       margin: 8px auto;
     }
     .linkItem a p{
         padding: 10px;
@@ -1268,6 +1273,19 @@ footer.socket_color{
     .link_items .linkItem a i{
         font-size: 3em;
     }
+    .carousel-item img{
+        height: auto;
+    }
+    .carousel-inner {
+        height: auto;
+        min-height: unset;
+    }
+    .link_items{
+        padding: 0 20px;
+    }
+    .link_items .linkItem .linkItemContainer{
+        padding: 8px;
+    }
 }
 @media screen and (max-width: 600px) {
     .top_banner{
@@ -1280,7 +1298,8 @@ footer.socket_color{
         font-size: 2.5em;
     }
     .linkItem {
-        padding:10px;
+        padding:8px;
+        width: 50%;
     }
     .card-deck {
         padding: 0 20px;
@@ -1293,10 +1312,6 @@ footer.socket_color{
 @media screen and (max-width: 500px) {
     .icon_links .linkItem a img {
         width: 50px;
-    }
-    .link_items .linkItem{
-        width: 100%;
-        margin: 15px auto;
     }
     .top_banner{
         height: 225px;
@@ -1317,7 +1332,6 @@ footer.socket_color{
     .swal2-container{
         width: 100%;
     }
-
 }
 @media screen and (max-width: 400px) {
     .top_banner{
@@ -1342,6 +1356,9 @@ footer.socket_color{
     }
     .linkItem a{
         font-size: 1em;
+    }
+    .link_items .linkItem{
+        width: 100%;
     }
     .psfw-inner-wrap{
         margin-right: 0 !important;

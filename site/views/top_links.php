@@ -48,7 +48,7 @@
 
 
             <div class="link_items row w-100">
-                <div class="linkItem col-lg-3 col-md-3 col-sm-12">
+                <div class="linkItem col-lg-3 col-md-3 col-sm-6">
                     <div class="linkItemContainer">
                         <i class="material-icons my-2">storefront</i>
                         <strong class="linkItemTitle my-2 zoomIn wow" data-wow-duration="0.5s" data-wow-delay="0s">فروشگاه</strong>
@@ -57,7 +57,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="linkItem col-lg-3 col-md-3 col-sm-12">
+                <div class="linkItem col-lg-3 col-md-3 col-sm-6">
                     <div class="linkItemContainer">
                         <i class="material-icons my-2">location_on</i>
                         <strong class="linkItemTitle my-2 zoomIn wow" data-wow-duration="0.5s" data-wow-delay="0.15s">ورود به سامانه ردیابی</strong>
@@ -66,21 +66,21 @@
                         </span>
                     </div>
                 </div>
-                <div class="linkItem col-lg-3 col-md-3 col-sm-12">
+                <div class="linkItem col-lg-3 col-md-3 col-sm-6">
                     <div class="linkItemContainer">
                         <i class="material-icons my-2">school</i>
                         <strong class="linkItemTitle my-2 zoomIn wow" data-wow-duration="0.5s" data-wow-delay="0.3s"> آموزش نصب ردیاب</strong>
                         <span class="link_cover">
-                            <a href="https://radshid.com/shop" target="_blank">بیشتر</a>
+                            <a href="https://radshid.com/gps-tracker-installation" target="_blank">بیشتر</a>
                         </span>
                     </div>
                 </div>
-                <div class="linkItem col-lg-3 col-md-3 col-sm-12">
+                <div class="linkItem col-lg-3 col-md-3 col-sm-6">
                     <div class="linkItemContainer">
                         <i class="material-icons my-2">work_outline</i>
                         <strong class="linkItemTitle my-2 zoomIn wow" data-wow-duration="0.5s" data-wow-delay="0.45s">نمایندگان رادشید</strong>
                         <span class="link_cover">
-                            <a href="https://radshid.com/shop" target="_blank">بیشتر</a>
+                            <a href="https://radshid.com/?p=9017" target="_blank">بیشتر</a>
                         </span>
                     </div>
                 </div>

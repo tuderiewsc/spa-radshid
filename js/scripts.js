@@ -475,8 +475,6 @@ jQuery(document).ready(function($){
     stripLength(elm4);
     /* Strip Length */
 
-
-
 });
 
 
