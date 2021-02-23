@@ -2,7 +2,7 @@
 
 
 <div class="row">
-        <div class="separator my-5">
+        <div class="separator my-4">
             <div class="separator_sub" id="separator_sub_right">
                 <h3 class="separator_sub_title mb-4"><?php echo __('Affilate Marketing System' , 'radshid_lan')?></h3>
                 <p class="separator_sub_text">

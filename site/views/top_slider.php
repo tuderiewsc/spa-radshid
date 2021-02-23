@@ -3,23 +3,21 @@
 
 <div class="top_slider">
 	<div id="topCarousel" class="carousel slide" data-ride="carousel">
-<!--		<ol class="carousel-indicators">-->
-<!--			<li data-target="#topCarousel" data-slide-to="0" class="active"></li>-->
-<!--			<li data-target="#topCarousel" data-slide-to="1"></li>-->
-<!--			<li data-target="#topCarousel" data-slide-to="2"></li>-->
-<!--			<li data-target="#topCarousel" data-slide-to="3"></li>-->
-<!--		</ol>-->
 		<div class="carousel-inner">
 			<div class="carousel-item active">
                 <a>
-                    <img class="d-block w-100" src="<?php echo RAD_ASSETS. '/images/sliders/radshid_banner.jpg'  ?>" alt="">
+                    <figure style="border-radius: 0">
+                        <img class="d-block w-100" src="<?php echo RAD_ASSETS. '/images/sliders/radshid_banner.jpg'  ?>" alt="">
+                    </figure>
                 </a>
 			</div>
-			<div class="carousel-item">
-                <a href="https://radshid.com/?p=13785" target="_blank">
-                    <img class="d-block w-100" src="<?php echo RAD_ASSETS. '/images/sliders/sippad_slide.jpg'  ?>" alt="">
-                </a>
-			</div>
+<!--			<div class="carousel-item">-->
+<!--                <figure style="border-radius: 0">-->
+<!--                    <a href="https://radshid.com/?p=13785" target="_blank">-->
+<!--                        <img class="d-block w-100" src="--><?php //echo RAD_ASSETS. '/images/sliders/sippad_slide.jpg'  ?><!--" alt="">-->
+<!--                    </a>-->
+<!--                </figure>-->
+<!--            </div>-->
 		</div>
 
 		<a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">

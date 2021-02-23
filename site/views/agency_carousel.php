@@ -1,7 +1,8 @@
 <?php defined( 'ABSPATH' ) or die( 'No script kiddies please!' ); ?>
 
 
-<!--  Demos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+
 <section>
     <div class="col-12">
         <div class="card-deck">
@@ -9,7 +10,7 @@
                     <span id="card-deck-title-text"><?php echo __('Our Customers' , 'radshid_lan')?></span>
                     <a class="more_link" href="https://radshid.com/?p=4520" target="_blank">
 	                    <?php echo __('More' , 'radshid_lan')?>
-                        <i class="fa fa-angle-left"></i>
+                        <i class="material-icons">add</i>
                     </a>
                 </h3>
             <div class="owl-carousel owl-theme agency_carousel">

@@ -2,7 +2,7 @@
 
 
 <div class="row" id="spaForms">
-    <div class="separator reverseOnMob my-5">
+    <div class="separator reverseOnMob my-4">
         <div class="separator_sub" id="separator_sub_right">
             <div class="spa_container_frm animate__animated animate__bounceIn animate__delay-1s" >
                 <ul class="nav nav-tabs">

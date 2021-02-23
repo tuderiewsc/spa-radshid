@@ -1,9 +1,15 @@
-/* Version 1.21 */
+/* Version 1.22 */
 jQuery(document).ready(function($){
 
     // inits
     $('a[href="#login_tab"]').click();
-    new WOW().init();
+    const wow = new WOW(
+        {
+            offset:0          // default
+            //mobile:false,
+        }
+    );
+    wow.init();
     $('#topCarousel').carousel({
         'interval': 6000,
         'ride': true
@@ -416,14 +422,17 @@ jQuery(document).ready(function($){
         rtl: true,
         margin: 80,
         loop: true,
-        nav: false,
-        // navText: ['بعدی', 'قبلی'],
+        nav: true,
+        navText: [
+            "<i class='fa fa-chevron-left'></i>",
+            "<i class='fa fa-chevron-right'></i>"
+        ],
         navElement: 'div',
         items: 1,
         slideBy: 'page',
-        dots: true,
+        dots: false,
         autoplay: true,
-        autoplayTimeout: 4000,
+        autoplayTimeout: 5000,
         autoplayHoverPause: true,
         center: true,
         mouseDrag: true,
