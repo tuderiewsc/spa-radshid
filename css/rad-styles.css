@@ -1,4 +1,4 @@
-/* Version 1.22 */
+/* Version 1.23 */
 
 
 /*ul#avia-menu{*/
@@ -82,7 +82,7 @@ a:hover, a:focus, a:visited {
     user-select: none;
     padding: 0;
     margin: 0;
-    font-family: iransans,iranyekan,Sans-serif!important;
+    font-family: iranyekan,Sans-serif!important;
 }
 .top_banner .top_banner_Title > .site_title{
     color: #cb2027;
@@ -96,7 +96,7 @@ a:hover, a:focus, a:visited {
     padding: 0;
     font-size: 1.75em;
     font-weight: bold;
-    font-family: iransans,Samim,Sans-serif!important;
+    font-family: Samim,Sans-serif!important;
 }
 
 .top_banner .top_banner_Slogan.typeWritter{
@@ -135,9 +135,9 @@ a:hover, a:focus, a:visited {
     object-fit: fill;
     border-radius: 0 !important;
 }
-.carousel-control-prev , .carousel-control-next{
-    display: none;
-}
+/*.carousel-control-prev , .carousel-control-next{*/
+    /*display: none;*/
+/*}*/
 /* Slider */
 
 
@@ -511,7 +511,7 @@ button#register_frm_submit_btn:hover {
     width: 100%;
     text-align: right;
     font-size: 1.5em;
-    font-family: iransans,iranyekan,Sans-serif!important;
+    font-family: iranyekan,Sans-serif!important;
     color: #424242;
     margin-bottom: 30px;
     padding: 4px;
@@ -636,7 +636,7 @@ button#register_frm_submit_btn:hover {
     color: #424242;
     text-align: justify;
     text-align-last: center;
-    font-family: iransans,Samim,Sans-serif!important;
+    font-family: Samim,Sans-serif!important;
 }
 
 /* Posts Grid */
@@ -665,7 +665,12 @@ button#register_frm_submit_btn:hover {
     border-radius: 8px;
     font-size: 1.125em;
     padding: 15px;
-    background-color: #CFD8DC;
+}
+.link_items .linkItem .linkItemContainer.even{
+    background-color: #686868;
+}
+.link_items .linkItem .linkItemContainer.odd{
+    background-color: #1c272b;
 }
 
 .link_items .linkItem .linkItemContainer .link_cover{
@@ -673,7 +678,6 @@ button#register_frm_submit_btn:hover {
     left: 0;
     top: 0;
     width: 0;
-    background-color: #1c272b;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -683,13 +687,22 @@ button#register_frm_submit_btn:hover {
     transition: 0.2s ease-in-out;
     border-radius: 8px;
 }
+.link_items .linkItem .linkItemContainer.even .link_cover{
+    background-color: #1c272b;
+}
+.link_items .linkItem .linkItemContainer.odd .link_cover{
+    background-color: #686868;
+}
 
 .link_items .linkItem .linkItemContainer:hover .link_cover{
     width: 100%;
     visibility: visible;
     z-index: 10;
 }
-.link_items .linkItem .link_cover a{
+.link_items .linkItem .linkItemContainer:hover .link_cover a{
+    display: block;
+}
+.link_items .linkItem .linkItemContainer .link_cover a{
     display: none;
     border-radius: 50px;
     border: 1px solid #bdbdbd;
@@ -697,21 +710,57 @@ button#register_frm_submit_btn:hover {
     color: #eee;
 }
 
-.link_items .linkItem .linkItemContainer:hover .link_cover a{
-    display: block;
+
+.link_items .linkItem .linkItemContainer strong{
+    font-size: 1.25em;
+    font-family: Samim,Sans-serif!important;
+}
+.link_items .linkItem .linkItemContainer.even strong{
+    color: #eeeeee;
+}
+.link_items .linkItem .linkItemContainer.odd strong{
+    color: #eeeeee;
+}
+.link_items .linkItem .linkItemContainer i{
+    font-size: 3.5em;
+}
+.link_items .linkItem .linkItemContainer.even i {
+    color: #eeeeee;
+}
+.link_items .linkItem .linkItemContainer.odd i {
+    color: #eeeeee;
 }
 
-.link_items .linkItem strong{
-    font-size: 1.25em;
-    font-family: iransans,Samim,Sans-serif!important;
-    color: #686868;
+.link_items .linkItem .linkItemContainer .call_to_action {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
-.link_items .linkItem i {
-    font-size: 3.5em;
-    color: #686868;
-    /*-webkit-text-stroke: 1px #757575;*/
-    /*-webkit-text-fill-color: transparent;*/
+.link_items .linkItem .linkItemContainer .call_to_action a{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-size: 11px;
+    border-radius: 50px;
+    padding: 0 8px;
+    height: 25px;
 }
+.link_items .linkItem .linkItemContainer.even .call_to_action a{
+    color: #eeeeee;
+    border: 1px solid #eeeeee;
+}
+.link_items .linkItem .linkItemContainer.odd .call_to_action a{
+    color: #eeeeee;
+    border: 1px solid #e0e0e0;
+}
+.link_items .linkItem .linkItemContainer .call_to_action i{
+    font-size: 1.75em;
+}
+
 
 .icon_links{
     visibility: hidden;
@@ -736,7 +785,7 @@ button#register_frm_submit_btn:hover {
     color: #1c272b;
     font-size: 1em;
     font-weight: bold;
-    font-family: iransans,Samim,Sans-serif!important;
+    font-family: Samim,Sans-serif!important;
     margin: 10px auto;
     visibility: hidden;
     animation-duration: 0.4s;
@@ -749,7 +798,7 @@ button#register_frm_submit_btn:hover {
 .icon_links .linkItemText span{
     color: #757575;
     font-size: 13px;
-    font-family: iransans,Samim,Sans-serif!important;
+    font-family: Samim,Sans-serif!important;
     text-align: center;
     font-weight: lighter;
     line-height: 2;
@@ -798,7 +847,7 @@ footer.socket_color{
     width:100%;
     direction:rtl;
     color: #1c272b !important;
-    font-family: iransans,Samim,Sans-serif !important;
+    font-family: Samim,Sans-serif !important;
     line-height: 2 !important;
     margin: 15px auto;
     font-size: 1em !important;
@@ -818,7 +867,7 @@ footer.socket_color{
 }
 .wpsp-slider-section .add_to_cart_inline a{
     border-radius: 0 !important;
-    font-family: iransans,Samim,Sans-serif !important;
+    font-family: Samim,Sans-serif !important;
     padding: 12px 24px !important;
     margin-top: 24px !important;
     font-size: 12px !important;
@@ -854,23 +903,23 @@ footer.socket_color{
 /* loading circle */
 .loader-container{
     position: absolute;
-    left: 0;
-    top: 0;
+    right: 4px;
+    top: 4px;
     width: 100%;
     background: transparent;
     height: 100%;
     border-radius: 0 !important;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 .loader-container .loader_circle {
     position: absolute;
     right: 4px;
     top: 4px;
-    border: 5px solid #f3f3f3;
+    border: 3px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 5px solid #cb2027;
-    width: 24px;
-    height: 24px;
+    border-top: 3px solid #cb2027;
+    width: 20px;
+    height: 20px;
     animation: spin 0.5s linear infinite;
     -webkit-animation: spin 0.5s linear infinite;
     -moz-animation: spin 0.5s linear infinite;
@@ -889,13 +938,13 @@ footer.socket_color{
 
 
 .avia_textblock p {
-    font-family: iransans,Samim,Sans-serif!important;
+    font-family: Samim,Sans-serif!important;
 }
 .avia_textblock p span{
-    font-family: iransans,Samim,Sans-serif!important;
+    font-family: Samim,Sans-serif!important;
 }
 .yith-wcbm-badge-text{
-    font-family: iransans,Samim,Sans-serif;
+    font-family: Samim,Sans-serif;
 }
 
 /* Products Slider */
@@ -1028,7 +1077,7 @@ footer.socket_color{
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    font-family: iransans,Samim,Sans-serif;
+    font-family: Samim,Sans-serif;
     border-radius: 0 !important;
 }
 
@@ -1053,7 +1102,7 @@ footer.socket_color{
 }
 
 .separator_sub_title {
-    font-family: iransans,Samim,Sans-serif!important;
+    font-family: Samim,Sans-serif!important;
     color: #eee !important;
     text-align: right;
     font-size: 2em;
@@ -1064,7 +1113,7 @@ footer.socket_color{
     line-height: 2.5 !important;
     font-size: 15px !important;
     text-align: justify !important;
-    font-family: iransans,Samim,Sans-serif!important;
+    font-family: Samim,Sans-serif!important;
 }
 
 .separator_link{
@@ -1294,6 +1343,10 @@ footer.socket_color{
     .link_items .linkItem a i{
         font-size: 3em;
     }
+    .carousel-item figure{
+        border: solid 4px #fff;
+        box-shadow: 0 0 10px #fff;
+    }
     .carousel-item img{
         height: auto;
     }
@@ -1313,6 +1366,19 @@ footer.socket_color{
     .top_links {
         margin-top: -40px;
     }
+    .link_items .linkItem .linkItemContainer:hover .link_cover{
+        z-index: -1;
+    }
+    .link_items .linkItem .linkItemContainer strong{
+        font-size: 1em;
+        font-weight: lighter;
+    }
+    .link_items .linkItem .linkItemContainer .call_to_action {
+        justify-content: space-between;
+    }
+    .link_items .linkItem .linkItemContainer .call_to_action a{
+        display: flex;
+    }
 }
 @media screen and (max-width: 600px) {
     .top_banner{
@@ -1325,7 +1391,6 @@ footer.socket_color{
         font-size: 2.5em;
     }
     .linkItem {
-        padding:8px;
         width: 50%;
     }
     .card-deck {
@@ -1359,6 +1424,19 @@ footer.socket_color{
     .swal2-container{
         width: 100%;
     }
+    .link_items .linkItem{
+        width: 100%;
+    }
+    .link_items .linkItem .linkItemContainer .call_to_action {
+        flex-flow: row wrap;
+    }
+    .link_items .linkItem .linkItemContainer strong{
+        width: 100%;
+    }
+    .link_items .linkItem .linkItemContainer a{
+        width: auto;
+        margin: 4px auto;
+    }
 }
 @media screen and (max-width: 400px) {
     .top_banner{
@@ -1381,9 +1459,6 @@ footer.socket_color{
 
     .linkItem a{
         font-size: 1em;
-    }
-    .link_items .linkItem{
-        width: 100%;
     }
     .psfw-inner-wrap{
         margin-right: 0 !important;

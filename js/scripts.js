@@ -1,4 +1,4 @@
-/* Version 1.22 */
+/* Version 1.23 */
 jQuery(document).ready(function($){
 
     // inits
@@ -11,16 +11,9 @@ jQuery(document).ready(function($){
     );
     wow.init();
     $('#topCarousel').carousel({
-        'interval': 6000,
+        'interval': 5000,
         'ride': true
     });
-
-
-    const handler = (event) => {
-        event.preventDefault();
-    };
-    let onTouchStart={handler};
-    document.addEventListener('touchstart', onTouchStart, {passive: true});
 
 
     // Constants
