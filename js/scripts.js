@@ -5,15 +5,11 @@ jQuery(document).ready(function($){
     $('a[href="#login_tab"]').click();
     const wow = new WOW(
         {
-            offset:0          // default
+            offset:0,
             //mobile:false,
         }
     );
     wow.init();
-    $('#topCarousel').carousel({
-        'interval': 5000,
-        'ride': true
-    });
 
 
     // Constants
@@ -27,7 +23,6 @@ jQuery(document).ready(function($){
     /* -------------------------------------------------------------------------------------------------- */
 
 
-    //$('.icon_links').css('visibility' , 'visible');
     $('.linkItemTitle').css('visibility' , 'visible').addClass('wow');
     $('.loader-container').css('display' , 'none').remove();
 

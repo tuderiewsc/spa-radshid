@@ -6,8 +6,8 @@
         <div class="separator_sub" id="separator_sub_right">
             <div class="spa_container_frm animate__animated animate__bounceIn animate__delay-1s" >
                 <ul class="nav nav-tabs">
-                    <li class="nav-tab active"><a data-toggle="tab" href="#login_tab"><?php _e('Login' , 'radshid_lan'); ?></a></li>
-                    <li class="nav-tab"><a data-toggle="tab" href="#register_tab"><?php _e('Register' , 'radshid_lan'); ?> </a></li>
+                    <li class="nav-tab active"><a data-toggle="tab" onclick="return false;" href="#login_tab"><?php _e('Login' , 'radshid_lan'); ?></a></li>
+                    <li class="nav-tab"><a data-toggle="tab" onclick="return false;" href="#register_tab"><?php _e('Register' , 'radshid_lan'); ?> </a></li>
                 </ul>
                 <div class="tab-content container-fluid">
                     <div id="login_tab" class="tab-pane fade in active">
