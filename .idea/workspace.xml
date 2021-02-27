@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56392efa-1ca6-4902-844c-1ac7506e81b5" name="Default Changelist" comment="Added widget 4 planet cats &amp; Latest planets">
-      <change afterPath="$PROJECT_DIR$/assets/images/sliders/car_tracker_banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/sliders/pda_banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/sliders/personal_tracker_banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/sliders/tablet_banner.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/TopBg-mobile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/TopBg.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/TopBg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/affilate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/car.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/dark/affilate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/dark/car.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/dark/fuel-station.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/dark/man.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/dark/tablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/dark/truck.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/fuel-station.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/man.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/tablet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icons_images/truck.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/sipaadBanner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/sliders/sippad_slide.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/rad-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/rad-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/radtools.php" beforeDir="false" afterPath="$PROJECT_DIR$/radtools.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/views/affilate_separator_section.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/affilate_separator_section.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/views/agency_carousel.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/agency_carousel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/views/sipaad_separator_section.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/sipaad_separator_section.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/views/top_links.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/top_links.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/site/views/top_slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/views/top_slider.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,21 +19,13 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site/views/top_slider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="216">
+              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
               <folding>
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#style#0;n#figure#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#style#0;n#figure#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#style#0;n#figure#0;n#a#0;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#style#0;n#figure#0;n#a#0;n#div#4;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -69,23 +34,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="749" column="17" lean-forward="true" selection-start-line="749" selection-start-column="17" selection-end-line="749" selection-end-column="17" />
-              <folding>
-                <element signature="e#29072#29462#0" />
-                <element signature="e#29463#29906#0" />
-                <element signature="e#29907#30467#0" />
-                <element signature="e#30468#30790#0" />
-              </folding>
+            <state relative-caret-position="183">
+              <caret line="643" column="12" lean-forward="true" selection-start-line="643" selection-start-column="12" selection-end-line="643" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#stripLength#0" />
@@ -107,18 +66,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.carousel-item img</find>
-      <find>link_items</find>
-      <find>top_slider</find>
-      <find>top_links</find>
-      <find>.card-deck</find>
       <find>.top_links</find>
       <find>slider</find>
       <find>.separator_sub_image img</find>
       <find>reverseOnMob</find>
       <find>my-5</find>
       <find>.separator_sub</find>
-      <find>.loader-container</find>
       <find>carousel</find>
       <find>.link_items .linkItem strong</find>
       <find>.link_items .linkItem .linkItemContainer</find>
@@ -137,9 +90,14 @@
       <find>کلیک کنید</find>
       <find>1c272b</find>
       <find>topCarousel</find>
+      <find>\n</find>
+      <find>.loader-container</find>
+      <find>757575</find>
+      <find>.top_slider</find>
+      <find>loader-container</find>
+      <find>top_links</find>
     </findStrings>
     <replaceStrings>
-      <replace>Samim</replace>
       <replace>elm</replace>
       <replace>alt=&quot;مشتریان رادشید&quot;</replace>
       <replace>20</replace>
@@ -169,6 +127,7 @@
       <replace>'</replace>
       <replace>iransans</replace>
       <replace>کلیک کنید</replace>
+      <replace>616161</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\wordpress\wp-content\plugins\ztools</dir>
@@ -222,14 +181,14 @@
         <option value="$PROJECT_DIR$/site/views/agency_carousel.php" />
         <option value="$PROJECT_DIR$/site/views/affilate_separator_section.php" />
         <option value="$PROJECT_DIR$/site/views/sipaad_separator_section.php" />
+        <option value="$PROJECT_DIR$/site/views/top_links.php" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/css/rad-styles.css" />
-        <option value="$PROJECT_DIR$/site/views/top_links.php" />
         <option value="$PROJECT_DIR$/site/views/top_slider.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -247,24 +206,6 @@
             <path>
               <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
               <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spa-radshid" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="sliders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spa-radshid" type="b2602c69:ProjectViewProjectNode" />
@@ -425,7 +366,8 @@
       <workItem from="1613884113474" duration="21206000" />
       <workItem from="1613971340940" duration="13276000" />
       <workItem from="1614058046154" duration="19462000" />
-      <workItem from="1614143943521" duration="18925000" />
+      <workItem from="1614143943521" duration="20768000" />
+      <workItem from="1614402756109" duration="7033000" />
     </task>
     <task id="LOCAL-00001" summary="before add settings page">
       <created>1587847902915</created>
@@ -452,7 +394,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="650403000" />
+    <option name="totallyTimeSpent" value="659279000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -468,9 +410,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1673774" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16897655" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.31744313" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.31744313" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49946696" weight="0.28277355" />
@@ -726,24 +668,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/icons_images/affilate.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/sliders/sippad_slide.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/sipaadBanner.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/TopBg.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/TopBg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/TopBg-mobile.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icons_images/affilate.png" />
+    <entry file="file://$PROJECT_DIR$/assets/images/sliders/sippad_slide.jpg" />
+    <entry file="file://$PROJECT_DIR$/assets/images/sipaadBanner.jpg" />
+    <entry file="file://$PROJECT_DIR$/assets/images/TopBg.gif" />
+    <entry file="file://$PROJECT_DIR$/assets/images/TopBg.jpg" />
+    <entry file="file://$PROJECT_DIR$/assets/images/TopBg-mobile.gif" />
     <entry file="file://$PROJECT_DIR$/inc/shortcode.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
@@ -761,45 +691,31 @@
     <entry file="file://$PROJECT_DIR$/site/views/top_links.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#stripLength#0" />
+            <element signature="n#!!block;n#InputValidation#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/rad-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="749" column="17" lean-forward="true" selection-start-line="749" selection-start-column="17" selection-end-line="749" selection-end-column="17" />
-          <folding>
-            <element signature="e#29072#29462#0" />
-            <element signature="e#29463#29906#0" />
-            <element signature="e#29907#30467#0" />
-            <element signature="e#30468#30790#0" />
-          </folding>
+        <state relative-caret-position="183">
+          <caret line="643" column="12" lean-forward="true" selection-start-line="643" selection-start-column="12" selection-end-line="643" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/views/top_slider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="216">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
           <folding>
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#figure#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#figure#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#figure#0;n#a#0;n#div#3;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#figure#0;n#a#0;n#div#4;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#stripLength#0" />
-            <element signature="n#!!block;n#InputValidation#0" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
           </folding>
         </state>
       </provider>

@@ -1,14 +1,14 @@
 /* Version 1.23 */
 
 
-/*ul#avia-menu{*/
-     /*display: none;*/
- /*}*/
-/*.fullsize .container{*/
-    /*max-width: 100% !important;*/
-    /*width: 100% !important;*/
-    /*padding: 0 !important;*/
-/*}*/
+ul#avia-menu{
+     display: none;
+ }
+.fullsize .container{
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+}
 
 
 html{
@@ -110,7 +110,7 @@ a:hover, a:focus, a:visited {
 
 /* Slider */
 .top_slider {
-    margin-top: 24px;
+    margin-top: 50px;
 }
 .carousel-inner{
     /*height: calc(100vh - 325px);*/
@@ -526,7 +526,7 @@ button#register_frm_submit_btn:hover {
     position: relative;
     text-align: center;
     padding: 5px 15px;
-    color: #757575 !important;
+    color: #616161 !important;
     font-size: 14px;
     font-weight: bold !important;
     -moz-transition: 0.2s ease-in-out;
@@ -544,7 +544,7 @@ button#register_frm_submit_btn:hover {
     right: -8px;
     top: 25%;
     font-size: 1.25em;
-    color: #757575;
+    color: #616161;
     -moz-transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
@@ -642,7 +642,7 @@ button#register_frm_submit_btn:hover {
 /* Posts Grid */
 /* Top Links */
 .top_links {
-    margin-top: -20px;
+    margin-top: -36px;
 }
 .link_items{
     width: 100%;
@@ -796,7 +796,7 @@ button#register_frm_submit_btn:hover {
     text-align-last: center;
 }
 .icon_links .linkItemText span{
-    color: #757575;
+    color: #616161;
     font-size: 13px;
     font-family: Samim,Sans-serif!important;
     text-align: center;
@@ -903,8 +903,8 @@ footer.socket_color{
 /* loading circle */
 .loader-container{
     position: absolute;
-    right: 4px;
-    top: 4px;
+    right: 5px;
+    top: 10px;
     width: 100%;
     background: transparent;
     height: 100%;
@@ -1008,7 +1008,7 @@ footer.socket_color{
 }
 .psfw-share-wrap a{
     background-color: #ffffff !important;
-    color: #757575 !important;
+    color: #616161 !important;
 }
 .psfw-share-wrap a:hover{
     color: #cb2027 !important;
@@ -1051,7 +1051,7 @@ footer.socket_color{
 }
 
 .psfw-main-product-wrapper .psfw-inner-wrap .psfw-lightbox-template-3 .psfw-button a, .psfw-main-product-wrapper .psfw-inner-wrap .psfw-lightbox-template-3 .psfw-lightbox-wishlist-wrap a, .psfw-main-product-wrapper .psfw-masonry-item .psfw-lightbox-template-3 .psfw-button a, .psfw-main-product-wrapper .psfw-masonry-item .psfw-lightbox-template-3 .psfw-lightbox-wishlist-wrap a, .psfw-display-popup .psfw-lightbox-template-3 .psfw-button a, .psfw-display-popup .psfw-lightbox-template-3 .psfw-lightbox-wishlist-wrap a, .psfw-main-product-wrapper .psfw-slider-inner-wrap .psfw-lightbox-template-3 .psfw-button a, .psfw-main-product-wrapper .psfw-slider-inner-wrap .psfw-lightbox-template-3 .psfw-lightbox-wishlist-wrap a {
-    color: #757575 !important;
+    color: #616161 !important;
 }
 
 .psfw-buton-one-wrapper.psfw-button a  {
