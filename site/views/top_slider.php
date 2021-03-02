@@ -37,16 +37,17 @@
         //const Slider = $('.carousel-inner');
         //Slider.append(
         //    `
-        //    <div class="carousel-item"><a href="https://radshid.com/shop" target="_blank"><figure style="border-radius: 0"><img class="d-block w-100" src="<?php //echo RAD_ASSETS. '/images/sliders/car_tracker_banner.jpg' ?>//" alt=""></figure></a></div>
-        //    <div class="carousel-item"><a href="https://radshid.com/shop" target="_blank"><figure style="border-radius: 0"><img class="d-block w-100" src="<?php //echo RAD_ASSETS. '/images/sliders/personal_tracker_banner.jpg' ?>//" alt=""></figure></a></div>
-        //    <div class="carousel-item"><a href="https://radshid.com/?p=12783" target="_blank"><figure style="border-radius: 0"><img class="d-block w-100" src="<?php //echo RAD_ASSETS. '/images/sliders/tablet_banner.jpg' ?>//" alt=""></figure></a></div>
-        //    <div class="carousel-item"><a href="https://radshid.com/?p=12775" target="_blank"><figure style="border-radius: 0"><img class="d-block w-100" src="<?php //echo RAD_ASSETS. '/images/sliders/pda_banner.jpg' ?>//" alt=""></figure></a></div>
+        //    <div class="carousel-item"><a href="https://radshid.com/shop" target="_blank"><figure style="border-radius: 0"><img class="d-block w-100" src="<?php //echo RAD_ASSETS. '/images/sliders/car_tracker_banner.jpg' ?>//" alt="ردیاب رادشید"></figure></a></div>
+        //    <div class="carousel-item"><a href="https://radshid.com/shop" target="_blank"><figure style="border-radius: 0"><img class="d-block w-100" src="<?php //echo RAD_ASSETS. '/images/sliders/personal_tracker_banner.jpg' ?>//" alt="ردیاب رادشید"></figure></a></div>
+        //    <div class="carousel-item"><a href="https://radshid.com/?p=12783" target="_blank"><figure style="border-radius: 0"><img class="d-block w-100" src="<?php //echo RAD_ASSETS. '/images/sliders/tablet_banner.jpg' ?>//" alt="ردیاب رادشید"></figure></a></div>
+        //    <div class="carousel-item"><a href="https://radshid.com/?p=12775" target="_blank"><figure style="border-radius: 0"><img class="d-block w-100" src="<?php //echo RAD_ASSETS. '/images/sliders/pda_banner.jpg' ?>//" alt="ردیاب رادشید"></figure></a></div>
         //    `
         //);
 
         $('#topCarousel').carousel({
             'interval': 5000,
             'keyboard': true,
+            'touch': true,
             'ride': true
         });
         $('a.carousel-control-prev').on('click' , function (e) {
@@ -58,7 +59,6 @@
             $('#topCarousel').carousel('next');
         });
     });
-
 </script>
 
 

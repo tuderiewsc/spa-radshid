@@ -1,6 +1,5 @@
 /* Version 1.23 */
 
-
 /*ul#avia-menu{*/
      /*display: none;*/
  /*}*/
@@ -10,20 +9,213 @@
     /*padding: 0 !important;*/
 /*}*/
 
-
-/*html{*/
-    /*scroll-behavior: smooth;*/
-/*}*/
-/*html:focus-within{*/
-    /*scroll-behavior: smooth;*/
-/*}*/
-
 @font-face {
     font-family: "Samim";
     src: url("../assets/fonts/Samim-FD.ttf") format("truetype"), url("../assets/fonts/Samim-FD.eot") format("eot"), url("../assets/fonts/Samim-FD.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+    font-family: 'mycon';
+    src:  url('../assets/fonts/mycon/mycon.eot?wyorkp');
+    src:  url('../assets/fonts/mycon/mycon.eot?wyorkp#iefix') format('embedded-opentype'),
+    url('../assets/fonts/mycon/mycon.ttf?wyorkp') format('truetype'),
+    url('../assets/fonts/mycon/mycon.woff?wyorkp') format('woff'),
+    url('../assets/fonts/mycon/mycon.svg?wyorkp#denta') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="ic-"], [class*=" ic-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'mycon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-line-left:before {
+    content: "\e900";
+}
+.ic-line-right:before {
+    content: "\e901";
+}
+.ic-line-top:before {
+    content: "\e902";
+}
+.ic-line-bottom:before {
+    content: "\e903";
+}
+.ic-search:before {
+    content: "\e904";
+}
+.ic-user:before {
+    content: "\e905";
+}
+.ic-cart:before {
+    content: "\e906";
+}
+.ic-like:before {
+    content: "\e907";
+}
+.ic-aparat:before {
+    content: "\e908";
+}
+.ic-twitter:before {
+    content: "\e909";
+}
+.ic-whatsapp:before {
+    content: "\e90a";
+}
+.ic-instagram:before {
+    content: "\e90b";
+}
+.ic-telegram:before {
+    content: "\e90c";
+}
+.ic-pin:before {
+    content: "\e90d";
+}
+.ic-phone:before {
+    content: "\e90e";
+}
+.ic-save:before {
+    content: "\e90f";
+}
+.ic-favorite-fill:before {
+    content: "\e910";
+}
+.ic-close:before {
+    content: "\e911";
+}
+.ic-more:before {
+    content: "\e912";
+}
+.ic-share:before {
+    content: "\e913";
+}
+.ic-mail:before {
+    content: "\e914";
+}
+.ic-facebook:before {
+    content: "\e915";
+}
+.ic-linkedin:before {
+    content: "\e916";
+}
+.ic-info1:before {
+    content: "\e917";
+}
+.ic-plus:before {
+    content: "\e918";
+}
+.ic-favorite:before {
+    content: "\e919";
+}
+.ic-clock:before {
+    content: "\e91a";
+}
+.ic-menu:before {
+    content: "\e91b";
+}
+.ic-arrow-up:before {
+    content: "\e91c";
+}
+.ic-arrow-down:before {
+    content: "\e91d";
+}
+.ic-arrow-left:before {
+    content: "\e91e";
+}
+.ic-arrow-right:before {
+    content: "\e91f";
+}
+.ic-minus:before {
+    content: "\e920";
+}
+.ic-comment:before {
+    content: "\e921";
+}
+.ic-info:before {
+    content: "\e922";
+}
+.ic-verify:before {
+    content: "\e923";
+}
+.ic-basket:before {
+    content: "\e924";
+}
+.ic-telephone:before {
+    content: "\e925";
+}
+.ic-filter:before {
+    content: "\e926";
+}
+.ic-list:before {
+    content: "\e927";
+}
+.ic-user1:before {
+    content: "\e929";
+}
+.ic-users:before {
+    content: "\e92a";
+}
+.ic-shopping-bag:before {
+    content: "\e92c";
+}
+.ic-shopping-cart:before {
+    content: "\e92d";
+}
+.ic-briefcase:before {
+    content: "\e92e";
+}
+.ic-phone1:before {
+    content: "\e92f";
+}
+.ic-book-open:before {
+    content: "\e930";
+}
+.ic-book:before {
+    content: "\e931";
+}
+.ic-alert-circle:before {
+    content: "\e932";
+}
+.ic-chevron-up:before {
+    content: "\e933";
+}
+.ic-chevron-right:before {
+    content: "\e934";
+}
+.ic-chevron-left:before {
+    content: "\e935";
+}
+.ic-chevron-down:before {
+    content: "\e936";
+}
+.ic-megaphone:before {
+    content: "\e938";
+}
+.ic-truck:before {
+    content: "\e939";
+}
+.ic-study:before {
+    content: "\e93a";
+}
+.ic-shop:before {
+    content: "\e937";
+}
+.ic-home:before {
+    content: "\e92b";
 }
 
 
@@ -134,6 +326,19 @@ a:hover, a:focus, a:visited {
     max-height: 500px;
     object-fit: fill;
     border-radius: 0 !important;
+}
+
+.carousel-control-next{
+    right: 5px;
+}
+.carousel-control-prev{
+    left: 5px;
+}
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='tomato' viewBox='0 0 8 8'><path d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/></svg>") ;
+}
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='tomato' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") ;
 }
 /*.carousel-control-prev , .carousel-control-next{*/
     /*display: none;*/
@@ -542,8 +747,8 @@ button#register_frm_submit_btn:hover {
 .card-deck .more_link i{
     position: absolute;
     right: -8px;
-    top: 25%;
-    font-size: 1.25em;
+    top: 8px;
+    font-size: 12px;
     color: #616161;
     -moz-transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
@@ -709,8 +914,6 @@ button#register_frm_submit_btn:hover {
     padding: 5px 40px;
     color: #eee;
 }
-
-
 .link_items .linkItem .linkItemContainer strong{
     font-size: 1.25em;
     font-family: Samim,Sans-serif!important;
@@ -759,50 +962,7 @@ button#register_frm_submit_btn:hover {
     border: 1px solid #e0e0e0;
 }
 .link_items .linkItem .linkItemContainer .call_to_action i{
-    font-size: 1.75em;
-}
-
-
-.icon_links{
-    visibility: hidden;
-    margin-top: -40px;
-}
-.icon_links .linkItem{
-    text-align: center;
-    border-radius: 0 !important;
-    margin: 15px auto;
-}
-.icon_links .linkItem a img {
-    width: 55px;
-    height: auto;
-}
-.icon_links .linkItem i{
-    padding: 10px;
-    color: #1c272b;
-    font-size: 4em;
-}
-
-.icon_links .linkItemTitle {
-    color: #1c272b;
     font-size: 1em;
-    font-weight: bold;
-    font-family: Samim,Sans-serif!important;
-    margin: 10px auto;
-    visibility: hidden;
-    animation-duration: 0.4s;
-    animation-delay: 0.5s;
-}
-.icon_links .linkItemText {
-    padding: 0 20%;
-    text-align-last: center;
-}
-.icon_links .linkItemText span{
-    color: #616161;
-    font-size: 13px;
-    font-family: Samim,Sans-serif!important;
-    text-align: center;
-    font-weight: lighter;
-    line-height: 2;
 }
 /* Top Links */
 
