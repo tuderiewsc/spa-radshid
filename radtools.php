@@ -3,7 +3,7 @@
  * Plugin Name: Radshid Customization
  * Plugin URI: https://radshid.com/
  * Description: Spa For Radshid Site.
- * Version: 1.7
+ * Version: 1.8
  * Author: Outsider
  * Author URI: https://radshid.com/
  * Text Domain: radshid_lan
@@ -33,7 +33,7 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_script('owlCarousel', RAD_JS.'owl.carousel.min.js');
 	wp_enqueue_script('wow', RAD_JS.'wow.min.js');
 	wp_enqueue_script('sweetAlert', RAD_JS.'sweetalert2.all.min.js');
-	wp_enqueue_script('myScripts', RAD_JS.'scripts.js' , '1.3');
+	wp_enqueue_script('myScripts', RAD_JS.'scripts.js' , '1.8');
 	wp_localize_script( 'myScripts', 'RadAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'security' => wp_create_nonce( '82ybuh2nuwbex887' )
@@ -44,17 +44,17 @@ add_action( 'wp_enqueue_scripts', function(){
 	wp_enqueue_style( 'owl_carousel_theme', RAD_CSS . 'owl.theme.default.min.css');
 	wp_enqueue_style( 'bootstrap', RAD_CSS . 'bootstrap.min.css');
 	wp_enqueue_style( 'animate_css', RAD_CSS . 'animate.min.css');
-	wp_enqueue_style( 'mystyles', RAD_CSS . 'rad-styles.css' , '1.3');
+	wp_enqueue_style( 'rad-styles', RAD_CSS . 'rad-styles.css' , '1.8');
 });
 // load css&js
 
 
 if(is_admin()){
-	require(RAD_ADMIN . 'admin_proccess.php');
-	require(RAD_ADMIN . 'ajax_requests.php');
+	include(RAD_ADMIN . 'admin_proccess.php'); // used include instead of require to not produce errors
+	include(RAD_ADMIN . 'ajax_requests.php');
 }
 // Short codes
-require(RAD_INCS . 'shortcode.php');
+include(RAD_INCS . 'shortcode.php');
 //require(RAD_INCS . 'functions.php');
 
 

@@ -10,12 +10,12 @@
                         <i class="ic-shopping-cart my-2"></i>
                         <div class="call_to_action">
                             <strong class="linkItemTitle my-2">فروشگاه</strong>
-                            <a href="https://radshid.com/shop" target="_blank">
+                            <a href="https://radshid.com/shop">
                                 کلیک کنید <i class="ic-line-left mx-2"></i>
                             </a>
                         </div>
                         <span class="link_cover">
-                            <a href="https://radshid.com/shop" target="_blank">کلیک کنید</a>
+                            <a href="https://radshid.com/shop">کلیک کنید</a>
                         </span>
                     </div>
                 </div>
@@ -38,12 +38,12 @@
                         <i class="ic-study my-2"></i>
                         <div class="call_to_action">
                             <strong class="linkItemTitle my-2"> آموزش نصب ردیاب</strong>
-                            <a href="https://radshid.com/gps-tracker-installation" target="_blank">
+                            <a href="https://radshid.com/gps-tracker-installation">
                                 کلیک کنید <i class="ic-line-left mx-2"></i>
                             </a>
                         </div>
                         <span class="link_cover">
-                            <a href="https://radshid.com/gps-tracker-installation" target="_blank">کلیک کنید</a>
+                            <a href="https://radshid.com/gps-tracker-installation">کلیک کنید</a>
                         </span>
                     </div>
                 </div>
@@ -52,12 +52,12 @@
                         <i class="ic-briefcase my-2"></i>
                         <div class="call_to_action">
                             <strong class="linkItemTitle my-2">نمایندگان رادشید</strong>
-                            <a href="https://radshid.com/?p=9017" target="_blank">
+                            <a href="https://radshid.com/?p=9017">
                                 کلیک کنید <i class="ic-line-left mx-2"></i>
                             </a>
                         </div>
                         <span class="link_cover">
-                            <a href="https://radshid.com/?p=9017" target="_blank">کلیک کنید</a>
+                            <a href="https://radshid.com/?p=9017">کلیک کنید</a>
                         </span>
                     </div>
                 </div>

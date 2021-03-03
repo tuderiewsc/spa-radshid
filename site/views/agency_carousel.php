@@ -6,7 +6,7 @@
         <div class="card-deck">
                 <h3 class="card-deck-title d-flex justify-content-between" data-hover="110" id="customers">
                     <span id="card-deck-title-text"><?php echo __('Our Customers' , 'radshid_lan')?></span>
-                    <a class="more_link" href="https://radshid.com/?p=4520" target="_blank">
+                    <a class="more_link" href="https://radshid.com/?p=4520">
 	                    <?php echo __('More' , 'radshid_lan')?>
                         <i class="ic-plus"></i>
                     </a>

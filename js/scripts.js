@@ -23,7 +23,6 @@ jQuery(document).ready(function($){
     /* -------------------------------------------------------------------------------------------------- */
 
 
-    $('.linkItemTitle').css('visibility' , 'visible').addClass('wow');
     $('.loader-container').css('display' , 'none').remove();
 
 
