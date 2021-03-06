@@ -163,6 +163,10 @@
   .link_items .linkItem .linkItemContainer .call_to_action a{
     display: flex;
   }
+  .top_slider #tempImg img{
+    height: auto;
+    min-height: auto;
+  }
 }
 @media screen and (max-width: 600px) {
   .top_banner{

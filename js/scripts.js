@@ -23,8 +23,6 @@ jQuery(document).ready(function($){
     /* -------------------------------------------------------------------------------------------------- */
 
 
-    $('.loader-container').css('display' , 'none').remove();
-
 
     /* Top Banner */
     // setTimeout(function () {

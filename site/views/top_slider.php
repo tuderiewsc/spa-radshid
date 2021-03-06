@@ -2,6 +2,9 @@
 
 
 <div class="top_slider">
+    <figure id="tempImg">
+        <img class="d-block w-100" src="<?php echo RAD_ASSETS. '/images/sliders/radshid_banner.jpg'  ?>" alt="ردیاب رادشید">
+    </figure>
 	<div id="topCarousel" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
@@ -39,7 +42,7 @@
             'keyboard': true,
             'touch': true,
             'ride': true
-        });
+        }).css('visibility' , 'visible');
         $('a.carousel-control-prev').on('click' , function (e) {
             e.preventDefault();
             $('#topCarousel').carousel('prev');
@@ -51,7 +54,10 @@
         setTimeout(function () {
             $('.carousel-control-prev').css('visibility' , 'visible');
             $('.carousel-control-next').css('visibility' , 'visible');
-        }, 1000)
+        }, 1000);
+
+        $('#tempImg').remove();
+        $('.loader-container').css('display' , 'none').remove();
     });
 </script>
 
