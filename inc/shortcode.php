@@ -13,6 +13,7 @@ add_action('init', function(){
 	add_shortcode('sipaad_separator' , 'sipaad_separator_section');
 	add_shortcode('affilate_dash' , 'affilate_dash_page');
 	add_shortcode('mellat' , 'mellat_page');
+	add_shortcode('product_share_btns' , 'product_share_buttons');
 });
 function mellat_page($atts, $content = null){
 	include(plugin_dir_path( __FILE__ ).'../site/views/mellat_test.php');
@@ -43,6 +44,9 @@ function sipaad_separator_section($atts, $content = null){
 }
 function affilate_dash_page($atts, $content = null){
 	include(plugin_dir_path( __FILE__ ).'../site/views/affilate_dash_page.php');
+}
+function product_share_buttons($atts, $content = null){
+	include(plugin_dir_path( __FILE__ ).'../site/views/product_share_buttons.php');
 }
 
 

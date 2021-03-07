@@ -1170,6 +1170,7 @@ footer.socket_color {
   align-content: center;
   font-family: IranSans, Sans-serif, Arial;
   border-radius: 0 !important;
+  margin: 60px auto;
 }
 
 .separator_sub {
@@ -1309,6 +1310,68 @@ footer.socket_color {
   background: #686868 !important;
 }
 
+.share_btns {
+  padding: 10px;
+  margin: 13px auto;
+  color: #1c272b;
+}
+
+.share_btns ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.share_btns ul li.title {
+  font-size: 15px;
+  user-select: none;
+}
+
+.share_btns ul li.icons {
+  font-size: 15px;
+  margin: auto 5px;
+}
+
+.share_btns ul li.icons a {
+  color: #686868;
+}
+
+.share_btns ul li.icons a i {
+  transition: 0.2s ease !important;
+  -webkit-transition: 0.2s ease !important;
+  -moz-transition: 0.2s ease !important;
+  -o-transition: 0.2s ease !important;
+  -ms-transition: 0.2s ease !important;
+}
+
+.share_btns ul li.icons.fb:hover a i {
+  color: #4267B2;
+  font-weight: bold;
+}
+
+.share_btns ul li.icons.wa:hover a i {
+  color: #128C7E;
+  font-weight: bold;
+}
+
+.share_btns ul li.icons.ln:hover a i {
+  color: #0077B5;
+  font-weight: bold;
+}
+
+.share_btns ul li.icons.tw:hover a i {
+  color: #1DA1F2;
+  font-weight: bold;
+}
+
+.share_btns ul li.icons.tl:hover a i {
+  color: #0088cc;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1000px) {
   .card-deck {
     padding: 0 90px;
@@ -1441,6 +1504,10 @@ footer.socket_color {
     visibility: visible !important;
   }
 
+  .separator {
+    margin: 24px auto;
+  }
+
   .separator_sub_title {
     font-size: 1.5em;
   }
@@ -1508,6 +1575,10 @@ footer.socket_color {
   .top_slider #tempImg img {
     height: auto;
     min-height: auto;
+  }
+
+  .share_btns ul {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 600px) {

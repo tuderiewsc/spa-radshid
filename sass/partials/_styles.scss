@@ -1003,6 +1003,7 @@ footer.socket_color{
   align-content: center;
   font-family: $textFont;
   border-radius: 0 !important;
+  margin: 60px auto;
 }
 
 .separator_sub {
@@ -1132,3 +1133,54 @@ footer.socket_color{
   background: $AccentColor !important;
 }
 
+
+
+// Start Product Share Buttons
+.share_btns{
+  padding: 10px;
+  margin: 13px auto;
+  color: $titleColor;
+}
+.share_btns ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+.share_btns ul li.title{
+  font-size: 15px;
+  user-select: none;
+}
+.share_btns ul li.icons{
+  font-size: 15px;
+  margin: auto 5px;
+}
+.share_btns ul li.icons a{
+  color: $AccentColor;
+}
+.share_btns ul li.icons a i{
+  @include myTransition(0.2s ease);
+}
+.share_btns ul li.icons.fb:hover a i{
+  color: $facebookColor;
+  font-weight: bold;
+}
+.share_btns ul li.icons.wa:hover a i{
+  color: $whatsappColor;
+  font-weight: bold;
+}
+.share_btns ul li.icons.ln:hover a i{
+  color: $linkedinColor;
+  font-weight: bold;
+}
+.share_btns ul li.icons.tw:hover a i{
+  color: $tweeterColor;
+  font-weight: bold;
+}
+.share_btns ul li.icons.tl:hover a i{
+  color: $telegramColor;
+  font-weight: bold;
+}
+// End Product Share Buttons
